@@ -198,7 +198,8 @@ export const services = [
         "list": [
           "Higher CSAT",
           "Lower handle time",
-          "Cohesive brand voice"
+          "Cohesive brand voice",
+          "Faster first response"
         ],
         "eyebrow": "Why It Matters"
       },
@@ -213,8 +214,7 @@ export const services = [
             "q": "Do you replace our helpdesk tooling?",
             "a": "No. We integrate with Zendesk, Intercom, Salesforce, Front and more."
           }
-        ],
-        "eyebrow": "Faster first response"
+        ]
       }
     ]
   },
@@ -333,7 +333,8 @@ export const services = [
         "list": [
           "Faster resolution",
           "Lower MTTR",
-          "Engineer-friendly"
+          "Engineer-friendly",
+          "24/7 if needed"
         ],
         "eyebrow": "Why It Matters"
       },
@@ -348,8 +349,7 @@ export const services = [
             "q": "Can you take on-call?",
             "a": "Yes, on PagerDuty, Opsgenie or Better Stack. Your runbooks, our rotations."
           }
-        ],
-        "eyebrow": "24/7 if needed"
+        ]
       }
     ]
   },
@@ -468,7 +468,8 @@ export const services = [
         "list": [
           "Throughput lift",
           "Audit-ready",
-          "Lower error rate"
+          "Lower error rate",
+          "Reclaimed weekends"
         ],
         "eyebrow": "Why It Matters"
       },
@@ -483,8 +484,7 @@ export const services = [
             "q": "How is data handled?",
             "a": "PII never leaves your environment unencrypted. Secure VPN, role-based access, audit logging."
           }
-        ],
-        "eyebrow": "Reclaimed weekends"
+        ]
       }
     ]
   },
@@ -603,7 +603,8 @@ export const services = [
         "list": [
           "More meetings",
           "Cleaner CRM",
-          "Better forecasts"
+          "Better forecasts",
+          "Performance pricing"
         ],
         "eyebrow": "Why It Matters"
       },
@@ -618,8 +619,7 @@ export const services = [
             "q": "Who writes the messaging?",
             "a": "We do, with your sales leadership in the room. Nothing ships unapproved."
           }
-        ],
-        "eyebrow": "Performance pricing"
+        ]
       }
     ]
   },
@@ -738,7 +738,8 @@ export const services = [
         "list": [
           "Faster close",
           "Audit-ready books",
-          "Fewer errors"
+          "Fewer errors",
+          "Lower cost"
         ],
         "eyebrow": "Why It Matters"
       },
@@ -753,8 +754,7 @@ export const services = [
             "q": "Can you handle multi-entity?",
             "a": "Yes, including intercompany reconciliations and consolidated reporting."
           }
-        ],
-        "eyebrow": "Lower cost"
+        ]
       }
     ]
   },
@@ -873,7 +873,8 @@ export const services = [
         "list": [
           "Faster hiring",
           "Better fit",
-          "Lower admin load"
+          "Lower admin load",
+          "Compliant"
         ],
         "eyebrow": "Why It Matters"
       },
@@ -888,8 +889,7 @@ export const services = [
             "q": "Can you work with our ATS?",
             "a": "We integrate with Greenhouse, Lever, Workable and others."
           }
-        ],
-        "eyebrow": "Compliant"
+        ]
       }
     ]
   },
@@ -1078,7 +1078,8 @@ export const services = [
         "list": [
           "Responsive business positioning",
           "Higher customer satisfaction",
-          "Improved customer retention"
+          "Improved customer retention",
+          "Stronger brand loyalty"
         ],
         "eyebrow": "Why It Matters"
       }
@@ -1164,7 +1165,8 @@ export const services = [
         "list": [
           "Lower infrastructure costs",
           "Faster deployment",
-          "Built-in workforce accountability and insights"
+          "Built-in workforce accountability and insights",
+          "Seamless CRM integration"
         ],
         "eyebrow": "Why It Matters"
       }
@@ -2395,7 +2397,8 @@ export const services = [
           "Scalable operations",
           "Faster response times",
           "Improved customer satisfaction",
-          "Cost-effectiveness"
+          "Cost-effectiveness",
+          "Multilingual support"
         ],
         "eyebrow": "Why It Matters"
       }
@@ -3514,7 +3517,8 @@ export const services = [
           "Round-the-clock support",
           "Reduced operational costs",
           "Faster response times to content",
-          "Regulatory compliance assurance"
+          "Regulatory compliance assurance",
+          "Brand image preservation"
         ],
         "eyebrow": "Why It Matters"
       }
@@ -3611,7 +3615,8 @@ export const services = [
           "Improved AI model accuracy through human guidance",
           "Prevention of pattern misidentification errors",
           "Better scalability and generalization",
-          "Compliance and data security alignment"
+          "Compliance and data security alignment",
+          "Cost-effective solutions"
         ],
         "eyebrow": "Why It Matters"
       }
