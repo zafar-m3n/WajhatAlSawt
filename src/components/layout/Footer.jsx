@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom'
 import { Icon } from '@iconify/react'
 import { company, footerLinks } from '@/data/site'
-import { industries } from '@/data/industries'
+import { industryIndex as industries } from '@/data/catalog'
 
 export default function Footer() {
   const columns = {

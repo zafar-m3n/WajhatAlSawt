@@ -6,13 +6,13 @@ import Select from '@/components/ui/Select'
 import Seo from '@/components/ui/Seo'
 import { FaqBlock } from '@/pages/Service'
 import { company, contactPage } from '@/data/site'
-import { practices, services } from '@/data/services'
+import { practices, serviceIndex } from '@/data/catalog'
 import { faqs } from '@/data/faqs'
 
-const bySlug = Object.fromEntries(services.map((s) => [s.slug, s]))
+const bySlug = Object.fromEntries(serviceIndex.map((s) => [s.slug, s]))
 const serviceOptions = practices.map((p) => ({
   label: p.name,
-  options: p.services.map((slug) => ({ value: slug, label: bySlug[slug].card.title })),
+  options: p.services.map((slug) => ({ value: slug, label: bySlug[slug].title })),
 }))
 
 const methods = [

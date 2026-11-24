@@ -76,9 +76,10 @@ function Hero() {
   )
 }
 
+const B = ({ children }) => <span className="text-linen">{children}</span>
+
 function Facts() {
   const f = Object.fromEntries(home.facts.map((x) => [x.label, x.value]))
-  const B = ({ children }) => <span className="text-linen">{children}</span>
   return (
     <section className="bg-fern" aria-label="Wajhat Al Sawt in numbers">
       <p className="shell display-section py-20 font-light text-sage md:py-28">

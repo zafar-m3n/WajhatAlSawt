@@ -5,11 +5,10 @@ import { Icon } from '@iconify/react'
 import Logo from '@/components/layout/Logo'
 import Button from '@/components/ui/Button'
 import { company, nav } from '@/data/site'
-import { practices, services } from '@/data/services'
-import { industries } from '@/data/industries'
+import { practices, serviceIndex, industryIndex as industries } from '@/data/catalog'
 
-const serviceBySlug = Object.fromEntries(services.map((s) => [s.slug, s]))
-const shortTitle = (s) => s.card?.title ?? s.title
+const serviceBySlug = Object.fromEntries(serviceIndex.map((s) => [s.slug, s]))
+const shortTitle = (s) => s.title
 
 function ServicesPanel({ onNavigate }) {
   return (
@@ -138,10 +137,14 @@ export default function Header() {
   const ref = useRef(null)
   const closeTimer = useRef()
 
-  useEffect(() => {
+  // Close menus whenever the URL changes (incl. back/forward)
+  const routeKey = location.pathname + location.search
+  const [lastRoute, setLastRoute] = useState(routeKey)
+  if (lastRoute !== routeKey) {
+    setLastRoute(routeKey)
     setPanel(null)
     setMobile(false)
-  }, [location.pathname, location.search])
+  }
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 8)
