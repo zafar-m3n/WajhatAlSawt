@@ -1,7 +1,13 @@
+import { Route, Routes } from 'react-router-dom'
+import Layout from '@/components/layout/Layout'
+import Home from '@/pages/Home'
+
 export default function App() {
   return (
-    <main className="shell py-24">
-      <h1 className="text-65">Wajhat Al Sawt</h1>
-    </main>
+    <Routes>
+      <Route element={<Layout />}>
+        <Route index element={<Home />} />
+      </Route>
+    </Routes>
   )
 }

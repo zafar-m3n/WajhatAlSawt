@@ -62,8 +62,8 @@ const post = {
 
 const slots = {
   'home-hero': {
-    ratio: '4 / 5',
-    size: '1600×2000',
+    ratio: '3 / 2',
+    size: '2100×1400',
     keywords: 'contact center agent headset natural light, customer service professional smiling, call center team modern office',
     alt: 'Wajhat Al Sawt team at work',
   },

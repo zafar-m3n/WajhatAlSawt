@@ -91,6 +91,30 @@
   max-width: 68ch;
 }
 
+/* Fluid display sizes on the 1.25 scale */
+@utility display-hero {
+  font-size: clamp(2.5rem, 7.2vw + 0.5rem, 6.4375rem);
+  line-height: 1;
+  letter-spacing: -0.045em;
+  font-weight: 300;
+}
+@utility display-page {
+  font-size: clamp(2.25rem, 5.6vw + 0.4rem, 5.125rem);
+  line-height: 1.02;
+  letter-spacing: -0.042em;
+  font-weight: 300;
+}
+@utility display-section {
+  font-size: clamp(1.75rem, 3.2vw + 0.5rem, 3.25rem);
+  line-height: 1.06;
+  letter-spacing: -0.035em;
+}
+@utility deck {
+  font-size: clamp(1.125rem, 0.9vw + 0.9rem, 1.3125rem);
+  line-height: 1.55;
+  color: var(--color-sage);
+}
+
 /* Running-text link: mint underline that thickens on hover */
 @utility text-link {
   color: var(--color-linen);
