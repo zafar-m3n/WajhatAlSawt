@@ -1,4 +1,4 @@
-// Image slots. Drop a file at public/images/<file> and it replaces the placeholder automatically.
+// Image slots. Drop public/images/<slot>.webp and it replaces the placeholder automatically.
 // Keywords are suggested Freepik Premium searches.
 
 const service = {
@@ -62,31 +62,31 @@ const post = {
 const slots = {
   'home-hero': {
     ratio: '16 / 9',
-    size: '2560×1440, full screen',
+    size: 'landscape, 2560px+ wide',
     keywords: 'contact center agent headset natural light, customer service professional smiling, call center team modern office',
     alt: 'Wajhat Al Sawt team at work',
   },
   'about-team': {
     ratio: '21 / 9',
-    size: '2400×1030 (phones crop to 4:5)',
+    size: 'landscape, 2400px+ wide',
     keywords: 'diverse office team meeting, business team collaborating, call center team portrait',
     alt: 'Wajhat Al Sawt Team',
   },
   'home-why': {
     ratio: '4 / 5',
-    size: '1600×2000',
+    size: 'portrait, 1600px+ wide',
     keywords: 'contact center supervisor coaching agent, team leader headset office, support team collaboration',
     alt: 'Wajhat Al Sawt team lead with an agent',
   },
 }
-for (const [k, v] of Object.entries(service)) slots[`service-${k}`] = { ratio: '3 / 2', size: '1800×1200', keywords: v }
-for (const [k, v] of Object.entries(industry)) slots[`industry-${k}`] = { ratio: '21 / 9', size: '2400×1030', keywords: v }
-for (const [k, v] of Object.entries(post)) slots[`post-${k}`] = { ratio: '16 / 9', size: '1920×1080', keywords: v }
+for (const [k, v] of Object.entries(service)) slots[`service-${k}`] = { ratio: '3 / 2', size: 'landscape, 2400px+ wide', keywords: v }
+for (const [k, v] of Object.entries(industry)) slots[`industry-${k}`] = { ratio: '21 / 9', size: 'landscape, 2400px+ wide', keywords: v }
+for (const [k, v] of Object.entries(post)) slots[`post-${k}`] = { ratio: '16 / 9', size: 'landscape, 2400px+ wide', keywords: v }
 
 export const imageSlots = slots
 
 export function imageFor(slot) {
   const s = slots[slot]
   if (!s) return null
-  return { ...s, slot, file: `/images/${slot}.jpg` }
+  return { ...s, slot, file: `/images/${slot}.webp` }
 }
