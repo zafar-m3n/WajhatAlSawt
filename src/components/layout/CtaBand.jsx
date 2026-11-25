@@ -12,8 +12,8 @@ export default function CtaBand({ title = cta.title, text = cta.text, action = '
           <p className="text-sage">{text}</p>
           <div className="flex flex-wrap items-center gap-x-6 gap-y-3">
             <Button to="/contact">{action}</Button>
-            <a href={company.phoneHref} className="text-15 text-sage hover:text-linen">
-              or call {company.phone}
+            <a href={`mailto:${company.email}`} className="text-15 text-sage hover:text-linen">
+              or email {company.email}
             </a>
           </div>
         </Reveal>

@@ -100,7 +100,7 @@ export const legal = {
           },
           {
             "type": "p",
-            "text": "or No: 302, Galle road, Colombo 4."
+            "text": "or Office 209, Sarah Building, Al Garhoud, Dubai, United Arab Emirates."
           }
         ]
       }
@@ -208,7 +208,7 @@ export const legal = {
           },
           {
             "type": "p",
-            "text": "or No: 302, Galle road, Colombo 4."
+            "text": "or Office 209, Sarah Building, Al Garhoud, Dubai, United Arab Emirates."
           }
         ]
       }

@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom'
 import { Icon } from '@iconify/react'
 
 const base =
-  'inline-flex items-center justify-center gap-2 rounded-[10px] px-5 py-3.5 text-15 font-semibold whitespace-nowrap transition-colors duration-200'
+  'inline-flex items-center justify-center gap-2 rounded-[10px] px-5 py-3.5 text-15 font-semibold whitespace-nowrap transition-colors duration-200 disabled:cursor-wait disabled:opacity-60'
 
 const variants = {
   primary: 'bg-jade text-ink hover:bg-mint',

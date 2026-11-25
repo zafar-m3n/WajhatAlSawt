@@ -17,17 +17,13 @@ const organization = {
   image: `${SITE_URL}/og-image.jpg`,
   description: TAGLINE,
   email: company.email,
-  telephone: company.phone,
-  // Address comes from site data, so updating company.address updates search data too
-  address: { '@type': 'PostalAddress', streetAddress: company.address },
+  // Address comes from site data, so updating it there updates search data too
+  address: { '@type': 'PostalAddress', ...company.addressParts },
   areaServed: ['Worldwide', 'Middle East'],
-  contactPoint: {
-    '@type': 'ContactPoint',
-    contactType: 'customer service',
-    telephone: company.phone,
-    email: company.email,
-    availableLanguage: ['English'],
-  },
+  contactPoint: [
+    { '@type': 'ContactPoint', contactType: 'customer service', email: company.email, availableLanguage: ['English'] },
+    { '@type': 'ContactPoint', contactType: 'careers', email: company.careersEmail, availableLanguage: ['English'] },
+  ],
 }
 
 const website = {

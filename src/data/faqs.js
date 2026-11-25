@@ -48,8 +48,8 @@ export const faqs = {
       "a": "Engagement terms vary by service and scale. We will explain the options best suited to your business during your initial consultation."
     },
     {
-      "q": "Can I speak with someone directly instead of sending an email?",
-      "a": "Yes. Call our hotline, listed on this page, and a member of our team will assist you right away."
+      "q": "Can I speak with someone directly?",
+      "a": "Yes. Send us a message through the form on this page or email info@wajhatalsawt.com, and a member of our team will get back to you within 24 hours to arrange a call."
     }
   ]
 }

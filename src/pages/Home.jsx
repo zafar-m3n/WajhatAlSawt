@@ -317,9 +317,9 @@ function Contact() {
       </Reveal>
       <Reveal className="mt-14 grid gap-10 border-t border-line pt-10 md:grid-cols-3">
         <div>
-          <p className="text-15 text-sage">Hotline</p>
-          <a href={company.phoneHref} className="mt-1 block text-21 hover:text-mint">
-            {company.phone}
+          <p className="text-15 text-sage">Careers</p>
+          <a href={`mailto:${company.careersEmail}`} className="mt-1 block text-21 break-words hover:text-mint">
+            {company.careersEmail}
           </a>
         </div>
         <div>

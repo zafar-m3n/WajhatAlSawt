@@ -8,8 +8,7 @@
 
 <p align="center">
   <a href="https://wajhatalsawt.com">wajhatalsawt.com</a> |
-  <a href="mailto:info@wajhatalsawt.com">info@wajhatalsawt.com</a> |
-  +94 76 846 2636
+  <a href="mailto:info@wajhatalsawt.com">info@wajhatalsawt.com</a>
 </p>
 
 ---
@@ -100,21 +99,16 @@ operations.
 - Teams led by experienced operators, not generic call center staffing
 - Transparent pricing with no hidden fees
 
-## Leadership
-
-**Executive Directors:** Hasmin Majid, Fahad Azwar and Abdul Shakir
-
-**Management Team:** Avinash Rohith (HR Manager), Jony Dewson (HOD Retention), Anfal Lafir (Senior Operations
-Manager) and Shaeed Yazameen (HOD Sales)
-
 ## Contact
 
 | | |
 |---|---|
 | **Email** | [info@wajhatalsawt.com](mailto:info@wajhatalsawt.com) |
-| **Hotline** | +94 76 846 2636 |
-| **Address** | No: 302, Galle road, Colombo 4. |
+| **Careers** | [careers@wajhatalsawt.com](mailto:careers@wajhatalsawt.com) |
+| **Address** | Office 209, Sarah Building, Al Garhoud, Dubai, United Arab Emirates |
 | **Web** | [www.wajhatalsawt.com](https://wajhatalsawt.com) |
+
+To get in touch, email us or send a message through the contact form on our website, and a member of our team will get back to you within 24 hours.
 
 ---
 

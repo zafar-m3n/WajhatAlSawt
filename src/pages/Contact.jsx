@@ -4,22 +4,14 @@ import { useState } from 'react'
 import { Icon } from '@iconify/react'
 import Button from '@/components/ui/Button'
 import PageIntro from '@/components/ui/PageIntro'
-import Select from '@/components/ui/Select'
 import Seo from '@/components/ui/Seo'
 import { FaqBlock } from '@/components/sections/Blocks'
-import { company, contactPage } from '@/data/site'
-import { practices, serviceIndex } from '@/data/catalog'
+import { company, contactForm, contactPage } from '@/data/site'
 import { faqs } from '@/data/faqs'
-
-const bySlug = Object.fromEntries(serviceIndex.map((s) => [s.slug, s]))
-const serviceOptions = practices.map((p) => ({
-  label: p.name,
-  options: p.services.map((slug) => ({ value: slug, label: bySlug[slug].title })),
-}))
 
 const methods = [
   { label: 'Email', value: company.email, href: `mailto:${company.email}`, icon: 'ph:envelope-simple-light' },
-  { label: 'Hotline', value: company.phone, href: company.phoneHref, icon: 'ph:phone-light' },
+  { label: 'Careers', value: company.careersEmail, href: `mailto:${company.careersEmail}`, icon: 'ph:briefcase-light', note: 'For job applications and career inquiries' },
   { label: 'Address', value: company.address, icon: 'ph:map-pin-light' },
   { label: 'Web', value: company.web, href: '/', icon: 'ph:globe-simple-light' },
 ]
@@ -45,77 +37,97 @@ function Field({ id, label, error, optional, children }) {
 }
 
 function ContactForm() {
-  const [values, setValues] = useState({ name: '', email: '', company: '', phone: '', service: null, message: '' })
+  const empty = { name: '', email: '', phone: '', company: '', message: '' }
+  const [values, setValues] = useState(empty)
   const [errors, setErrors] = useState({})
-  const [status, setStatus] = useState(null)
+  const [status, setStatus] = useState(null) // 'sending' | 'sent' | 'error' | null
 
   const set = (k) => (e) => {
-    setValues((v) => ({ ...v, [k]: e?.target ? e.target.value : e }))
+    setValues((v) => ({ ...v, [k]: e.target.value }))
     setErrors((er) => ({ ...er, [k]: undefined }))
-    setStatus(null)
+    if (status !== 'sending') setStatus(null)
   }
 
-  const submit = (e) => {
+  const submit = async (e) => {
     e.preventDefault()
+    if (status === 'sending') return
     const er = {}
     if (!values.name.trim()) er.name = 'Enter your name.'
     if (!values.email.trim()) er.email = 'Enter your email address.'
     else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(values.email)) er.email = 'Enter an email address like name@company.com.'
-    if (!values.message.trim()) er.message = 'Enter a brief description of your requirements.'
+    if (!values.message.trim()) er.message = 'Enter a brief message.'
     setErrors(er)
     if (Object.keys(er).length) {
       document.getElementById(`cf-${Object.keys(er)[0]}`)?.focus()
       return
     }
-    setStatus('offline')
+
+    setStatus('sending')
+    try {
+      const res = await fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
+        body: JSON.stringify({
+          access_key: contactForm.accessKey,
+          subject: `New website inquiry from ${values.name.trim()}`,
+          from_name: 'Wajhat Al Sawt Website',
+          replyto: values.email.trim(),
+          botcheck: e.target.botcheck.checked,
+          ...values,
+        }),
+      })
+      const data = await res.json().catch(() => ({}))
+      if (!res.ok || !data.success) throw new Error(data.message)
+      setValues(empty)
+      setStatus('sent')
+    } catch {
+      setStatus('error')
+    }
   }
 
   const aria = (k) => ({ 'aria-invalid': !!errors[k], 'aria-describedby': errors[k] ? `cf-${k}-error` : undefined })
 
+  const message = {
+    sending: 'Sending your message...',
+    sent: 'Thank you. Your message has been received and a member of our team will get back to you within 24 hours.',
+    error: (
+      <>
+        Your message could not be sent. Please try again or email{' '}
+        <a className="text-link" href={`mailto:${company.email}`}>
+          {company.email}
+        </a>
+        .
+      </>
+    ),
+  }[status] ?? 'We respond to every inquiry within 24 hours.'
+
   return (
     <form onSubmit={submit} noValidate className="grid gap-8 sm:grid-cols-2 sm:gap-x-8">
+      {/* Honeypot for spam bots (Web3Forms rejects submissions where it is ticked) */}
+      <input type="checkbox" name="botcheck" className="hidden" tabIndex={-1} autoComplete="off" aria-hidden="true" />
       <Field id="cf-name" label="Full name" error={errors.name}>
         <input id="cf-name" autoComplete="name" value={values.name} onChange={set('name')} className={fieldCls} {...aria('name')} />
       </Field>
-      <Field id="cf-email" label="Work email" error={errors.email}>
+      <Field id="cf-email" label="Email" error={errors.email}>
         <input id="cf-email" type="email" autoComplete="email" value={values.email} onChange={set('email')} className={fieldCls} {...aria('email')} />
-      </Field>
-      <Field id="cf-company" label="Company" optional>
-        <input id="cf-company" autoComplete="organization" value={values.company} onChange={set('company')} className={fieldCls} />
       </Field>
       <Field id="cf-phone" label="Phone" optional>
         <input id="cf-phone" type="tel" autoComplete="tel" value={values.phone} onChange={set('phone')} className={fieldCls} />
       </Field>
-      <div className="sm:col-span-2">
-        <Field id="cf-service" label="Service you're interested in" optional>
-          <Select
-            inputId="cf-service"
-            instanceId="cf-service"
-            variant="underline"
-            options={serviceOptions}
-            value={values.service}
-            onChange={set('service')}
-            placeholder="Choose a service"
-            isClearable
-          />
-        </Field>
-      </div>
+      <Field id="cf-company" label="Company" optional>
+        <input id="cf-company" autoComplete="organization" value={values.company} onChange={set('company')} className={fieldCls} />
+      </Field>
       <div className="sm:col-span-2">
         <Field id="cf-message" label="Message" error={errors.message}>
           <textarea id="cf-message" rows={5} value={values.message} onChange={set('message')} className={`${fieldCls} resize-y`} {...aria('message')} />
         </Field>
       </div>
       <div className="flex flex-col gap-4 sm:col-span-2 sm:flex-row sm:items-center">
-        <Button type="submit">Send message</Button>
-        <p role="status" className="text-15 text-sage">
-          {status === 'offline' ? (
-            <>
-              This form isn't connected yet. Email <a className="text-link" href={`mailto:${company.email}`}>{company.email}</a> or call{' '}
-              <a className="text-link" href={company.phoneHref}>{company.phone}</a>.
-            </>
-          ) : (
-            'We respond to every inquiry within 24 hours.'
-          )}
+        <Button type="submit" disabled={status === 'sending'}>
+          {status === 'sending' ? 'Sending...' : 'Send message'}
+        </Button>
+        <p role="status" className={`text-15 ${status === 'error' ? 'text-red-300' : 'text-sage'}`}>
+          {message}
         </p>
       </div>
     </form>
@@ -143,6 +155,7 @@ export default function Contact() {
                   ) : (
                     <p className="mt-1 text-21">{m.value}</p>
                   )}
+                  {m.note && <p className="mt-1 text-15 text-sage">{m.note}</p>}
                 </div>
               </motion.li>
             ))}

@@ -5,10 +5,17 @@ export const company = {
   blurb:
     'Wajhat Al Sawt is a global provider of business process outsourcing and contact center services, helping enterprises reduce costs, streamline operations and accelerate growth.',
   email: 'info@wajhatalsawt.com',
+  careersEmail: 'careers@wajhatalsawt.com',
   web: 'www.wajhatalsawt.com',
-  phone: '+94 76 846 2636',
-  phoneHref: 'tel:+94768462636',
-  address: 'No: 302, Galle road, Colombo 4.',
+  // No public phone number for now: visitors are asked to get in touch by message or email
+  address: 'Office 209, Sarah Building, Al Garhoud, Dubai, United Arab Emirates',
+  // Structured form of the address for search engines
+  addressParts: {
+    streetAddress: 'Office 209, Sarah Building, Al Garhoud',
+    addressLocality: 'Dubai',
+    addressRegion: 'Dubai',
+    addressCountry: 'AE',
+  },
   // Placeholder social links (real accounts to be added later)
   socials: [
     { label: 'LinkedIn', icon: 'ph:linkedin-logo', href: '#' },
@@ -31,12 +38,7 @@ export const footerLinks = {
     { label: 'Home', to: '/' },
     { label: 'About Us', to: '/about' },
     { label: 'Contact', to: '/contact' },
-  ],
-  Resources: [
     { label: 'FAQs', to: '/faqs' },
-    { label: 'Privacy Policy', to: '/privacy' },
-    { label: 'Terms of Service', to: '/terms' },
-    { label: 'Cookie Policy', to: '/cookies' },
   ],
 }
 
@@ -72,7 +74,7 @@ export const home = {
   contact: {
     title: 'Contact Us',
     intro: 'Whether you have a question or are ready to begin, our team is available to help.',
-    note: 'Contact us directly and a member of our team will respond within 24 hours.',
+    note: 'Get in touch by email or through our contact form, and a member of our team will get back to you within 24 hours.',
   },
   why: [
     'Dedicated support available 24/7 across every engagement',
@@ -104,53 +106,13 @@ export const about = {
     { name: 'Innovation', text: 'We invest continuously in the technology and training that keep our clients ahead.' },
     { name: 'Partnership', text: "Our success is measured by our clients' success, and every engagement is built on long-term trust." },
   ],
-  team: {
-    title: 'Meet Our Team',
-    intro: 'Our leadership team brings decades of combined experience in business process outsourcing and technology.',
-    outro:
-      'Together, our leaders combine strategic vision, operational excellence and industry expertise to deliver exceptional outsourcing solutions for clients worldwide.',
-    directors: [
-      {
-        name: 'Hasmin Majid',
-        role: 'Director',
-        bio: 'Provides strategic leadership for business growth, operational excellence and long-term organizational success, with a focus on innovative outsourcing solutions, strong client relationships and sustainable partnerships.',
-      },
-      {
-        name: 'Fahad Azwar',
-        role: 'Director',
-        bio: 'Leads the organization with a commitment to strategic vision, operational efficiency and continuous innovation, building lasting client partnerships and delivering high-quality outsourcing solutions across global markets.',
-      },
-      {
-        name: 'Abdul Shakir',
-        role: 'Director',
-        bio: 'Directs corporate strategy through effective leadership, operational excellence and customer-focused solutions, strengthening business performance and creating long-term value for clients and stakeholders.',
-      },
-    ],
-    managers: [
-      {
-        name: 'Avinash Rohith',
-        role: 'HR Manager',
-        bio: 'Leads talent acquisition, employee engagement and HR policy across all Wajhat Al Sawt divisions, fostering a high-performance culture built on development and retention.',
-      },
-      {
-        name: 'Jony Dewson',
-        role: 'HOD Retention',
-        bio: 'Leads client retention strategy, renewal negotiations and satisfaction programs, sustaining long-term client relationships through proactive engagement.',
-      },
-      {
-        name: 'Anfal Lafir',
-        role: 'Senior Operations Manager',
-        bio: 'Oversees day-to-day operational delivery across all active client programs, ensuring service level compliance and workforce productivity.',
-      },
-      {
-        name: 'Shaeed Yazameen',
-        role: 'HOD Sales',
-        bio: "Leads the sales function and is responsible for cross-departmental alignment, performance benchmarking and the implementation of Wajhat Al Sawt's operational excellence standards.",
-      },
-    ],
-  },
 }
 
+
+// Web3Forms access key. It is a public key by design (it only allows sending to the inbox it was created for).
+export const contactForm = {
+  accessKey: 'b3d90040-edab-46af-9138-0b23f1f80ae6',
+}
 
 export const contactPage = {
   title: 'Contact Us',

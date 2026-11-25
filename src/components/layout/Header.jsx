@@ -200,11 +200,11 @@ function MobileMenu({ onClose }) {
           Get started
         </Button>
         <p className="text-15 text-sage">
-          <a href={company.phoneHref} className="text-linen">
-            {company.phone}
+          <a href={`mailto:${company.email}`} className="text-linen">
+            {company.email}
           </a>
           <br />
-          <a href={`mailto:${company.email}`}>{company.email}</a>
+          <a href={`mailto:${company.careersEmail}`}>{company.careersEmail}</a>
         </p>
       </div>
     </motion.div>

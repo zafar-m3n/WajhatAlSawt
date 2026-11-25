@@ -9,7 +9,8 @@ export default function Footer() {
     Services: practices.map((p) => ({ label: p.name, to: `/services/${p.slug}` })),
     Industries: industries.map((i) => ({ label: i.name, to: `/industries/${i.slug}` })),
   }
-  const order = ['Company', 'Services', 'Industries', 'Resources']
+  // Brand block + these three columns = 4 columns on desktop; legal links live in the bottom bar
+  const order = ['Company', 'Services', 'Industries']
 
   return (
     <footer className="mt-32 overflow-hidden border-t border-line md:mt-40">
@@ -17,11 +18,11 @@ export default function Footer() {
         <div className="space-y-6">
           <p className="measure text-15 text-sage">{company.blurb}</p>
           <address className="space-y-1 text-15 not-italic">
-            <a href={company.phoneHref} className="block hover:text-mint">
-              {company.phone}
-            </a>
             <a href={`mailto:${company.email}`} className="block hover:text-mint">
               {company.email}
+            </a>
+            <a href={`mailto:${company.careersEmail}`} className="block hover:text-mint">
+              {company.careersEmail}
             </a>
             <span className="block text-sage">{company.address}</span>
           </address>
@@ -35,7 +36,7 @@ export default function Footer() {
             ))}
           </ul>
         </div>
-        <nav aria-label="Footer" className="grid grid-cols-2 gap-x-8 gap-y-10 sm:grid-cols-4">
+        <nav aria-label="Footer" className="grid grid-cols-2 gap-x-8 gap-y-10 sm:grid-cols-3">
           {order.map((col) => (
             <div key={col}>
               <h2 className="font-sans text-15 font-semibold tracking-normal text-linen">{col}</h2>
