@@ -28,7 +28,7 @@ function HeroScene() {
       <div className="sticky top-0 flex h-svh items-center justify-center overflow-hidden">
         <motion.div style={reduce ? undefined : { scale, borderRadius: radius }} className="absolute inset-0 overflow-hidden will-change-transform">
           <motion.div style={reduce ? undefined : { scale: zoom }} className="absolute inset-0">
-            <Photo slot="home-hero" fill eager rounded="rounded-none" captionClassName="top-28 right-[10%] text-right max-sm:hidden" />
+            <Photo slot="home-hero" fill eager rounded="rounded-none" />
           </motion.div>
           <div className="absolute inset-0 bg-gradient-to-t from-ink via-ink/55 to-ink/10" />
         </motion.div>
@@ -77,7 +77,7 @@ function PracticeCard({ p }) {
     <Link to={`/services/${p.slug}`} className="group flex h-full w-[82vw] shrink-0 snap-start flex-col sm:w-[26rem] lg:w-[30rem]">
       <div className="overflow-hidden rounded-[24px]">
         <div className="transition-transform duration-[1.2s] ease-[cubic-bezier(.22,1,.36,1)] group-hover:scale-[1.06]">
-          <Photo slot={`service-${p.slug}`} ratio="4 / 3" rounded="rounded-none" showKeywords={false} />
+          <Photo slot={`service-${p.slug}`} ratio="4 / 3" rounded="rounded-none" />
         </div>
       </div>
       <div className="mt-6 flex items-baseline justify-between gap-4">

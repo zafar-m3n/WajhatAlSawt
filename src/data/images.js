@@ -1,53 +1,44 @@
-// Image slots. Drop public/images/<slot>.webp and it replaces the placeholder automatically.
-// Keywords are suggested Freepik Premium searches.
+// Site photography (WebP, 2560px wide; home-why 2000px), imported through the @/ alias so Vite
+// fingerprints and caches them.
+//
+// `pos` is the CSS object-position used when an image is cropped to fit its frame (wide banners,
+// cards). `posMobile` overrides it on phones, where frames are portrait and off-centre subjects
+// would otherwise be cut.
+import homeHero from '@/assets/home-hero.webp'
+import homeWhy from '@/assets/home-why.webp'
+import aboutTeam from '@/assets/about-team.webp'
+import callCenter from '@/assets/service-call-center-outsourcing.webp'
+import bpoSupport from '@/assets/service-bpo-business-support.webp'
+import afterHours from '@/assets/service-after-hours-overflow.webp'
+import orderBilling from '@/assets/service-order-taking-billing.webp'
+import inboundOutbound from '@/assets/service-inbound-outbound.webp'
+import customerService from '@/assets/service-customer-service-support.webp'
+import aiTechnology from '@/assets/service-ai-technology.webp'
+import banking from '@/assets/industry-banking-financial.webp'
+import ecommerce from '@/assets/industry-ecommerce.webp'
+import technology from '@/assets/industry-technology.webp'
 
-const main = {
-  'home-hero': {
-    ratio: '16 / 9',
-    size: 'landscape, 2560px+ wide',
-    keywords: 'contact center agent headset natural light, customer service professional smiling, call center team modern office',
-    alt: 'Wajhat Al Sawt team at work',
-  },
-  'about-team': {
-    ratio: '21 / 9',
-    size: 'landscape, 2400px+ wide',
-    keywords: 'diverse office team meeting, business team collaborating, call center team portrait',
-    alt: 'Wajhat Al Sawt Team',
-  },
-  'home-why': {
-    ratio: '4 / 5',
-    size: 'portrait, 1600px+ wide',
-    keywords: 'contact center supervisor coaching agent, team leader headset office, support team collaboration',
-    alt: 'Wajhat Al Sawt team lead with an agent',
-  },
+const slots = {
+  'home-hero': { file: homeHero, ratio: '16 / 9', alt: 'Wajhat Al Sawt team at work' },
+  'home-why': { file: homeWhy, ratio: '4 / 5', alt: 'Wajhat Al Sawt team lead with an agent' },
+  'about-team': { file: aboutTeam, ratio: '21 / 9', alt: 'Wajhat Al Sawt Team', pos: 'center 22%' },
+
+  // One image per service category (category page banner + home card)
+  'service-call-center-outsourcing': { file: callCenter, ratio: '21 / 9' },
+  'service-bpo-business-support': { file: bpoSupport, ratio: '21 / 9', pos: 'center 4%' },
+  'service-after-hours-overflow': { file: afterHours, ratio: '21 / 9' },
+  'service-order-taking-billing': { file: orderBilling, ratio: '21 / 9', pos: 'center 25%' },
+  'service-inbound-outbound': { file: inboundOutbound, ratio: '21 / 9', posMobile: '66% center' },
+  'service-customer-service-support': { file: customerService, ratio: '21 / 9' },
+  'service-ai-technology': { file: aiTechnology, ratio: '21 / 9', posMobile: '74% center' },
+
+  // One image per industry (industry page banner + home industries band)
+  'industry-banking-financial': { file: banking, ratio: '21 / 9', pos: 'center 18%' },
+  'industry-ecommerce': { file: ecommerce, ratio: '21 / 9', posMobile: '60% center' },
+  'industry-technology': { file: technology, ratio: '21 / 9', pos: 'center 15%', posMobile: '64% center' },
 }
-
-// One image per service category (category page banner + home card)
-const category = {
-  'call-center-outsourcing': 'call center agents headsets modern office, contact center team working',
-  'bpo-business-support': 'back office team working laptops office, business operations team documents',
-  'after-hours-overflow': 'night shift customer support agent headset, support agent working late office',
-  'order-taking-billing': 'agent taking phone order laptop, customer service billing call',
-  'inbound-outbound': 'sales agent phone call headset smiling, inbound call center agent answering',
-  'customer-service-support': 'customer service representative helping customer headset, help desk support agent',
-  'ai-technology': 'person working with AI interface computer, data annotation team computers',
-}
-
-// One image per industry (industry page banner + home industries band)
-const industry = {
-  'banking-financial': 'bank customer service representative headset, financial advisor phone call office',
-  ecommerce: 'online shopping customer support agent, ecommerce packages delivery laptop',
-  technology: 'SaaS support team laptops office, tech company customer success team',
-}
-
-const slots = { ...main }
-for (const [k, v] of Object.entries(category)) slots[`service-${k}`] = { ratio: '21 / 9', size: 'landscape, 2400px+ wide', keywords: v }
-for (const [k, v] of Object.entries(industry)) slots[`industry-${k}`] = { ratio: '21 / 9', size: 'landscape, 2400px+ wide', keywords: v }
-
-export const imageSlots = slots
 
 export function imageFor(slot) {
   const s = slots[slot]
-  if (!s) return null
-  return { ...s, slot, file: `/images/${slot}.webp` }
+  return s ? { ...s, slot } : null
 }
