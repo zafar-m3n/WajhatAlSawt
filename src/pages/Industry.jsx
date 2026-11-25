@@ -1,12 +1,13 @@
 import { useParams } from 'react-router-dom'
+import { motion } from 'motion/react'
 import { Icon } from '@iconify/react'
 import Button from '@/components/ui/Button'
 import PageIntro from '@/components/ui/PageIntro'
-import Photo from '@/components/ui/Photo'
 import Seo from '@/components/ui/Seo'
 import CtaBand from '@/components/layout/CtaBand'
+import { Reveal, ScrollWords, SplitHeading, Stagger, item } from '@/components/motion/Motion'
 import NotFound from '@/pages/NotFound'
-import { FaqBlock, Figures } from '@/pages/Service'
+import { FaqBlock } from '@/pages/Service'
 import { industries } from '@/data/industries'
 
 const by = (secs, h) => secs.find((s) => s.heading === h)
@@ -28,7 +29,7 @@ export default function Industry() {
   return (
     <>
       <Seo title={ind.title} description={ind.intro} path={`/industries/${ind.slug}`} />
-      <PageIntro crumbs={[{ label: 'Industries' }, { label: ind.name }]} title={ind.title}>
+      <PageIntro crumbs={[{ label: 'Industries' }, { label: ind.name }]} title={ind.title} image={{ slot: `industry-${ind.slug}`, alt: ind.title }}>
         <p className="mt-6 text-17 text-mint">{ind.subtitle}</p>
         <p className="deck measure mt-4">{ind.intro}</p>
         <div className="mt-10 flex flex-wrap gap-4">
@@ -39,106 +40,98 @@ export default function Industry() {
         </div>
       </PageIntro>
 
-      <div className="shell">
-        <Photo slot={`industry-${ind.slug}`} alt={ind.title} rounded="rounded-[28px]" className="max-md:!aspect-[4/5]" />
-      </div>
-
-      <section className="shell grid gap-14 pt-28 md:pt-40 lg:grid-cols-[minmax(0,1.1fr)_minmax(0,1fr)] lg:gap-20">
-        <div>
-          <h2 className="display-section max-w-[16ch]">{overview.heading}</h2>
-          {overview.paras?.map((p) => (
-            <p key={p} className="measure mt-8 text-21 leading-relaxed">
-              {p}
-            </p>
+      <section className="shell pt-32 md:pt-48">
+        <SplitHeading as="h2" text={overview.heading} className="display-section max-w-[18ch]" inView />
+        {overview.paras?.[0] && <ScrollWords text={overview.paras[0]} className="mt-12 max-w-[34ch] font-display text-[clamp(1.5rem,2.6vw,2.6rem)] leading-[1.2] font-medium tracking-[-0.015em]" />}
+        <Stagger className="mt-20 grid gap-10 md:grid-cols-3">
+          {overview.items?.map((it) => (
+            <motion.li variants={item} key={it.title} className="border-t border-linen/40 pt-6">
+              <h3 className="text-21 font-semibold tracking-[-0.015em]">{it.title}</h3>
+              <p className="mt-3 text-sage">{it.text}</p>
+            </motion.li>
           ))}
-        </div>
-        <div className="space-y-12">
-          <ul className="border-t border-line">
-            {overview.items?.map((it) => (
-              <li key={it.title} className="border-b border-line py-6">
-                <h3 className="text-21 tracking-[-0.025em]">{it.title}</h3>
-                <p className="mt-2 text-sage">{it.text}</p>
-              </li>
-            ))}
-          </ul>
-          <Figures metrics={ind.metrics} />
-        </div>
+        </Stagger>
       </section>
 
       {challenges && (
-        <section className="shell pt-28 md:pt-40">
-          <h2 className="font-sans text-17 font-semibold tracking-normal text-sage">{challenges.heading}</h2>
-          <ul className="mt-8 border-t border-line">
+        <section className="shell pt-32 md:pt-44">
+          <Reveal>
+            <h2 className="font-sans text-17 font-semibold tracking-normal text-mint">{challenges.heading}</h2>
+          </Reveal>
+          <Stagger className="mt-8 border-t border-line" gap={0.12}>
             {challenges.items.map((c) => (
-              <li key={c.title} className="border-b border-line py-6 font-display text-26 font-light tracking-[-0.035em] md:py-8 md:text-41">
-                {c.title}
-              </li>
+              <motion.li variants={item} key={c.title} className="flex items-center justify-between gap-6 border-b border-line py-7 md:py-9">
+                <span className="font-display text-[clamp(1.6rem,3.6vw,3.5rem)] leading-tight font-semibold tracking-[-0.02em]">{c.title}</span>
+                <Icon icon="ph:check-circle-light" className="size-8 shrink-0 text-jade md:size-10" aria-hidden="true" />
+              </motion.li>
             ))}
-          </ul>
+          </Stagger>
         </section>
       )}
 
       {built && (
-        <section className="mt-28 bg-fern md:mt-40">
-          <div className="shell grid gap-12 py-20 md:py-28 lg:grid-cols-2 lg:gap-20">
+        <section className="mt-32 bg-fern md:mt-44">
+          <div className="shell grid gap-12 py-24 md:py-32 lg:grid-cols-2 lg:gap-20">
             <div>
-              <h2 className="display-section max-w-[14ch]">{built.heading}</h2>
-              {built.paras?.map((p) => (
-                <p key={p} className="measure mt-8 text-sage">
-                  {p}
-                </p>
-              ))}
+              <SplitHeading as="h2" text={built.heading} className="display-section max-w-[14ch]" inView />
+              <Reveal>
+                {built.paras?.map((p) => (
+                  <p key={p} className="measure mt-8 text-sage">
+                    {p}
+                  </p>
+                ))}
+              </Reveal>
             </div>
-            <ul className="self-end border-t border-line">
+            <Stagger className="self-end border-t border-line">
               {built.list.map((l) => (
-                <li key={l} className="flex gap-3 border-b border-line py-4 text-17">
+                <motion.li variants={item} key={l} className="flex gap-4 border-b border-line py-5 text-17">
                   <Icon icon="ph:check" className="mt-1 size-4.5 shrink-0 text-jade" aria-hidden="true" />
                   {l}
-                </li>
+                </motion.li>
               ))}
-            </ul>
+            </Stagger>
           </div>
         </section>
       )}
 
       {why && (
-        <section className="shell pt-28 md:pt-40">
-          <h2 className="display-section">{why.heading}</h2>
-          <ul className="mt-12 grid gap-10 md:grid-cols-3">
+        <section className="shell pt-32 md:pt-44">
+          <SplitHeading as="h2" text={why.heading} className="display-section" inView />
+          <Stagger className="mt-14 grid gap-12 md:grid-cols-3">
             {why.items.map((it) => (
-              <li key={it.title} className="border-t border-linen/40 pt-6">
-                <h3 className="text-21 tracking-[-0.025em]">{it.title}</h3>
+              <motion.li variants={item} key={it.title}>
+                <h3 className="text-26 font-semibold tracking-[-0.02em]">{it.title}</h3>
                 <p className="mt-3 text-sage">{it.text}</p>
-              </li>
+              </motion.li>
             ))}
-          </ul>
+          </Stagger>
         </section>
       )}
 
       {cover && (
-        <section className="shell grid gap-8 pt-28 md:pt-40 lg:grid-cols-[minmax(0,0.8fr)_minmax(0,1.2fr)] lg:gap-20">
-          <h2 className="display-section max-w-[12ch]">{cover.heading}</h2>
-          <ul className="grid gap-x-12 border-t border-line sm:grid-cols-2">
+        <section className="shell grid gap-10 pt-32 md:pt-44 lg:grid-cols-[minmax(0,0.8fr)_minmax(0,1.2fr)] lg:gap-20">
+          <SplitHeading as="h2" text={cover.heading} className="display-section max-w-[12ch]" inView />
+          <Stagger className="grid gap-x-12 border-t border-line sm:grid-cols-2">
             {cover.list.map((l) => (
-              <li key={l} className="border-b border-line py-4">
+              <motion.li variants={item} key={l} className="border-b border-line py-5 text-17">
                 {l}
-              </li>
+              </motion.li>
             ))}
-          </ul>
+          </Stagger>
         </section>
       )}
 
       {example && (
-        <section className="shell pt-28 md:pt-40">
-          <figure className="border-l-2 border-jade pl-6 md:pl-10">
-            <figcaption className="text-15 text-sage">{example.heading}</figcaption>
-            <blockquote className="mt-5 max-w-[34ch] font-display text-26 leading-snug font-light tracking-[-0.035em] md:text-33">
-              {example.paras?.[0]}
-            </blockquote>
-          </figure>
-          <Button to="/contact" variant="secondary" className="mt-10">
-            Talk to us
-          </Button>
+        <section className="shell pt-32 md:pt-44">
+          <Reveal>
+            <p className="text-17 text-mint">{example.heading}</p>
+          </Reveal>
+          <ScrollWords text={example.paras?.[0] ?? ''} className="mt-8 max-w-[28ch] font-display text-[clamp(1.75rem,3.6vw,3.6rem)] leading-[1.1] font-semibold tracking-[-0.02em]" />
+          <Reveal>
+            <Button to="/contact" variant="secondary" className="mt-12">
+              Talk to us
+            </Button>
+          </Reveal>
         </section>
       )}
 

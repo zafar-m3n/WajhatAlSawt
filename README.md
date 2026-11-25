@@ -79,7 +79,6 @@ AI data annotation, AI as a service, AI implementation, and human in the loop.
 
 ## Industries we serve
 
-- **Automotive** — BPO support built for performance, loyalty, and always-on service.
 - **Banking & Financial** — Financial support that protects trust.
 - **eCommerce** — Customer care that keeps online shoppers moving.
 - **Technology** — Technology support that keeps pace with product growth.

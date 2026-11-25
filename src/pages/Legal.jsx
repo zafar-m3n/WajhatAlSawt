@@ -29,7 +29,7 @@ export default function Legal({ page }) {
         <article className="max-w-[68ch]">
           {doc.sections.map((s) => (
             <section key={s.heading} id={anchor(s.heading)} className="scroll-mt-28 border-t border-line pt-8 pb-12">
-              <h2 className="text-26 tracking-[-0.03em]">{s.heading}</h2>
+              <h2 className="text-26 tracking-[-0.02em]">{s.heading}</h2>
               {s.blocks.some((b) => b.type === 'li') ? (
                 <div className="mt-5 space-y-4 text-sage">
                   {s.blocks.filter((b) => b.type === 'p').map((b) => (

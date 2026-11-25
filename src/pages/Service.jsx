@@ -1,52 +1,42 @@
 import { Link, useParams } from 'react-router-dom'
+import { motion } from 'motion/react'
 import { Icon } from '@iconify/react'
 import Accordion from '@/components/ui/Accordion'
 import Button from '@/components/ui/Button'
 import PageIntro from '@/components/ui/PageIntro'
-import Photo from '@/components/ui/Photo'
 import Seo from '@/components/ui/Seo'
 import CtaBand from '@/components/layout/CtaBand'
+import { Marquee, Reveal, SplitHeading, Stagger, item } from '@/components/motion/Motion'
 import NotFound from '@/pages/NotFound'
 import { practices, services } from '@/data/services'
 
 const find = (secs, test) => secs.find(test)
 
-export function Figures({ metrics }) {
-  return (
-    <dl className="grid grid-cols-2 gap-x-8 border-t border-line">
-      {metrics.map((m) => (
-        <div key={m.label} className="border-b border-line py-5">
-          <dt className="text-15 text-sage">{m.label}</dt>
-          <dd className="mt-1 font-display text-26 font-light tracking-[-0.04em] md:text-33">{m.value}</dd>
-        </div>
-      ))}
-    </dl>
-  )
-}
-
 export function Steps({ steps }) {
   return (
-    <ol className="border-t border-line">
+    <Stagger as="ol" className="border-t border-line">
       {steps.map((s, i) => (
-        <li key={s.title} className="grid grid-cols-[3.5rem_1fr] gap-x-6 border-b border-line py-8 md:grid-cols-[5rem_1fr] md:py-10">
-          <span className="font-display text-33 leading-none font-light text-mint md:text-41" aria-hidden="true">
+        <motion.li variants={item} key={s.title} className="grid grid-cols-[3.5rem_1fr] gap-x-6 border-b border-line py-8 md:grid-cols-[6rem_1fr] md:py-10">
+          <span className="font-display text-41 leading-none font-semibold text-mint md:text-52" aria-hidden="true">
             {i + 1}
           </span>
           <div>
-            <h3 className="text-21 tracking-[-0.025em]">{s.title}</h3>
+            <h3 className="text-21 font-semibold tracking-[-0.015em] md:text-26">{s.title}</h3>
             <p className="measure mt-2 text-sage">{s.text}</p>
           </div>
-        </li>
+        </motion.li>
       ))}
-    </ol>
+    </Stagger>
   )
 }
 
 export function FaqBlock({ faqs, title = 'Frequently Asked Questions' }) {
   return (
-    <section className="shell grid gap-10 pt-28 md:pt-40 lg:grid-cols-[minmax(0,0.8fr)_minmax(0,1.2fr)] lg:gap-20">
-      <h2 className="display-section max-w-[12ch]">{title}</h2>
-      <Accordion items={faqs} />
+    <section className="shell grid gap-10 pt-32 md:pt-44 lg:grid-cols-[minmax(0,0.8fr)_minmax(0,1.2fr)] lg:gap-20">
+      <SplitHeading as="h2" text={title} className="display-section max-w-[12ch]" inView />
+      <Reveal delay={0.15}>
+        <Accordion items={faqs} />
+      </Reveal>
     </section>
   )
 }
@@ -73,6 +63,7 @@ export default function Service() {
       <PageIntro
         crumbs={[{ label: 'Solutions', to: '/solutions' }, { label: practice.name, to: `/solutions?practice=${practice.slug}` }, { label: s.card.title }]}
         title={s.title}
+        image={{ slot: `service-${s.slug}`, alt: s.title }}
       >
         {s.kicker && <p className="mt-6 text-17 text-mint">{s.kicker}</p>}
         <p className="deck measure mt-4">{s.intro}</p>
@@ -84,117 +75,104 @@ export default function Service() {
         </div>
       </PageIntro>
 
-      <section className="shell grid gap-14 lg:grid-cols-[minmax(0,1.1fr)_minmax(0,1fr)] lg:gap-20">
+      <section className="shell grid gap-12 pt-32 md:pt-44 lg:grid-cols-[minmax(0,1fr)_minmax(0,1.1fr)] lg:gap-24">
+        <SplitHeading as="h2" text={overview.heading} className="display-section max-w-[14ch] lg:sticky lg:top-28 lg:self-start" inView />
         <div>
-          <h2 className="display-section max-w-[16ch]">{overview.heading}</h2>
-          <div className="mt-8 space-y-5">
+          <Reveal className="space-y-5">
             {overview.paras?.map((p, i) => (
               <p key={p} className={`measure ${i === 0 ? 'text-21 leading-relaxed' : 'text-sage'}`}>
                 {p}
               </p>
             ))}
-          </div>
+          </Reveal>
           {overview.bullets && (
-            <ul className="mt-10 space-y-3 border-t border-line pt-8">
+            <Stagger className="mt-10 border-t border-line">
               {overview.bullets.map((b) => (
-                <li key={b} className="flex gap-3">
-                  <Icon icon="ph:check" className="mt-1 size-4.5 shrink-0 text-jade" aria-hidden="true" />
+                <motion.li variants={item} key={b} className="flex gap-4 border-b border-line py-5 text-17">
+                  <Icon icon="ph:check-circle-light" className="mt-0.5 size-6 shrink-0 text-jade" aria-hidden="true" />
                   <span>{b}</span>
-                </li>
+                </motion.li>
               ))}
-            </ul>
+            </Stagger>
           )}
-        </div>
-        <div className="space-y-10 lg:sticky lg:top-28 lg:self-start">
-          <Photo slot={`service-${s.slug}`} alt={s.title} />
-          <Figures metrics={s.metrics} />
         </div>
       </section>
 
       {included && (
-        <section className="shell pt-28 md:pt-40">
-          <h2 className="display-section">{included.heading}</h2>
-          <ul className="mt-12 grid gap-x-16 border-t border-line md:grid-cols-2">
+        <section className="shell pt-32 md:pt-44">
+          <SplitHeading as="h2" text={included.heading} className="display-section" inView />
+          <Stagger className="mt-12 grid gap-x-16 border-t border-line md:grid-cols-2">
             {included.items.map((it) => (
-              <li key={it.title} className="border-b border-line py-7">
-                <h3 className="text-21 tracking-[-0.025em]">{it.title}</h3>
-                <p className="mt-2 text-sage">{it.text}</p>
-              </li>
+              <motion.li variants={item} key={it.title} className="border-b border-line py-8">
+                <h3 className="text-21 font-semibold tracking-[-0.015em] md:text-26">{it.title}</h3>
+                <p className="mt-3 text-sage">{it.text}</p>
+              </motion.li>
             ))}
-          </ul>
+          </Stagger>
         </section>
       )}
 
       {extra.map((x) => (
-        <section key={x.heading} className="shell pt-28 md:pt-40">
-          <h2 className="display-section max-w-[18ch]">{x.heading}</h2>
-          {x.paras?.map((p) => (
-            <p key={p} className="measure mt-6 text-sage">
-              {p}
-            </p>
-          ))}
+        <section key={x.heading} className="shell pt-32 md:pt-44">
+          <SplitHeading as="h2" text={x.heading} className="display-section max-w-[18ch]" inView />
+          <Reveal>
+            {x.paras?.map((p) => (
+              <p key={p} className="measure mt-6 text-sage">
+                {p}
+              </p>
+            ))}
+          </Reveal>
           {x.items && (
-            <ul className="mt-10 grid gap-x-16 border-t border-line md:grid-cols-2">
+            <Stagger className="mt-10 grid gap-x-16 border-t border-line md:grid-cols-2">
               {x.items.map((it) => (
-                <li key={it.title} className="border-b border-line py-7">
-                  <h3 className="text-21 tracking-[-0.025em]">{it.title}</h3>
+                <motion.li variants={item} key={it.title} className="border-b border-line py-7">
+                  <h3 className="text-21 font-semibold tracking-[-0.015em]">{it.title}</h3>
                   {it.text && <p className="mt-2 text-sage">{it.text}</p>}
-                </li>
+                </motion.li>
               ))}
-            </ul>
+            </Stagger>
           )}
         </section>
       ))}
 
       {process && (
-        <section className="shell grid gap-12 pt-28 md:pt-40 lg:grid-cols-[minmax(0,0.8fr)_minmax(0,1.2fr)] lg:gap-20">
-          <h2 className="display-section max-w-[14ch] lg:sticky lg:top-28 lg:self-start">{process.heading}</h2>
+        <section className="shell grid gap-12 pt-32 md:pt-44 lg:grid-cols-[minmax(0,0.8fr)_minmax(0,1.2fr)] lg:gap-20">
+          <SplitHeading as="h2" text={process.heading} className="display-section max-w-[14ch] lg:sticky lg:top-28 lg:self-start" inView />
           <Steps steps={process.steps} />
         </section>
       )}
 
       {benefits && (
-        <section className="mt-28 bg-fern md:mt-40" aria-labelledby="benefits">
-          <div className="shell py-20 md:py-28">
-            <h2 id="benefits" className="font-sans text-17 font-semibold tracking-normal text-sage">
+        <section className="mt-32 bg-fern py-20 md:mt-44 md:py-28" aria-labelledby="benefits">
+          <Reveal className="shell">
+            <h2 id="benefits" className="font-sans text-17 font-semibold tracking-normal text-mint">
               {benefits.heading}
             </h2>
-            <ul className="mt-8 flex flex-wrap items-baseline gap-x-5 gap-y-3 font-display text-26 leading-snug font-light tracking-[-0.035em] md:text-41">
-              {benefits.list.map((b, i) => (
-                <li key={b} className="flex items-baseline gap-5">
-                  {i > 0 && (
-                    <span className="text-mint/60" aria-hidden="true">
-                      /
-                    </span>
-                  )}
-                  {b}
-                </li>
-              ))}
-            </ul>
-          </div>
+          </Reveal>
+          <Marquee items={benefits.list} className="mt-10 font-display text-41 font-semibold tracking-[-0.02em] md:text-65" duration={45} />
         </section>
       )}
 
       {faq && <FaqBlock faqs={faq.faqs} title={faq.heading} />}
 
       {siblings.length > 0 && (
-        <section className="shell pt-28 md:pt-40">
-          <div className="flex items-baseline justify-between gap-6 border-b border-linen/40 pb-4">
-            <h2 className="text-26 tracking-[-0.03em]">More in {practice.name}</h2>
+        <section className="shell pt-32 md:pt-44">
+          <Reveal className="flex items-baseline justify-between gap-6 border-b border-linen/40 pb-4">
+            <h2 className="text-26 font-semibold tracking-[-0.02em] md:text-33">More in {practice.name}</h2>
             <Link to={`/solutions?practice=${practice.slug}`} className="text-link shrink-0 text-15">
               See all
             </Link>
-          </div>
-          <ul className="grid md:grid-cols-2 md:gap-x-16">
+          </Reveal>
+          <Stagger className="grid md:grid-cols-2 md:gap-x-16">
             {siblings.slice(0, 6).map((x) => (
-              <li key={x.slug} className="border-b border-line">
+              <motion.li variants={item} key={x.slug} className="border-b border-line">
                 <Link to={`/solutions/${x.slug}`} className="group flex items-center justify-between gap-6 py-5">
-                  <span className="transition-colors group-hover:text-mint">{x.card.title}</span>
-                  <Icon icon="ph:arrow-up-right" className="size-5 shrink-0 text-sage group-hover:text-mint" aria-hidden="true" />
+                  <span className="text-17 transition-colors group-hover:text-mint">{x.card.title}</span>
+                  <Icon icon="ph:arrow-up-right" className="size-5 shrink-0 text-sage transition-transform duration-500 group-hover:translate-x-1 group-hover:-translate-y-1 group-hover:text-mint" aria-hidden="true" />
                 </Link>
-              </li>
+              </motion.li>
             ))}
-          </ul>
+          </Stagger>
         </section>
       )}
 

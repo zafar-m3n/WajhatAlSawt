@@ -4,16 +4,32 @@ import { imageFor } from '@/data/images'
 /**
  * Shows public/images/<slot>.jpg when it exists, otherwise a placeholder that names the slot,
  * its size and the suggested Freepik keywords.
+ * `fill` makes it cover its positioned parent instead of using its own aspect ratio.
  */
-export default function Photo({ slot, alt, className = '', ratio, rounded = 'rounded-[22px]', showKeywords = true, eager = false }) {
+export default function Photo({
+  slot,
+  alt,
+  className = '',
+  ratio,
+  mobileRatio,
+  rounded = 'rounded-[22px]',
+  showKeywords = true,
+  captionClassName = 'inset-x-0 bottom-0',
+  eager = false,
+  fill = false,
+}) {
   const img = imageFor(slot)
   const [failed, setFailed] = useState(false)
   if (!img) return null
-  const aspect = ratio ?? img.ratio
   const label = alt ?? img.alt ?? ''
+  const box = fill ? 'absolute inset-0' : 'relative'
+  const r = ratio ?? img.ratio
+  // With mobileRatio, phones get their own crop; the desktop ratio applies from md up
+  const sizing = fill ? {} : mobileRatio ? { '--ar': r, '--ar-m': mobileRatio } : { aspectRatio: r }
+  const sizeCls = !fill && mobileRatio ? 'aspect-(--ar-m) md:aspect-(--ar)' : ''
 
   return (
-    <div className={`relative overflow-hidden bg-fern ${rounded} ${className}`} style={{ aspectRatio: aspect }}>
+    <div className={`${box} ${sizeCls} overflow-hidden bg-fern ${rounded} ${className}`} style={sizing}>
       {!failed && (
         <img
           src={img.file}
@@ -33,7 +49,7 @@ export default function Photo({ slot, alt, className = '', ratio, rounded = 'rou
             <path d="M100 -20a120 120 0 0 1 0 240" stroke="currentColor" />
           </svg>
           {showKeywords && (
-            <div className="absolute inset-x-0 bottom-0 p-4 text-13 leading-snug text-sage">
+            <div className={`absolute p-4 text-13 leading-snug text-sage ${captionClassName}`}>
               <p className="font-semibold text-linen/80">
                 {img.file.replace('/images/', '')} <span className="font-normal text-sage">({img.size})</span>
               </p>

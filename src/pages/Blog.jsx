@@ -1,3 +1,5 @@
+import { motion } from 'motion/react'
+import { Reveal, Stagger, item } from '@/components/motion/Motion'
 import { useState } from 'react'
 import { Link, useSearchParams } from 'react-router-dom'
 import PageIntro from '@/components/ui/PageIntro'
@@ -32,7 +34,7 @@ function Newsletter() {
     <section className="mt-28 bg-fern md:mt-36" aria-labelledby="newsletter">
       <div className="shell grid gap-8 py-16 md:grid-cols-2 md:items-end md:py-20">
         <div>
-          <h2 id="newsletter" className="text-26 tracking-[-0.03em] md:text-33">
+          <h2 id="newsletter" className="text-26 tracking-[-0.02em] md:text-33">
             {blogPage.newsletter.title}
           </h2>
           <p className="mt-3 text-sage">{blogPage.newsletter.text}</p>
@@ -96,13 +98,15 @@ export default function Blog() {
         </div>
 
         {lead && (
-          <article className="grid gap-8 pt-14 md:pt-20 lg:grid-cols-[minmax(0,1.3fr)_minmax(0,1fr)] lg:items-end lg:gap-14">
-            <Link to={`/blogs/${lead.slug}`} aria-hidden="true" tabIndex={-1}>
-              <Photo slot={`post-${lead.slug}`} alt={lead.title} />
+          <Reveal key={lead.slug} as="article" className="grid gap-8 pt-14 md:pt-20 lg:grid-cols-[minmax(0,1.3fr)_minmax(0,1fr)] lg:items-end lg:gap-14">
+            <Link to={`/blogs/${lead.slug}`} aria-hidden="true" tabIndex={-1} className="group block overflow-hidden rounded-[24px]">
+              <div className="transition-transform duration-[1.2s] ease-[cubic-bezier(.22,1,.36,1)] group-hover:scale-[1.05]">
+                <Photo slot={`post-${lead.slug}`} alt={lead.title} rounded="rounded-none" />
+              </div>
             </Link>
             <div>
               <p className="text-15 text-mint">{lead.category}</p>
-              <h2 className="mt-3 text-33 leading-tight tracking-[-0.035em] md:text-41">
+              <h2 className="mt-3 text-33 leading-tight tracking-[-0.02em] md:text-41">
                 <Link to={`/blogs/${lead.slug}`} className="hover:text-mint">
                   {lead.title}
                 </Link>
@@ -110,24 +114,24 @@ export default function Blog() {
               <p className="measure mt-5 text-sage">{lead.excerpt}</p>
               <PostMeta p={lead} className="mt-6" />
             </div>
-          </article>
+          </Reveal>
         )}
 
-        <ul className="mt-16 border-t border-line md:mt-20">
+        <Stagger key={cat} className="mt-16 border-t border-line md:mt-20">
           {rest.map((p) => (
-            <li key={p.slug} className="border-b border-line">
+            <motion.li variants={item} key={p.slug} className="border-b border-line">
               <Link to={`/blogs/${p.slug}`} className="group grid gap-5 py-8 sm:grid-cols-[11rem_1fr] sm:gap-8 md:grid-cols-[14rem_1fr]">
                 <Photo slot={`post-${p.slug}`} alt="" showKeywords={false} rounded="rounded-[14px]" />
                 <div>
                   <p className="text-15 text-mint">{p.category}</p>
-                  <h3 className="mt-2 text-21 tracking-[-0.025em] transition-colors group-hover:text-mint md:text-26">{p.title}</h3>
+                  <h3 className="mt-2 text-21 tracking-[-0.015em] transition-colors group-hover:text-mint md:text-26">{p.title}</h3>
                   <p className="measure mt-3 line-clamp-2 text-15 text-sage">{p.excerpt}</p>
                   <PostMeta p={p} className="mt-4" />
                 </div>
               </Link>
-            </li>
+            </motion.li>
           ))}
-        </ul>
+        </Stagger>
       </section>
 
       <Newsletter />

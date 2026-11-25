@@ -1,3 +1,5 @@
+import { motion } from 'motion/react'
+import { Reveal, Stagger, item } from '@/components/motion/Motion'
 import { Link, useSearchParams } from 'react-router-dom'
 import { Icon } from '@iconify/react'
 import PageIntro from '@/components/ui/PageIntro'
@@ -16,16 +18,16 @@ const options = [
 function Row({ s }) {
   const c = s.card
   return (
-    <li className="border-b border-line">
+    <motion.li variants={item} className="border-b border-line">
       <Link
         to={`/solutions/${s.slug}`}
         className="group grid gap-x-10 gap-y-2 py-7 md:grid-cols-[minmax(0,1fr)_minmax(0,1.25fr)_9rem_2.5rem] md:items-center md:py-8"
       >
-        <h3 className="text-21 tracking-[-0.03em] transition-colors group-hover:text-mint md:text-26">{c.title}</h3>
+        <h3 className="text-21 tracking-[-0.02em] transition-colors group-hover:text-mint md:text-26">{c.title}</h3>
         <p className="measure text-15 text-sage">{c.description}</p>
         {c.metric ? (
           <p className="text-15 md:text-right">
-            <span className="font-display text-21 tracking-[-0.03em] text-linen">{c.metric.value}</span>
+            <span className="font-display text-21 tracking-[-0.02em] text-linen">{c.metric.value}</span>
             <span className="ml-2 text-sage md:ml-0 md:block">{c.metric.label}</span>
           </p>
         ) : (
@@ -37,7 +39,7 @@ function Row({ s }) {
           aria-hidden="true"
         />
       </Link>
-    </li>
+    </motion.li>
   )
 }
 
@@ -70,15 +72,15 @@ export default function Solutions() {
 
         {shown.map((p) => (
           <div key={p.slug} className="pt-16 md:pt-20">
-            <div className="flex items-baseline justify-between gap-6 border-b border-linen/40 pb-4">
-              <h2 className="text-26 tracking-[-0.03em] md:text-33">{p.name}</h2>
+            <Reveal className="flex items-baseline justify-between gap-6 border-b border-linen/40 pb-4">
+              <h2 className="text-26 tracking-[-0.02em] md:text-33">{p.name}</h2>
               <span className="shrink-0 text-15 text-sage">{p.services.length} services</span>
-            </div>
-            <ul>
+            </Reveal>
+            <Stagger>
               {p.services.map((slug) => (
                 <Row key={slug} s={bySlug[slug]} />
               ))}
-            </ul>
+            </Stagger>
           </div>
         ))}
       </section>

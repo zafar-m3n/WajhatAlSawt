@@ -52,7 +52,7 @@ export default function Footer() {
         </nav>
       </div>
 
-      <p aria-hidden="true" className="shell mt-20 font-display text-[clamp(2.2rem,10.4vw,9.25rem)] leading-[0.82] font-light tracking-[-0.06em] whitespace-nowrap text-linen/90 select-none">
+      <p aria-hidden="true" className="shell mt-20 font-display text-[clamp(2.2rem,10.4vw,9.25rem)] leading-[0.82] font-light tracking-[-0.02em] whitespace-nowrap text-linen/90 select-none">
         Wajhat <span className="text-sage/70">Al</span> Sawt
       </p>
       <div className="shell flex flex-col gap-3 border-t border-line py-6 text-13 text-sage sm:flex-row sm:justify-between">

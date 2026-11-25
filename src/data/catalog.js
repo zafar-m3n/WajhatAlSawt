@@ -277,11 +277,6 @@ export const serviceIndex = [
 
 export const industryIndex = [
   {
-    "slug": "automotive",
-    "name": "Automotive",
-    "subtitle": "BPO support built for performance, loyalty, and always-on service"
-  },
-  {
     "slug": "banking-financial",
     "name": "Banking & Financial",
     "subtitle": "Secure, compliant customer support for financial service teams"

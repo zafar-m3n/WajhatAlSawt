@@ -1,3 +1,5 @@
+import { motion } from 'motion/react'
+import { Reveal, Stagger, item } from '@/components/motion/Motion'
 import { useState } from 'react'
 import { Icon } from '@iconify/react'
 import Button from '@/components/ui/Button'
@@ -127,9 +129,9 @@ export default function Contact() {
 
       <section className="shell grid gap-16 lg:grid-cols-[minmax(0,0.85fr)_minmax(0,1.15fr)] lg:gap-24">
         <div>
-          <ul className="border-t border-line">
+          <Stagger className="border-t border-line">
             {methods.map((m) => (
-              <li key={m.label} className="flex gap-5 border-b border-line py-6">
+              <motion.li variants={item} key={m.label} className="flex gap-5 border-b border-line py-6">
                 <Icon icon={m.icon} className="mt-1 size-6 shrink-0 text-mint" aria-hidden="true" />
                 <div>
                   <p className="text-15 text-sage">{m.label}</p>
@@ -141,9 +143,9 @@ export default function Contact() {
                     <p className="mt-1 text-21">{m.value}</p>
                   )}
                 </div>
-              </li>
+              </motion.li>
             ))}
-          </ul>
+          </Stagger>
           <ul className="mt-12 space-y-6">
             {contactPage.trust.map((t) => (
               <li key={t.title}>
@@ -154,13 +156,13 @@ export default function Contact() {
           </ul>
         </div>
 
-        <div>
+        <Reveal delay={0.15}>
           <h2 className="display-section max-w-[16ch]">{contactPage.formTitle}</h2>
           <p className="measure mt-6 text-sage">{contactPage.formIntro}</p>
           <div className="mt-12">
             <ContactForm />
           </div>
-        </div>
+        </Reveal>
       </section>
 
       <FaqBlock faqs={faqs.contact} />

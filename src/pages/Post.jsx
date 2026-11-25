@@ -1,6 +1,6 @@
 import { Link, useParams } from 'react-router-dom'
 import PageIntro from '@/components/ui/PageIntro'
-import Photo from '@/components/ui/Photo'
+import { Reveal } from '@/components/motion/Motion'
 import Seo from '@/components/ui/Seo'
 import CtaBand from '@/components/layout/CtaBand'
 import NotFound from '@/pages/NotFound'
@@ -12,7 +12,7 @@ function Body({ blocks }) {
   return blocks.map((b, i) => {
     if (b.type === 'h2')
       return (
-        <h2 key={i} className="mt-14 text-26 tracking-[-0.03em] md:text-33">
+        <h2 key={i} className="mt-14 text-26 tracking-[-0.02em] md:text-33">
           {b.text}
         </h2>
       )
@@ -43,16 +43,13 @@ export default function Post() {
   return (
     <>
       <Seo title={p.title} description={p.excerpt} path={`/blogs/${p.slug}`} />
-      <PageIntro crumbs={[{ label: 'Blog', to: '/blogs' }, { label: p.category, to: `/blogs?category=${encodeURIComponent(p.category)}` }]} title={p.title} className="[&_h1]:max-w-[22ch]">
+      <PageIntro crumbs={[{ label: 'Blog', to: '/blogs' }, { label: p.category, to: `/blogs?category=${encodeURIComponent(p.category)}` }]} title={p.title} image={{ slot: `post-${p.slug}`, alt: p.title }} className="[&_h1]:max-w-[22ch]">
         <PostMeta p={p} className="mt-8" />
       </PageIntro>
 
-      <div className="shell">
-        <Photo slot={`post-${p.slug}`} alt={p.title} rounded="rounded-[28px]" eager />
-      </div>
 
       <article className="shell pt-16 md:pt-24">
-        <div className="mx-auto max-w-[68ch]">
+        <Reveal className="mx-auto max-w-[68ch]">
           <Body blocks={p.body} />
           {p.tags.length > 0 && (
             <ul className="mt-14 flex flex-wrap gap-x-5 gap-y-2 border-t border-line pt-6 text-15 text-sage" aria-label="Tags">
@@ -61,17 +58,17 @@ export default function Post() {
               ))}
             </ul>
           )}
-        </div>
+        </Reveal>
       </article>
 
       <section className="shell pt-28 md:pt-36">
-        <h2 className="border-b border-linen/40 pb-4 text-26 tracking-[-0.03em]">Related Articles</h2>
+        <h2 className="border-b border-linen/40 pb-4 text-26 tracking-[-0.02em]">Related Articles</h2>
         <ul className="grid md:grid-cols-2 md:gap-x-16">
           {related.map((r) => (
             <li key={r.slug} className="border-b border-line">
               <Link to={`/blogs/${r.slug}`} className="group block py-7">
                 <p className="text-15 text-mint">{r.category}</p>
-                <h3 className="mt-2 text-21 tracking-[-0.025em] group-hover:text-mint">{r.title}</h3>
+                <h3 className="mt-2 text-21 tracking-[-0.015em] group-hover:text-mint">{r.title}</h3>
                 <p className="mt-3 line-clamp-2 text-15 text-sage">{r.excerpt}</p>
               </Link>
             </li>
