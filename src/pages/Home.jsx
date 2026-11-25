@@ -8,7 +8,6 @@ import Seo from '@/components/ui/Seo'
 import { EASE, Marquee, ParallaxPhoto, Reveal, ScrollWords, SplitHeading, Stagger, item } from '@/components/motion/Motion'
 import { company, home, about } from '@/data/site'
 import { practices, serviceIndex, industryIndex } from '@/data/catalog'
-import { posts } from '@/data/posts'
 
 const titleOf = Object.fromEntries(serviceIndex.map((s) => [s.slug, s.title]))
 
@@ -45,8 +44,8 @@ function HeroScene() {
             <p className="deck max-w-[42ch] text-linen/85">{home.lede}</p>
             <div className="flex flex-wrap gap-4">
               <Button to="/contact">Get started</Button>
-              <Button to="/solutions" variant="secondary" className="bg-ink/40 backdrop-blur">
-                Our solutions
+              <Button href="#services" variant="secondary" className="bg-ink/40 backdrop-blur">
+                Our services
               </Button>
             </div>
           </motion.div>
@@ -75,10 +74,10 @@ function Statement() {
 /* 3 ── Practices gliding past horizontally (pinned on desktop, swipe on phones) */
 function PracticeCard({ p }) {
   return (
-    <Link to={`/solutions?practice=${p.slug}`} className="group flex h-full w-[82vw] shrink-0 snap-start flex-col sm:w-[26rem] lg:w-[30rem]">
+    <Link to={`/services/${p.slug}`} className="group flex h-full w-[82vw] shrink-0 snap-start flex-col sm:w-[26rem] lg:w-[30rem]">
       <div className="overflow-hidden rounded-[24px]">
         <div className="transition-transform duration-[1.2s] ease-[cubic-bezier(.22,1,.36,1)] group-hover:scale-[1.06]">
-          <Photo slot={`service-${p.services[0]}`} ratio="4 / 3" rounded="rounded-none" showKeywords={false} />
+          <Photo slot={`service-${p.slug}`} ratio="4 / 3" rounded="rounded-none" showKeywords={false} />
         </div>
       </div>
       <div className="mt-6 flex items-baseline justify-between gap-4">
@@ -114,19 +113,17 @@ function Practices() {
   }, [])
 
   const intro = (
-    <div className="flex w-[82vw] shrink-0 flex-col justify-between sm:w-[24rem] lg:w-[28rem]">
+    <div className="flex w-[82vw] shrink-0 flex-col sm:w-[24rem] lg:w-[28rem]">
       <div>
-        <h2 className="display-section">Our Solutions</h2>
+        <h2 className="display-section">Our Services</h2>
         <p className="deck mt-6 max-w-[30ch]">Empowering businesses worldwide with innovative BPO solutions.</p>
       </div>
-      <Link to="/solutions" className="text-link mt-8 self-start text-17">
-        See all {serviceIndex.length} services
-      </Link>
     </div>
   )
 
   return (
     <>
+      <div id="services" className="scroll-mt-24" aria-hidden="true" />
       {/* Desktop: pinned horizontal glide */}
       <section ref={section} className="relative hidden lg:block" style={{ height: `calc(100vh + ${dist}px)` }}>
         <div className="sticky top-0 flex h-screen items-center overflow-hidden">
@@ -299,42 +296,8 @@ function Why() {
   )
 }
 
-/* 8 ── Latest insights */
-function Insights() {
-  return (
-    <section className="shell pt-32 md:pt-44" aria-labelledby="insights-title">
-      <Reveal className="flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
-        <div>
-          <h2 id="insights-title" className="display-section">
-            Insights &amp; Innovation
-          </h2>
-          <p className="deck mt-5 max-w-[44ch]">Expert insights, industry trends, and success stories from the world of business process outsourcing.</p>
-        </div>
-        <Link to="/blogs" className="text-link shrink-0 text-17">
-          Read the blog
-        </Link>
-      </Reveal>
-      <Stagger className="mt-14 grid gap-12 md:grid-cols-3 md:gap-8">
-        {posts.slice(0, 3).map((p) => (
-          <motion.li variants={item} key={p.slug}>
-            <Link to={`/blogs/${p.slug}`} className="group block">
-              <div className="overflow-hidden rounded-[20px]">
-                <div className="transition-transform duration-[1.2s] ease-[cubic-bezier(.22,1,.36,1)] group-hover:scale-[1.06]">
-                  <Photo slot={`post-${p.slug}`} ratio="4 / 3" rounded="rounded-none" showKeywords={false} />
-                </div>
-              </div>
-              <p className="mt-5 text-15 text-mint">{p.category}</p>
-              <h3 className="mt-2 text-21 font-semibold tracking-[-0.02em] transition-colors group-hover:text-mint">{p.title}</h3>
-              <p className="mt-3 text-15 text-sage">{p.readTime}</p>
-            </Link>
-          </motion.li>
-        ))}
-      </Stagger>
-    </section>
-  )
-}
 
-/* 9 ── Contact */
+/* 8 ── Contact */
 function Contact() {
   return (
     <section className="shell pt-32 md:pt-44" aria-labelledby="home-contact">
@@ -383,7 +346,6 @@ export default function Home() {
       <ServiceBand />
       <Industries />
       <Why />
-      <Insights />
       <Contact />
     </>
   )

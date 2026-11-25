@@ -30,7 +30,7 @@ function ServicesMenu({ onNavigate }) {
         {practices.map((x) => (
           <li key={x.slug}>
             <Link
-              to={`/solutions?practice=${x.slug}`}
+              to={`/services/${x.slug}`}
               onMouseEnter={() => setActive(x.slug)}
               onFocus={() => setActive(x.slug)}
               onClick={onNavigate}
@@ -56,15 +56,15 @@ function ServicesMenu({ onNavigate }) {
           >
             {p.services.map((slug) => (
               <li key={slug}>
-                <Link to={`/solutions/${slug}`} onClick={onNavigate} className="block rounded-[8px] px-2 py-1.5 text-15 text-linen/90 transition-colors hover:text-mint">
+                <Link to={`/services/${p.slug}#${slug}`} onClick={onNavigate} className="block rounded-[8px] px-2 py-1.5 text-15 text-linen/90 transition-colors hover:text-mint">
                   {titleOf[slug]}
                 </Link>
               </li>
             ))}
           </motion.ul>
         </AnimatePresence>
-        <Link to="/solutions" onClick={onNavigate} className="text-link mt-auto self-start px-2 pt-4 text-15">
-          See all solutions
+        <Link to={`/services/${p.slug}`} onClick={onNavigate} className="text-link mt-auto self-start px-2 pt-4 text-15">
+          Open {p.name}
         </Link>
       </div>
     </motion.div>
@@ -174,7 +174,7 @@ function MobileMenu({ onClose }) {
                       {(item.menu === 'services' ? practices : industries).map((x) => (
                         <li key={x.slug}>
                           <Link
-                            to={item.menu === 'services' ? `/solutions?practice=${x.slug}` : `/industries/${x.slug}`}
+                            to={item.menu === 'services' ? `/services/${x.slug}` : `/industries/${x.slug}`}
                             onClick={onClose}
                             className="flex justify-between text-17 text-sage"
                           >

@@ -7,7 +7,7 @@ import Seo from '@/components/ui/Seo'
 import CtaBand from '@/components/layout/CtaBand'
 import { Reveal, ScrollWords, SplitHeading, Stagger, item } from '@/components/motion/Motion'
 import NotFound from '@/pages/NotFound'
-import { FaqBlock } from '@/pages/Service'
+import { FaqBlock } from '@/components/sections/Blocks'
 import { industries } from '@/data/industries'
 
 const by = (secs, h) => secs.find((s) => s.heading === h)
@@ -34,8 +34,8 @@ export default function Industry() {
         <p className="deck measure mt-4">{ind.intro}</p>
         <div className="mt-10 flex flex-wrap gap-4">
           <Button to="/contact">Get started</Button>
-          <Button to="/solutions" variant="secondary">
-            View solutions
+          <Button to="/#services" variant="secondary">
+            Our services
           </Button>
         </div>
       </PageIntro>

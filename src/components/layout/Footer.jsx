@@ -1,11 +1,12 @@
 import { Link } from 'react-router-dom'
 import { Icon } from '@iconify/react'
 import { company, footerLinks } from '@/data/site'
-import { industryIndex as industries } from '@/data/catalog'
+import { practices, industryIndex as industries } from '@/data/catalog'
 
 export default function Footer() {
   const columns = {
     ...footerLinks,
+    Services: practices.map((p) => ({ label: p.name, to: `/services/${p.slug}` })),
     Industries: industries.map((i) => ({ label: i.name, to: `/industries/${i.slug}` })),
   }
   const order = ['Company', 'Services', 'Industries', 'Resources']

@@ -2,6 +2,7 @@
 export const practices = [
   {
     "slug": "call-center-outsourcing",
+    "description": "Dedicated contact center teams, set up the way your business needs them: onshore, nearshore, offshore or fully virtual.",
     "name": "Call Center Outsourcing",
     "services": [
       "virtual-call-center-solutions",
@@ -16,6 +17,7 @@ export const practices = [
   },
   {
     "slug": "bpo-business-support",
+    "description": "Back office, finance, HR and operations support that keeps your business running smoothly behind the scenes.",
     "name": "BPO & Business Support Services",
     "services": [
       "back-office-operations",
@@ -31,6 +33,7 @@ export const practices = [
   },
   {
     "slug": "after-hours-overflow",
+    "description": "SMS, live chat and email teams that keep customers answered after hours and whenever volumes spike.",
     "name": "After-Hours & Overflow Support",
     "services": [
       "sms-support",
@@ -40,6 +43,7 @@ export const practices = [
   },
   {
     "slug": "order-taking-billing",
+    "description": "Order taking, billing and subscription support that turns every customer call into a smooth transaction.",
     "name": "Order Taking & Billing Services",
     "services": [
       "order-taking",
@@ -49,6 +53,7 @@ export const practices = [
   },
   {
     "slug": "inbound-outbound",
+    "description": "Inbound and outbound teams that answer, qualify, book and sell across every channel.",
     "name": "Inbound & Outbound Support",
     "services": [
       "inbound-contact-center-solutions",
@@ -61,6 +66,7 @@ export const practices = [
   },
   {
     "slug": "customer-service-support",
+    "description": "Customer, technical and help desk support, plus answering services and content moderation.",
     "name": "Customer Service & Support",
     "services": [
       "customer-support-excellence",
@@ -72,6 +78,7 @@ export const practices = [
   },
   {
     "slug": "ai-technology",
+    "description": "Data annotation, AI services and human-in-the-loop teams that help you put AI to work.",
     "name": "AI & Technology Services",
     "services": [
       "ai-data-annotation",

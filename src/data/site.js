@@ -19,25 +19,18 @@ export const company = {
 }
 
 export const nav = [
+  { label: 'Home', to: '/' },
   { label: 'About', to: '/about' },
   { label: 'Services', menu: 'services' },
   { label: 'Industries', menu: 'industries' },
-  { label: 'Solutions', to: '/solutions' },
-  { label: 'Blog', to: '/blogs' },
   { label: 'Contact', to: '/contact' },
 ]
 
 export const footerLinks = {
   Company: [
+    { label: 'Home', to: '/' },
     { label: 'About Us', to: '/about' },
-    { label: 'Blog', to: '/blogs' },
     { label: 'Contact', to: '/contact' },
-  ],
-  Services: [
-    { label: 'Customer Support', to: '/solutions/customer-support-excellence' },
-    { label: 'IT Outsourcing', to: '/solutions/technical-support' },
-    { label: 'Finance & Accounting', to: '/solutions/finance-accounting' },
-    { label: 'HR Solutions', to: '/solutions/hr-recruitment' },
   ],
   Resources: [
     { label: 'FAQs', to: '/faqs' },
@@ -50,13 +43,6 @@ export const footerLinks = {
 export const home = {
   title: 'Empowering Businesses Through Smart Outsourcing',
   lede: 'Wajhat Al Sawt delivers world-class BPO solutions that streamline operations, reduce costs, and accelerate growth for enterprises across the globe.',
-  facts: [
-    { value: '#1', label: 'Rated BPO Provider 2026' },
-    { value: '500+', label: 'Global Clients' },
-    { value: '98%', label: 'Client Retention' },
-    { value: '50+', label: 'Countries Served' },
-    { value: '10K+', label: 'Professionals' },
-  ],
   journey: {
     title: 'The Journey With Us',
     intro: 'From first conversation to ongoing growth — a clear, proven path at every step.',
@@ -96,12 +82,6 @@ export const home = {
 export const about = {
   title: 'About Wajhat Al Sawt',
   lede: 'We help enterprises run leaner, smarter operations through world-class outsourcing.',
-  facts: [
-    { value: '10+', label: 'Years in Business' },
-    { value: '500+', label: 'Enterprise Clients' },
-    { value: '50+', label: 'Countries Served' },
-    { value: '10K+', label: 'Professionals' },
-  ],
   story: {
     title: 'Building the Future of Business Process',
     paras: [
@@ -109,7 +89,6 @@ export const about = {
       'We combine cutting-edge technology with world-class talent to deliver solutions that drive measurable business impact for our clients.',
       'Today, our teams operate around the clock across multiple time zones, giving partners the flexibility to scale support, operations, and growth without the overhead of building it all in-house.',
     ],
-    badge: { title: '10 Years Strong', text: 'Excellence in BPO Services' },
   },
   mission:
     'To empower businesses worldwide with reliable, scalable outsourcing solutions that reduce costs, streamline operations, and free our clients to focus on what they do best — growing their business.',
@@ -169,10 +148,6 @@ export const about = {
   },
 }
 
-export const solutionsPage = {
-  title: 'Our Solutions',
-  lede: "Empowering businesses worldwide with innovative BPO solutions — we're not just a service provider, we're your strategic partner in growth.",
-}
 
 export const contactPage = {
   title: 'Contact Us',
@@ -187,11 +162,6 @@ export const contactPage = {
   ],
 }
 
-export const blogPage = {
-  title: 'Our Blog',
-  lede: 'Stay ahead with expert insights, industry trends, and success stories from the world of business process outsourcing.',
-  newsletter: { title: 'Stay Updated with Latest Insights', text: 'Subscribe to our newsletter and never miss an update.' },
-}
 
 export const cta = {
   title: 'Ready to Transform Your Business?',

@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
 
-export function Mark({ className = 'size-8' }) {
+function Mark({ className = 'size-8' }) {
   return (
     <svg viewBox="0 0 48 48" className={className} aria-hidden="true">
       <defs>
