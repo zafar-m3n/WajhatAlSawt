@@ -1,11 +1,11 @@
-// Generated from the captured live-site content. Edit docs/content and re-run docs/tools/build-data.mjs.
+// Site content. Source of truth: edit here (the old capture converter is retired).
 export const industries = [
   {
     "slug": "banking-financial",
     "name": "Banking & Financial",
     "title": "Banking & Financial BPO Services",
-    "subtitle": "Secure, compliant customer support for financial service teams",
-    "intro": "Responsive support for banks, lenders, card providers, wealth teams, and financial institutions that need speed without compromising trust.",
+    "subtitle": "Secure, compliant customer support for financial services organizations",
+    "intro": "Responsive support for banks, lenders, card issuers, wealth managers and financial institutions that require speed without compromising trust.",
     "metrics": [
       {
         "value": "Secure",
@@ -26,25 +26,24 @@ export const industries = [
     ],
     "sections": [
       {
-        "heading": "Financial support that protects trust",
+        "heading": "Financial Support That Protects Trust",
         "paras": [
-          "Financial customers expect fast, accurate, and secure help. Wajhat Al Sawt supports daily customer operations for financial institutions while respecting the regulatory pressure, privacy expectations, fraud risk, and emotional weight that come with money-related service moments."
+          "Financial customers expect fast, accurate and secure service. Wajhat Al Sawt supports the daily customer operations of financial institutions with full regard for regulatory requirements, privacy expectations, fraud risk and the sensitivity of financial matters."
         ],
         "items": [
           {
             "title": "Advanced technology integration",
-            "text": "Work inside your CRM, ticketing, knowledge, verification, and reporting workflows."
+            "text": "Our teams work within your CRM, ticketing, knowledge base, verification and reporting workflows."
           },
           {
             "title": "24/7 availability",
-            "text": "Offer dependable support for account, payment, card, billing, and service needs."
+            "text": "Dependable support for account, payment, card, billing and service needs."
           },
           {
             "title": "Multichannel support",
-            "text": "Meet customers through the channels they already trust and use."
+            "text": "Customers are served on the channels they already know and trust."
           }
-        ],
-        "image": "Banking & Financial BPO Services"
+        ]
       },
       {
         "heading": "Challenges We Handle",
@@ -61,41 +60,38 @@ export const industries = [
           {
             "title": "Fraud prevention and escalation"
           }
-        ],
-        "eyebrow": "Industry Pressure"
+        ]
       },
       {
         "heading": "Solutions Built Around Your Workflow",
         "paras": [
-          "Wajhat Al Sawt helps financial organizations manage customer care during normal operations, outages, billing questions, disputes, account requests, and other high-pressure interactions. Teams are trained around your policies, risk posture, and customer experience standards."
+          "Wajhat Al Sawt helps financial organizations manage customer care during normal operations, service outages, billing questions, disputes, account requests and other high-pressure interactions. Our teams are trained on your policies, risk standards and customer experience requirements."
         ],
         "list": [
           "24/7 support",
           "Security and fraud protection workflows",
           "Customer satisfaction surveys",
-          "Financially trained customer support agents",
+          "Agents trained in financial services",
           "Billing and payment support",
           "Customer chat services"
-        ],
-        "eyebrow": "Tailored Support"
+        ]
       },
       {
         "heading": "Why It Works",
         "items": [
           {
-            "title": "Lower wait times",
-            "text": "Keep customers reassured with quick, responsive service during sensitive financial moments."
+            "title": "Shorter wait times",
+            "text": "Prompt, responsive service reassures customers at sensitive financial moments."
           },
           {
             "title": "Stronger security and compliance",
-            "text": "Support privacy, secure handling, and regulated workflows with trained teams and clear escalation."
+            "text": "Trained teams and clear escalation paths support privacy, secure handling and regulated workflows."
           },
           {
             "title": "Cost-effective support",
-            "text": "Scale financial customer operations without losing control of quality or cost."
+            "text": "Financial customer operations scale without loss of control over quality or cost."
           }
-        ],
-        "eyebrow": "Benefits"
+        ]
       },
       {
         "heading": "What We Can Cover",
@@ -106,34 +102,32 @@ export const industries = [
           "Billing and payment support",
           "Inbound support",
           "Survey and feedback services"
-        ],
-        "eyebrow": "Related Services"
+        ]
       },
       {
         "heading": "How Teams Use This",
         "paras": [
-          "The source page describes a payment technology company that needed better ROI with current clients and expansion into new markets, using targeted support strategies to drive adoption and card acceptance."
-        ],
-        "eyebrow": "Example"
+          "A payment technology company needed to increase returns from existing clients and expand into new markets. Targeted support strategies helped it drive product adoption and wider card acceptance."
+        ]
       },
       {
         "heading": "Frequently Asked Questions",
         "faqs": [
           {
-            "q": "How is financial security and compliance supported?",
-            "a": "Teams follow client-defined security, privacy, verification, and escalation processes for safe call handling and customer data protection."
+            "q": "How do you protect financial security and compliance?",
+            "a": "Our teams follow your security, privacy, verification and escalation procedures, ensuring safe call handling and protection of customer data."
           },
           {
-            "q": "Can banking call center solutions be customized?",
-            "a": "Yes. Workflows can be shaped around fraud support, loan processing, card services, account inquiries, billing, and other financial needs."
+            "q": "Can banking contact center services be customized?",
+            "a": "Yes. Workflows can be designed around fraud support, loan processing, card services, account inquiries, billing and other financial requirements."
           },
           {
-            "q": "What financial services can be supported?",
-            "a": "Support can cover general banking, mortgage servicing, credit card services, investment support, wealth operations, and related financial customer care."
+            "q": "Which financial services can you support?",
+            "a": "We support general banking, mortgage servicing, credit card services, investment support, wealth management operations and related financial customer care."
           },
           {
             "q": "How quickly can a team be implemented?",
-            "a": "A trained support team can typically be launched in a few weeks, depending on workflow complexity, tooling access, and compliance requirements."
+            "a": "A trained support team can typically be launched within a few weeks, depending on workflow complexity, system access and compliance requirements."
           }
         ]
       }
@@ -143,8 +137,8 @@ export const industries = [
     "slug": "ecommerce",
     "name": "eCommerce",
     "title": "eCommerce Call Center Services",
-    "subtitle": "Scalable customer care for fast-moving online retail brands",
-    "intro": "Support online shoppers with order help, returns, billing, retention, product questions, and peak-season volume coverage.",
+    "subtitle": "Scalable customer care for fast-growing online retail brands",
+    "intro": "Support for online shoppers covering orders, returns, billing, retention, product questions and peak-season demand.",
     "metrics": [
       {
         "value": "Peak",
@@ -165,48 +159,46 @@ export const industries = [
     ],
     "sections": [
       {
-        "heading": "Customer care that keeps online shoppers moving",
+        "heading": "Customer Care That Keeps Online Shoppers Moving",
         "paras": [
-          "eCommerce customers expect fast answers, accurate order information, easy returns, and brand-aware service. Wajhat Al Sawt supplies friendly, knowledgeable agents who help with order status, billing, returns, product inquiries, subscriptions, and other touchpoints across the online buying journey."
+          "Online shoppers expect fast answers, accurate order information, simple returns and service that reflects your brand. Wajhat Al Sawt provides friendly, knowledgeable agents who assist with order status, billing, returns, product questions, subscriptions and every other stage of the online buying journey."
         ],
         "items": [
           {
             "title": "Advanced technology integration",
-            "text": "Connect agents with eCommerce platforms, inventory systems, helpdesks, and CRM tools."
+            "text": "Agents connect with your eCommerce platform, inventory systems, help desk and CRM tools."
           },
           {
             "title": "24/7 availability",
-            "text": "Serve shoppers across time zones, launch windows, and peak seasonal surges."
+            "text": "Shoppers are supported across time zones, product launches and seasonal peaks."
           },
           {
             "title": "Multichannel support",
-            "text": "Handle customer needs through voice, live chat, email, SMS, social messaging, and more."
+            "text": "Customer needs are handled through voice, live chat, email, SMS, social messaging and more."
           }
-        ],
-        "image": "eCommerce Call Center Services"
+        ]
       },
       {
         "heading": "Challenges We Handle",
         "items": [
           {
-            "title": "High-volume inquiries during peak seasons"
+            "title": "High inquiry volumes during peak seasons"
           },
           {
             "title": "Complex return and exchange policies"
           },
           {
-            "title": "Cart abandonment and missed revenue opportunities"
+            "title": "Cart abandonment and missed revenue"
           },
           {
             "title": "Negative reviews caused by delays or poor service"
           }
-        ],
-        "eyebrow": "Industry Pressure"
+        ]
       },
       {
         "heading": "Solutions Built Around Your Workflow",
         "paras": [
-          "Wajhat Al Sawt trains agents around your catalog, brand voice, workflows, seasonality, systems, and policies so support feels accurate and consistent. Teams can serve startups, growing stores, and enterprise commerce brands with flexible staffing models."
+          "Wajhat Al Sawt trains agents on your catalog, brand voice, workflows, seasonality, systems and policies, so every interaction is accurate and consistent. Flexible staffing models serve startups, growing retailers and enterprise brands alike."
         ],
         "list": [
           "Customer support",
@@ -215,26 +207,24 @@ export const industries = [
           "Renewal notifications",
           "Order confirmation and processing",
           "Product updates and launch announcements"
-        ],
-        "eyebrow": "Tailored Support"
+        ]
       },
       {
         "heading": "Why It Works",
         "items": [
           {
             "title": "Focus on core activities",
-            "text": "Let internal teams prioritize product, merchandising, marketing, and growth work."
+            "text": "Internal teams can prioritize product, merchandising, marketing and growth."
           },
           {
             "title": "Improved customer service",
-            "text": "Use trained agents to provide timely, professional responses across high-volume channels."
+            "text": "Trained agents provide timely, professional responses across high-volume channels."
           },
           {
             "title": "Scalability and flexibility",
-            "text": "Scale support up or down for seasonality, promotions, launches, and unexpected spikes."
+            "text": "Support scales up or down for seasons, promotions, launches and unexpected surges."
           }
-        ],
-        "eyebrow": "Benefits"
+        ]
       },
       {
         "heading": "What We Can Cover",
@@ -245,38 +235,36 @@ export const industries = [
           "Subscription and continuity management",
           "Inbound support",
           "Survey and feedback services"
-        ],
-        "eyebrow": "Related Services"
+        ]
       },
       {
         "heading": "How Teams Use This",
         "paras": [
-          "The source page emphasizes brand-specific support for retailers that need retention, order care, customer engagement, and scalable coverage during demand spikes."
-        ],
-        "eyebrow": "Example"
+          "Online retailers rely on brand-specific support teams to improve retention, manage orders, strengthen customer engagement and maintain service levels during periods of peak demand."
+        ]
       },
       {
         "heading": "Frequently Asked Questions",
         "faqs": [
           {
-            "q": "What eCommerce support can be outsourced?",
-            "a": "Order tracking, returns, exchanges, subscription support, product questions, billing help, customer engagement, and omnichannel support can all be outsourced."
+            "q": "Which eCommerce support functions can be outsourced?",
+            "a": "Order tracking, returns, exchanges, subscription support, product questions, billing assistance, customer engagement and omnichannel support can all be outsourced."
           },
           {
-            "q": "Can agents access order and inventory systems?",
-            "a": "Yes. Agents can be trained and granted controlled access to the platforms needed for accurate, real-time customer assistance."
+            "q": "Can agents access our order and inventory systems?",
+            "a": "Yes. Agents are trained and given controlled access to the platforms required for accurate, real-time customer assistance."
           },
           {
             "q": "Is 24/7 support available?",
-            "a": "Yes. Teams can be staffed around the clock for customers who need help outside normal business hours."
+            "a": "Yes. Teams can be staffed around the clock for customers who need assistance outside normal business hours."
           },
           {
             "q": "Can support scale during peak periods?",
-            "a": "Yes. Staffing can expand for seasonal peaks, promotions, launches, shipping delays, outages, and other volume surges."
+            "a": "Yes. Staffing expands to cover seasonal peaks, promotions, launches, shipping delays, outages and other surges in demand."
           },
           {
             "q": "Do you offer multilingual support?",
-            "a": "Yes. Multilingual teams can help brands support global shoppers and expand into new markets."
+            "a": "Yes. Multilingual teams help brands serve customers worldwide and expand into new markets."
           }
         ]
       }
@@ -286,8 +274,8 @@ export const industries = [
     "slug": "technology",
     "name": "Technology",
     "title": "Technology & SaaS Call Center Services",
-    "subtitle": "Frictionless support for software, SaaS, IT, and digital product teams",
-    "intro": "Expert customer and technical support that helps tech companies reduce friction, resolve issues, and keep users engaged.",
+    "subtitle": "Seamless support for software, SaaS, IT and digital product companies",
+    "intro": "Expert customer and technical support that helps technology companies reduce friction, resolve issues and keep users engaged.",
     "metrics": [
       {
         "value": "ITSM",
@@ -308,25 +296,24 @@ export const industries = [
     ],
     "sections": [
       {
-        "heading": "Technology support that keeps pace with product growth",
+        "heading": "Technology Support That Keeps Pace With Product Growth",
         "paras": [
-          "Technology customers expect quick answers, personalized support, and reliable troubleshooting. Wajhat Al Sawt gives software, SaaS, hardware, and digital service teams a trained support layer that can handle product questions, outages, technical issues, appointment workflows, and customer insights while your team focuses on innovation."
+          "Technology customers expect prompt answers, personalized support and reliable troubleshooting. Wajhat Al Sawt provides software, SaaS, hardware and digital service companies with a trained support team that handles product questions, outages, technical issues, appointment workflows and customer insight, while your team focuses on innovation."
         ],
         "items": [
           {
             "title": "Advanced technology integration",
-            "text": "Work with helpdesk, CRM, ITSM, knowledge base, and remote support workflows."
+            "text": "Our teams work within your help desk, CRM, ITSM, knowledge base and remote support workflows."
           },
           {
             "title": "24/7 availability",
-            "text": "Support users during outages, launches, time-zone gaps, and after-hours incidents."
+            "text": "Users are supported during outages, launches, time zone gaps and after-hours incidents."
           },
           {
             "title": "Multichannel support",
-            "text": "Provide consistent help across phone, chat, email, SMS, and digital support channels."
+            "text": "Consistent assistance across phone, chat, email, SMS and digital support channels."
           }
-        ],
-        "image": "Technology & SaaS Call Center Services"
+        ]
       },
       {
         "heading": "Challenges We Handle",
@@ -338,18 +325,17 @@ export const industries = [
             "title": "Inconsistent troubleshooting and service quality"
           },
           {
-            "title": "High call volume during outages"
+            "title": "High call volumes during outages"
           },
           {
             "title": "Limited 24/7 coverage"
           }
-        ],
-        "eyebrow": "Industry Pressure"
+        ]
       },
       {
         "heading": "Solutions Built Around Your Workflow",
         "paras": [
-          "Wajhat Al Sawt helps technology teams protect customer experience during outages, billing questions, product confusion, troubleshooting requests, and growth spikes. Agents are trained around your product, support protocols, tools, and escalation rules."
+          "Wajhat Al Sawt helps technology companies protect the customer experience during outages, billing questions, product inquiries, troubleshooting requests and periods of rapid growth. Agents are trained on your product, support protocols, tools and escalation procedures."
         ],
         "list": [
           "24/7 live answering",
@@ -358,52 +344,48 @@ export const industries = [
           "Technical support",
           "Market research and customer insight",
           "Inbound and outbound call handling"
-        ],
-        "eyebrow": "Tailored Support"
+        ]
       },
       {
         "heading": "Why It Works",
         "items": [
           {
             "title": "Scalable support",
-            "text": "Adjust coverage as demand changes so teams are not locked into fixed capacity."
+            "text": "Coverage adjusts as demand changes, so you are never locked into fixed capacity."
           },
           {
-            "title": "Expert-level IT troubleshooting",
-            "text": "Use trained agents and escalation paths to help customers resolve more complicated issues."
+            "title": "Expert IT troubleshooting",
+            "text": "Trained agents and clear escalation paths help customers resolve complex issues."
           },
           {
             "title": "Seamless integration",
-            "text": "Operate inside your helpdesk, ITSM, CRM, and product-support systems."
+            "text": "Our teams operate within your help desk, ITSM, CRM and product support systems."
           }
-        ],
-        "eyebrow": "Benefits"
+        ]
       },
       {
         "heading": "What We Can Cover",
         "list": [
-          "Help desk and IT support call center",
+          "Help desk and IT support",
           "SaaS and software customer support",
           "Technical troubleshooting and remote IT assistance",
           "Cybersecurity and compliance help desk",
-          "Omnichannel tech support solutions",
+          "Omnichannel technical support",
           "BPO and SaaS business support"
-        ],
-        "eyebrow": "Related Services"
+        ]
       },
       {
         "heading": "How Teams Use This",
         "paras": [
-          "The source page describes a home services technology platform that needed scalable support as demand rose, using training and quality management to improve productivity and sales support."
-        ],
-        "eyebrow": "Example"
+          "A home services technology platform needed scalable support as demand grew. Structured training and quality management improved agent productivity and strengthened sales support."
+        ]
       },
       {
         "heading": "Frequently Asked Questions",
         "faqs": [
           {
-            "q": "How can technology call center support improve retention?",
-            "a": "Fast, friendly, knowledgeable support reduces churn by helping users get value from the product with less friction."
+            "q": "How does technology support improve customer retention?",
+            "a": "Prompt, knowledgeable support reduces churn by helping users realize the full value of your product with less friction."
           },
           {
             "q": "Is 24/7 IT support available?",
@@ -411,15 +393,15 @@ export const industries = [
           },
           {
             "q": "Can support scale during outages?",
-            "a": "Yes. Coverage can scale up or down as demand changes, including outage-related spikes."
+            "a": "Yes. Coverage scales up or down as demand changes, including during outage-related surges."
           },
           {
-            "q": "What platforms can Wajhat Al Sawt integrate with?",
-            "a": "Teams can work with common helpdesk, CRM, and ITSM tools such as Zendesk, ServiceNow, Freshdesk, and similar platforms."
+            "q": "Which platforms can Wajhat Al Sawt integrate with?",
+            "a": "Our teams work with leading help desk, CRM and ITSM tools, including Zendesk, ServiceNow and Freshdesk."
           },
           {
-            "q": "How is data security handled in IT support?",
-            "a": "Support workflows can follow strict cybersecurity, access-control, privacy, and escalation protocols aligned with your compliance needs."
+            "q": "How is data security managed in IT support?",
+            "a": "Support workflows follow strict cybersecurity, access control, privacy and escalation protocols aligned with your compliance requirements."
           }
         ]
       }

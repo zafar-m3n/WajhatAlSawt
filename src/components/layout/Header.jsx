@@ -218,6 +218,9 @@ export default function Header() {
   const [hidden, setHidden] = useState(false)
   const location = useLocation()
   const navRef = useRef(null)
+  // The phone menu portals into <body>, which only exists in the browser (not at prerender)
+  const [mounted, setMounted] = useState(false)
+  useEffect(() => setMounted(true), [])
 
   // Close menus whenever the URL changes (incl. back/forward)
   const routeKey = location.pathname + location.search
@@ -297,7 +300,7 @@ export default function Header() {
           </button>
         </div>
       </div>
-      {createPortal(<AnimatePresence>{mobile && <MobileMenu onClose={() => setMobile(false)} />}</AnimatePresence>, document.body)}
+      {mounted && createPortal(<AnimatePresence>{mobile && <MobileMenu onClose={() => setMobile(false)} />}</AnimatePresence>, document.body)}
     </header>
   )
 }

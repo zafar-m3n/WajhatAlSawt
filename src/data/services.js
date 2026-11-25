@@ -1,8 +1,8 @@
-// Generated from the captured live-site content. Edit docs/content and re-run docs/tools/build-data.mjs.
+// Site content. Source of truth: edit here (the old capture converter is retired).
 export const practices = [
   {
     "slug": "call-center-outsourcing",
-    "description": "Dedicated contact center teams, set up the way your business needs them: onshore, nearshore, offshore or fully virtual.",
+    "description": "Dedicated contact center teams configured to your requirements, whether onshore, nearshore, offshore or fully virtual.",
     "name": "Call Center Outsourcing",
     "services": [
       "virtual-call-center-solutions",
@@ -17,7 +17,7 @@ export const practices = [
   },
   {
     "slug": "bpo-business-support",
-    "description": "Back office, finance, HR and operations support that keeps your business running smoothly behind the scenes.",
+    "description": "Back office, finance, HR and operational support that keeps your business running efficiently behind the scenes.",
     "name": "BPO & Business Support Services",
     "services": [
       "back-office-operations",
@@ -33,7 +33,7 @@ export const practices = [
   },
   {
     "slug": "after-hours-overflow",
-    "description": "SMS, live chat and email teams that keep customers answered after hours and whenever volumes spike.",
+    "description": "Dedicated SMS, live chat and email teams that keep your customers supported outside business hours and during periods of peak demand.",
     "name": "After-Hours & Overflow Support",
     "services": [
       "sms-support",
@@ -43,7 +43,7 @@ export const practices = [
   },
   {
     "slug": "order-taking-billing",
-    "description": "Order taking, billing and subscription support that turns every customer call into a smooth transaction.",
+    "description": "Order taking, billing and subscription support that turns every customer interaction into a smooth, secure transaction.",
     "name": "Order Taking & Billing Services",
     "services": [
       "order-taking",
@@ -53,7 +53,7 @@ export const practices = [
   },
   {
     "slug": "inbound-outbound",
-    "description": "Inbound and outbound teams that answer, qualify, book and sell across every channel.",
+    "description": "Inbound and outbound teams that answer, qualify, schedule and sell across every channel.",
     "name": "Inbound & Outbound Support",
     "services": [
       "inbound-contact-center-solutions",
@@ -66,7 +66,7 @@ export const practices = [
   },
   {
     "slug": "customer-service-support",
-    "description": "Customer, technical and help desk support, plus answering services and content moderation.",
+    "description": "Customer, technical and help desk support, together with answering services and content moderation.",
     "name": "Customer Service & Support",
     "services": [
       "customer-support-excellence",
@@ -78,7 +78,7 @@ export const practices = [
   },
   {
     "slug": "ai-technology",
-    "description": "Data annotation, AI services and human-in-the-loop teams that help you put AI to work.",
+    "description": "Data annotation, AI services and human-in-the-loop teams that help you apply AI effectively and responsibly.",
     "name": "AI & Technology Services",
     "services": [
       "ai-data-annotation",
@@ -93,53 +93,51 @@ export const services = [
   {
     "slug": "customer-support-excellence",
     "practice": "customer-service-support",
-    "kicker": "24/7 Multilingual Support",
+    "kicker": "24/7 multilingual support",
     "title": "Customer Support Excellence",
-    "intro": "Dedicated support pods that read your brand voice, hit the SLAs leadership cares about, and lift CSAT month over month — across voice, chat and email.",
+    "intro": "Dedicated support teams that reflect your brand voice, meet the service levels your leadership expects and raise customer satisfaction month after month, across voice, chat and email.",
     "short": "Customer Support Excellence",
     "sections": [
       {
-        "heading": "Operator-grade customer support",
+        "heading": "Professional, Expert-Led Customer Support",
         "paras": [
-          "We build a dedicated team sized to your workload, trained on your product and tone, and instrumented with the QA you would set up if you had the time."
+          "We build a dedicated team sized to your workload, trained on your products and tone of voice, and supported by a rigorous quality assurance framework."
         ],
         "bullets": [
-          "Dedicated team trained on your product and ICP",
-          "Integrated with your CRM and helpdesk on day one",
-          "Weekly QA scoring with a calibrated rubric",
-          "Real-time CSAT and AHT dashboards"
-        ],
-        "image": "Customer Support Excellence"
+          "A dedicated team trained on your products and customers",
+          "Integration with your CRM and help desk from day one",
+          "Weekly quality scoring against a calibrated framework",
+          "Real-time customer satisfaction and handle time dashboards"
+        ]
       },
       {
         "heading": "What's Included",
         "items": [
           {
             "title": "24/7 multilingual coverage",
-            "text": "Follow-the-sun pods covering every market you sell into."
+            "text": "Teams across time zones provide continuous coverage in every market you serve."
           },
           {
-            "title": "AI-assisted tooling",
-            "text": "Summarisation, suggested replies and sentiment hints remove the rote work."
+            "title": "AI-assisted tools",
+            "text": "Summaries, suggested replies and sentiment indicators reduce repetitive work."
           },
           {
             "title": "Quality assurance",
-            "text": "Calibrated weekly QA with coaching loops back to agents."
+            "text": "Calibrated weekly quality reviews with structured coaching for every agent."
           },
           {
             "title": "Live dashboards",
-            "text": "CSAT, AHT, FCR and NPS surfaced in real time."
+            "text": "CSAT, AHT, FCR and NPS reported in real time."
           },
           {
-            "title": "On-floor leads",
-            "text": "Senior leads with the team every shift and escalation."
+            "title": "On-site team leaders",
+            "text": "Senior leaders are present on every shift to guide the team and manage escalations."
           },
           {
-            "title": "Compliance built in",
-            "text": "SOC 2, GDPR and HIPAA-ready PII handling."
+            "title": "Built-in compliance",
+            "text": "Personal data handled in line with SOC 2, GDPR and HIPAA requirements."
           }
-        ],
-        "eyebrow": "Capabilities"
+        ]
       },
       {
         "heading": "Our Customer Support Excellence Process",
@@ -147,45 +145,44 @@ export const services = [
           {
             "n": "01",
             "title": "Discovery",
-            "text": "We read your tickets and walk your flows. Three days, no decks."
+            "text": "Over three days, we review your support tickets and customer journeys in detail."
           },
           {
             "n": "02",
             "title": "Strategy",
-            "text": "A written plan: SLAs, staffing, tooling and metrics."
+            "text": "A written plan covering service levels, staffing, tools and metrics."
           },
           {
             "n": "03",
             "title": "Implementation",
-            "text": "Hire, train and ship a pilot pod within four weeks."
+            "text": "We recruit, train and launch a pilot team within four weeks."
           },
           {
             "n": "04",
             "title": "Optimization",
-            "text": "Monthly QA scorecards and quarterly business reviews."
+            "text": "Monthly quality scorecards and quarterly business reviews."
           }
         ]
       },
       {
         "heading": "Key Benefits",
         "list": [
-          "Higher CSAT",
-          "Lower handle time",
-          "Cohesive brand voice",
+          "Higher customer satisfaction",
+          "Shorter handle times",
+          "A consistent brand voice",
           "Faster first response"
-        ],
-        "eyebrow": "Why It Matters"
+        ]
       },
       {
         "heading": "Frequently Asked Questions",
         "faqs": [
           {
-            "q": "How quickly can a pod go live?",
-            "a": "Standard pods ship in 2–4 weeks from contract — pilot first, then scale."
+            "q": "How quickly can a support team go live?",
+            "a": "A standard team is operational within two to four weeks of contract signing, beginning with a pilot before scaling."
           },
           {
-            "q": "Do you replace our helpdesk tooling?",
-            "a": "No. We integrate with Zendesk, Intercom, Salesforce, Front and more."
+            "q": "Do you replace our help desk tools?",
+            "a": "No. We integrate with your existing platforms, including Zendesk, Intercom, Salesforce and Front."
           }
         ]
       }
@@ -194,76 +191,74 @@ export const services = [
   {
     "slug": "technical-support",
     "practice": "customer-service-support",
-    "kicker": "Expert IT Solutions",
+    "kicker": "Expert IT support",
     "title": "Technical Support",
-    "intro": "Tier 1–3 technical support for SaaS, fintech and connected hardware. We read logs, write runbooks, and ship postmortems your engineers will actually read.",
+    "intro": "Tier 1 to Tier 3 technical support for SaaS, fintech and connected hardware companies. We analyze logs, maintain runbooks and produce clear, actionable incident reports.",
     "short": "Technical Support",
     "sections": [
       {
-        "heading": "Engineering-literate support",
+        "heading": "Technically Proficient Support Teams",
         "paras": [
-          "Our pods include people who have shipped software themselves. Logs, APIs and basic SQL are not foreign languages — they escalate well and document better."
+          "Our teams include professionals with hands-on software experience. Proficient with logs, APIs and SQL, they escalate accurately and document thoroughly."
         ],
         "bullets": [
-          "Tier 1 through Tier 3 with clear escalation paths",
+          "Tier 1 to Tier 3 coverage with clear escalation paths",
           "On-call rotations integrated with your incident management",
-          "Knowledge base authored and kept current",
-          "Postmortems written within 48h of any P1"
-        ],
-        "image": "Technical Support"
+          "A knowledge base written and kept current",
+          "Incident reports completed within 48 hours of any critical issue"
+        ]
       },
       {
         "heading": "What's Included",
         "items": [
           {
             "title": "Tiered escalation",
-            "text": "Clean hand-offs between Tier 1, 2 and 3 with defined exit criteria."
+            "text": "Structured handoffs between Tier 1, 2 and 3, with defined escalation criteria."
           },
           {
-            "title": "Knowledge base authoring",
-            "text": "Every recurring ticket becomes a KB entry that deflects future tickets."
+            "title": "Knowledge base development",
+            "text": "Recurring issues become knowledge base articles that reduce future tickets."
           },
           {
             "title": "Incident triage",
-            "text": "Operators on PagerDuty/Opsgenie who know when to wake an engineer."
+            "text": "Experienced operators on PagerDuty and Opsgenie who know when to escalate to engineering."
           },
           {
-            "title": "Postmortem reporting",
-            "text": "Blameless, written within 48h, shared with leadership."
+            "title": "Incident reporting",
+            "text": "Blameless reports completed within 48 hours and shared with leadership."
           },
           {
             "title": "System monitoring",
-            "text": "Proactive monitoring and alerting on your stack."
+            "text": "Proactive monitoring and alerting across your technology stack."
           },
           {
             "title": "Software support",
             "text": "Installation, configuration and update management."
           }
-        ],
-        "eyebrow": "Capabilities"
+        ]
       },
       {
         "heading": "Our Technical Support Process",
         "steps": [
           {
             "n": "01",
-            "title": "Stack walkthrough",
-            "text": "Two days with your engineers on the stack and failure modes."
+            "title": "Technology review",
+            "text": "Two days with your engineers reviewing your technology stack and common failure points."
           },
           {
             "n": "02",
-            "title": "Runbook v1",
-            "text": "Co-authored runbook for the top ticket types and incidents."
+            "title": "Initial runbook",
+            "text": "A jointly developed runbook covering the most common tickets and incidents."
           },
           {
             "n": "03",
             "title": "Pilot",
-            "text": "Tier 1 in production with shadowing before live takeover."
+            "text": "Tier 1 operates in production alongside your team before taking full ownership."
           },
           {
             "n": "04",
             "title": "Steady state",
-            "text": "Quarterly stack reviews and monthly KB audits."
+            "text": "Quarterly technology reviews and monthly knowledge base audits."
           }
         ]
       },
@@ -271,22 +266,21 @@ export const services = [
         "heading": "Key Benefits",
         "list": [
           "Faster resolution",
-          "Lower MTTR",
-          "Engineer-friendly",
-          "24/7 if needed"
-        ],
-        "eyebrow": "Why It Matters"
+          "Lower mean time to resolution",
+          "Seamless collaboration with engineering",
+          "24/7 coverage when required"
+        ]
       },
       {
         "heading": "Frequently Asked Questions",
         "faqs": [
           {
-            "q": "Can your team read code?",
-            "a": "At Tier 2 and 3, yes — we hire for it. Tier 1 recognises patterns and escalates cleanly."
+            "q": "Can your team work with code?",
+            "a": "Yes. Our Tier 2 and Tier 3 specialists are recruited for their technical skills, and Tier 1 agents recognize common patterns and escalate accurately."
           },
           {
-            "q": "Can you take on-call?",
-            "a": "Yes, on PagerDuty, Opsgenie or Better Stack. Your runbooks, our rotations."
+            "q": "Can you provide on-call coverage?",
+            "a": "Yes. We work with PagerDuty, Opsgenie and Better Stack, following your runbooks with our own on-call rotations."
           }
         ]
       }
@@ -295,42 +289,41 @@ export const services = [
   {
     "slug": "back-office-operations",
     "practice": "bpo-business-support",
-    "kicker": "Streamlined Processes",
+    "kicker": "Streamlined, audit-ready processes",
     "title": "Back Office Operations",
-    "intro": "Document and data ops with audit trails baked in. Claims, KYC, finance and admin handled by specialists you can name.",
+    "intro": "Document and data operations with full audit trails. Claims, KYC, finance and administrative work are handled by a dedicated team of named specialists.",
     "short": "Back Office Operations",
     "sections": [
       {
-        "heading": "The unsexy work, done right",
+        "heading": "Essential Operations, Delivered with Precision",
         "paras": [
-          "We run the operations that pay your bills, file your claims and clear your KYC backlogs. Boring on purpose. Audit-ready by default."
+          "We manage the operations that keep your business running, from processing payments and filing claims to clearing KYC backlogs. Our processes are consistent, controlled and audit-ready by design."
         ],
         "bullets": [
-          "Dedicated specialists trained on your workflow",
-          "SOC 2 and GDPR aligned controls",
-          "Automation layered on top of human review",
-          "SLA-backed throughput with exception paths"
-        ],
-        "image": "Back Office Operations"
+          "Dedicated specialists trained on your workflows",
+          "Controls aligned with SOC 2 and GDPR",
+          "Automation combined with human review",
+          "SLA-backed throughput with defined exception handling"
+        ]
       },
       {
         "heading": "What's Included",
         "items": [
           {
             "title": "SOC 2 aligned controls",
-            "text": "Logged actions, role-based access, encrypted handoffs."
+            "text": "Logged actions, role-based access and encrypted handoffs."
           },
           {
             "title": "Workflow automation",
-            "text": "RPA and scripts do the rote work; humans handle judgement."
+            "text": "Automation handles repetitive tasks, while specialists apply judgment where it matters."
           },
           {
             "title": "Exception management",
-            "text": "Clear runbooks for cases off the happy path, with owners and SLAs."
+            "text": "Clear procedures for non-standard cases, each with a defined owner and SLA."
           },
           {
             "title": "Quality sampling",
-            "text": "Statistical sampling with feedback loops back to operators."
+            "text": "Statistical sampling with structured feedback to the operations team."
           },
           {
             "title": "Document management",
@@ -338,10 +331,9 @@ export const services = [
           },
           {
             "title": "Claims processing",
-            "text": "End-to-end claims handling with audit trails."
+            "text": "End-to-end claims handling with complete audit trails."
           }
-        ],
-        "eyebrow": "Capabilities"
+        ]
       },
       {
         "heading": "Our Back Office Operations Process",
@@ -349,45 +341,44 @@ export const services = [
           {
             "n": "01",
             "title": "Workflow audit",
-            "text": "We map your current state — every step and exception."
+            "text": "We document your current processes in full, including every step and exception."
           },
           {
             "n": "02",
             "title": "Pilot",
-            "text": "Run a sample volume in parallel to measure quality and speed."
+            "text": "A sample volume runs in parallel so quality and speed can be measured."
           },
           {
             "n": "03",
-            "title": "Cutover",
-            "text": "Phased migration with monitoring. We taper, not flip."
+            "title": "Transition",
+            "text": "A phased, closely monitored migration that transfers work gradually rather than all at once."
           },
           {
             "n": "04",
             "title": "Steady state",
-            "text": "Monthly process reviews and an automation backlog."
+            "text": "Monthly process reviews and an ongoing program of automation improvements."
           }
         ]
       },
       {
         "heading": "Key Benefits",
         "list": [
-          "Throughput lift",
-          "Audit-ready",
-          "Lower error rate",
-          "Reclaimed weekends"
-        ],
-        "eyebrow": "Why It Matters"
+          "Higher throughput",
+          "Audit-ready records",
+          "Lower error rates",
+          "More time for your team to focus on priorities"
+        ]
       },
       {
         "heading": "Frequently Asked Questions",
         "faqs": [
           {
-            "q": "What work do you take on?",
-            "a": "Document handling, claims, KYC, finance ops, data entry, moderation — rule-bound, high-volume work."
+            "q": "What type of work do you handle?",
+            "a": "Rule-based, high-volume work, including document handling, claims, KYC, finance operations, data entry and moderation."
           },
           {
-            "q": "How is data handled?",
-            "a": "PII never leaves your environment unencrypted. Secure VPN, role-based access, audit logging."
+            "q": "How is data protected?",
+            "a": "Personal data never leaves your environment unencrypted. We use secure VPN connections, role-based access and audit logging."
           }
         ]
       }
@@ -396,99 +387,96 @@ export const services = [
   {
     "slug": "sales-lead-generation",
     "practice": "inbound-outbound",
-    "kicker": "Pipeline Growth",
+    "kicker": "Sustained pipeline growth",
     "title": "Sales & Lead Generation",
-    "intro": "Outbound pods built around your ICP. Trained on your product, paid on the meetings that show up.",
+    "intro": "Dedicated outbound sales teams built around your ideal customer profile, trained on your products and measured on qualified meetings delivered.",
     "short": "Sales & Lead Generation",
     "sections": [
       {
-        "heading": "Pipeline-grade outbound",
+        "heading": "Outbound Sales That Builds Your Pipeline",
         "paras": [
-          "We build SDR pods that work like an extension of your team — same Slack channel, same CRM, same scorecards."
+          "Our sales development teams operate as a seamless extension of your organization, working within your communication channels, CRM and performance scorecards."
         ],
         "bullets": [
-          "SDRs trained on your product, ICP and battlecards",
-          "Multi-channel sequences across email, LinkedIn and phone",
-          "CRM hygiene as a first-class deliverable",
-          "Live conversion analytics from cold to closed"
-        ],
-        "image": "Sales & Lead Generation"
+          "Sales development representatives trained on your products, ideal customer profile and competitive positioning",
+          "Multichannel outreach across email, LinkedIn and phone",
+          "Accurate, well-maintained CRM data as a core deliverable",
+          "Live conversion analytics from first contact to closed deal"
+        ]
       },
       {
         "heading": "What's Included",
         "items": [
           {
-            "title": "ICP-tuned playbooks",
-            "text": "Built with your AEs, shipped, and updated weekly on what works."
+            "title": "Tailored sales playbooks",
+            "text": "Developed with your account executives and refined weekly based on results."
           },
           {
-            "title": "Multi-touch sequences",
-            "text": "Email, LinkedIn and phone, orchestrated to avoid repetition."
+            "title": "Multi-touch outreach",
+            "text": "Coordinated email, LinkedIn and phone outreach that avoids repetition."
           },
           {
-            "title": "CRM hygiene",
-            "text": "Every interaction logged correctly; enrichment and routing handled."
+            "title": "CRM data quality",
+            "text": "Every interaction logged accurately, with data enrichment and routing managed."
           },
           {
             "title": "Conversion analytics",
-            "text": "Funnel from prospect to meeting to opportunity in your dashboards."
+            "text": "Your full funnel, from prospect to meeting to opportunity, visible in your dashboards."
           },
           {
             "title": "Appointment setting",
-            "text": "Qualified meetings booked straight into your calendar."
+            "text": "Qualified meetings booked directly into your calendar."
           },
           {
             "title": "Lead qualification",
-            "text": "BANT/MEDDIC screening so AEs only see real opportunities."
+            "text": "BANT and MEDDIC screening ensures your account executives see only genuine opportunities."
           }
-        ],
-        "eyebrow": "Capabilities"
+        ]
       },
       {
         "heading": "Our Sales & Lead Generation Process",
         "steps": [
           {
             "n": "01",
-            "title": "ICP & messaging",
-            "text": "Refine the ICP and write the sequences with your leadership."
+            "title": "Ideal customer profile and messaging",
+            "text": "We refine your ideal customer profile and develop outreach messaging with your leadership."
           },
           {
             "n": "02",
             "title": "Pilot",
-            "text": "Eight-week pilot with two SDRs; measure acceptance and conversion."
+            "text": "An eight-week pilot with two representatives measures acceptance and conversion rates."
           },
           {
             "n": "03",
             "title": "Scale",
-            "text": "Add seats based on what's working. Drop what isn't."
+            "text": "Capacity is expanded based on proven results, and less effective activity is discontinued."
           },
           {
             "n": "04",
             "title": "Optimize",
-            "text": "Weekly playbook iteration on live results."
+            "text": "Playbooks are refined weekly based on live performance data."
           }
         ]
       },
       {
         "heading": "Key Benefits",
         "list": [
-          "More meetings",
-          "Cleaner CRM",
-          "Better forecasts",
-          "Performance pricing"
-        ],
-        "eyebrow": "Why It Matters"
+          "More qualified meetings",
+          "Cleaner CRM data",
+          "More accurate forecasting",
+          "Performance-based pricing"
+        ]
       },
       {
         "heading": "Frequently Asked Questions",
         "faqs": [
           {
-            "q": "Do you offer performance pricing?",
-            "a": "Yes, after the first month — a base for the seat plus a fee on accepted, qualified meetings."
+            "q": "Do you offer performance-based pricing?",
+            "a": "Yes. After the first month, pricing combines a base fee per seat with a fee for each accepted, qualified meeting."
           },
           {
-            "q": "Who writes the messaging?",
-            "a": "We do, with your sales leadership in the room. Nothing ships unapproved."
+            "q": "Who develops the outreach messaging?",
+            "a": "We develop it in collaboration with your sales leadership, and no messaging is used without your approval."
           }
         ]
       }
@@ -497,23 +485,22 @@ export const services = [
   {
     "slug": "finance-accounting",
     "practice": "bpo-business-support",
-    "kicker": "Numbers You Can Trust",
+    "kicker": "Accurate, reliable financial operations",
     "title": "Finance & Accounting",
-    "intro": "Finance operations run by specialists, with the controls and reconciliations your auditors expect.",
+    "intro": "Finance operations managed by specialists, with the controls and reconciliations your auditors expect.",
     "short": "Finance & Accounting",
     "sections": [
       {
-        "heading": "Books that close on time",
+        "heading": "Timely, Accurate Financial Close",
         "paras": [
-          "From day-to-day bookkeeping to month-end close, we keep your finance function accurate, timely and audit-ready."
+          "From daily bookkeeping to month-end close, we keep your finance function accurate, timely and audit-ready."
         ],
         "bullets": [
           "Dedicated finance specialists",
-          "Standardised close checklists",
-          "Segregation of duties and controls",
-          "Reporting tailored to your leadership"
-        ],
-        "image": "Finance & Accounting"
+          "Standardized close checklists",
+          "Segregation of duties and strong controls",
+          "Reporting tailored to your leadership team"
+        ]
       },
       {
         "heading": "What's Included",
@@ -528,7 +515,7 @@ export const services = [
           },
           {
             "title": "Bookkeeping",
-            "text": "Accurate daily ledgers and categorisation."
+            "text": "Accurate daily ledgers and categorization."
           },
           {
             "title": "Payroll",
@@ -536,14 +523,13 @@ export const services = [
           },
           {
             "title": "Financial reporting",
-            "text": "Monthly packs your leadership actually reads."
+            "text": "Clear monthly reporting packs designed for leadership decision-making."
           },
           {
             "title": "Reconciliations",
-            "text": "Bank, intercompany and balance-sheet reconciliations."
+            "text": "Bank, intercompany and balance sheet reconciliations."
           }
-        ],
-        "eyebrow": "Capabilities"
+        ]
       },
       {
         "heading": "Our Finance & Accounting Process",
@@ -551,17 +537,17 @@ export const services = [
           {
             "n": "01",
             "title": "Process review",
-            "text": "Map your chart of accounts, tools and close calendar."
+            "text": "We review your chart of accounts, tools and close calendar."
           },
           {
             "n": "02",
             "title": "Parallel run",
-            "text": "Run alongside your current process to validate accuracy."
+            "text": "We operate alongside your current process to validate accuracy."
           },
           {
             "n": "03",
             "title": "Transition",
-            "text": "Phased handover with documented controls."
+            "text": "A phased handover supported by documented controls."
           },
           {
             "n": "04",
@@ -573,22 +559,21 @@ export const services = [
       {
         "heading": "Key Benefits",
         "list": [
-          "Faster close",
+          "Faster financial close",
           "Audit-ready books",
           "Fewer errors",
-          "Lower cost"
-        ],
-        "eyebrow": "Why It Matters"
+          "Lower operating costs"
+        ]
       },
       {
         "heading": "Frequently Asked Questions",
         "faqs": [
           {
-            "q": "Which tools do you work in?",
-            "a": "QuickBooks, Xero, NetSuite, Sage and more — we adapt to your stack."
+            "q": "Which accounting platforms do you support?",
+            "a": "We work with QuickBooks, Xero, NetSuite, Sage and other leading platforms, adapting to your existing systems."
           },
           {
-            "q": "Can you handle multi-entity?",
+            "q": "Can you support multiple entities?",
             "a": "Yes, including intercompany reconciliations and consolidated reporting."
           }
         ]
@@ -598,53 +583,51 @@ export const services = [
   {
     "slug": "hr-recruitment",
     "practice": "bpo-business-support",
-    "kicker": "People Operations",
+    "kicker": "Comprehensive people operations",
     "title": "HR & Recruitment",
-    "intro": "End-to-end recruitment and people operations — from sourcing to onboarding to ongoing HR administration.",
+    "intro": "End-to-end recruitment and people operations, from sourcing and onboarding to ongoing HR administration.",
     "short": "HR & Recruitment",
     "sections": [
       {
-        "heading": "Hire and keep great people",
+        "heading": "Attract and Retain Exceptional People",
         "paras": [
-          "We run the full talent lifecycle so your managers can focus on the work, not the paperwork."
+          "We manage the complete talent lifecycle, allowing your managers to focus on performance rather than administration."
         ],
         "bullets": [
-          "Sourcing tuned to your roles and culture",
+          "Sourcing aligned with your roles and culture",
           "Structured screening and interviews",
-          "Smooth onboarding from offer to day one",
+          "Seamless onboarding from offer to first day",
           "Ongoing HR administration and compliance"
-        ],
-        "image": "HR & Recruitment"
+        ]
       },
       {
         "heading": "What's Included",
         "items": [
           {
             "title": "Candidate sourcing",
-            "text": "Proactive sourcing across channels for your open roles."
+            "text": "Proactive sourcing across multiple channels for your open roles."
           },
           {
-            "title": "Screening & interviews",
-            "text": "Structured screening so you only meet qualified candidates."
+            "title": "Screening and interviews",
+            "text": "Structured screening ensures you meet only qualified candidates."
           },
           {
             "title": "Onboarding",
-            "text": "Offer, paperwork and first-week setup handled."
+            "text": "Offers, documentation and first-week setup, fully managed."
           },
           {
-            "title": "Payroll & benefits",
+            "title": "Payroll and benefits",
             "text": "Accurate payroll and benefits administration."
           },
           {
             "title": "HR administration",
-            "text": "Records, leave and day-to-day people ops."
+            "text": "Records, leave management and day-to-day people operations."
           },
           {
             "title": "Compliance",
-            "text": "Local labour-law compliance across markets."
+            "text": "Compliance with local labor laws across every market."
           }
-        ],
-        "eyebrow": "Capabilities"
+        ]
       },
       {
         "heading": "Our HR & Recruitment Process",
@@ -652,21 +635,21 @@ export const services = [
           {
             "n": "01",
             "title": "Role intake",
-            "text": "Define the role, must-haves and culture fit with your team."
+            "text": "We define the role, essential requirements and cultural fit with your team."
           },
           {
             "n": "02",
-            "title": "Sourcing & screening",
-            "text": "Build a shortlist of qualified, interested candidates."
+            "title": "Sourcing and screening",
+            "text": "We build a shortlist of qualified, interested candidates."
           },
           {
             "n": "03",
             "title": "Onboarding",
-            "text": "Smooth offer-to-start handover."
+            "text": "A smooth transition from accepted offer to start date."
           },
           {
             "n": "04",
-            "title": "People ops",
+            "title": "People operations",
             "text": "Ongoing HR administration and retention support."
           }
         ]
@@ -675,22 +658,21 @@ export const services = [
         "heading": "Key Benefits",
         "list": [
           "Faster hiring",
-          "Better fit",
-          "Lower admin load",
-          "Compliant"
-        ],
-        "eyebrow": "Why It Matters"
+          "Stronger candidate fit",
+          "Reduced administrative workload",
+          "Full regulatory compliance"
+        ]
       },
       {
         "heading": "Frequently Asked Questions",
         "faqs": [
           {
-            "q": "Do you handle international hiring?",
+            "q": "Do you support international hiring?",
             "a": "Yes, including local compliance and payroll across multiple markets."
           },
           {
-            "q": "Can you work with our ATS?",
-            "a": "We integrate with Greenhouse, Lever, Workable and others."
+            "q": "Can you work with our applicant tracking system?",
+            "a": "Yes. We integrate with Greenhouse, Lever, Workable and other leading platforms."
           }
         ]
       }
@@ -701,675 +683,642 @@ export const services = [
     "practice": "call-center-outsourcing",
     "kicker": "Access a skilled global workforce for personalized, strategic customer care",
     "title": "Virtual Call Center Solutions",
-    "intro": "Revolutionize your customer care by outsourcing a virtual contact center. We provide dedicated support targeted to your customer needs and business goals, leveraging industry-leading tools to enhance customer satisfaction.",
+    "intro": "A virtual contact center gives you dedicated support aligned to your customers and business objectives, delivered with industry-leading tools that raise customer satisfaction.",
     "short": "Virtual Call Center Solutions",
     "sections": [
       {
-        "heading": "Our virtual call center solutions",
+        "heading": "Our Virtual Call Center Solutions",
         "paras": [
-          "We provide dedicated support through virtual contact centers using industry-leading tools to enhance satisfaction and reduce internal team costs — backed by a skilled, distributed global workforce."
+          "We deliver dedicated support through virtual contact centers, combining industry-leading tools with a skilled, distributed global workforce to improve satisfaction and reduce internal costs."
         ],
         "bullets": [
           "Scalable, flexible virtual teams",
-          "Reduced overhead costs",
-          "Cloud-based operations ensuring uninterrupted service",
-          "Access to global agent pools",
-          "Enhanced customer insights through sophisticated tools"
-        ],
-        "image": "Virtual Call Center Solutions"
+          "Lower overhead costs",
+          "Cloud-based operations that ensure uninterrupted service",
+          "Access to global talent pools",
+          "Deeper customer insight through advanced tools"
+        ]
       },
       {
         "heading": "What's Included",
         "items": [
           {
             "title": "Improved customer satisfaction",
-            "text": "Efficient and flexible support swiftly scales to business needs, allowing faster handle times and more dedicated support."
+            "text": "Flexible support scales quickly with demand, shortening handle times and giving customers more dedicated attention."
           },
           {
             "title": "Increased agent productivity",
-            "text": "Remote work reduces overhead costs and boosts employee morale while ensuring optimal efficiency."
+            "text": "Remote delivery lowers overhead and strengthens agent engagement while maintaining high efficiency."
           },
           {
             "title": "Advanced analytics",
-            "text": "Gain insights into customer expectations and agent performance with real-time data monitoring and reporting."
+            "text": "Real-time monitoring and reporting reveal customer expectations and agent performance."
           },
           {
             "title": "Rapid deployment",
-            "text": "Quickly set up and customize these services to your branding as your business evolves."
+            "text": "Services are set up quickly and tailored to your brand, then adapted as your business evolves."
           }
-        ],
-        "eyebrow": "Capabilities"
+        ]
       },
       {
         "heading": "Key Benefits",
         "list": [
           "Scalable, flexible virtual teams",
-          "Reduced overhead costs",
-          "Cloud-based operations ensuring uninterrupted service",
-          "Access to global agent pools",
-          "Enhanced customer insights through sophisticated tools"
-        ],
-        "eyebrow": "Why It Matters"
+          "Lower overhead costs",
+          "Cloud-based operations that ensure uninterrupted service",
+          "Access to global talent pools",
+          "Deeper customer insight through advanced tools"
+        ]
       }
     ]
   },
   {
     "slug": "customer-experience-management",
     "practice": "call-center-outsourcing",
-    "kicker": "Improve CX & brand loyalty by utilizing expert tools to anticipate customer needs",
+    "kicker": "Strengthen customer experience and loyalty by anticipating customer needs",
     "title": "Customer Experience Management",
-    "intro": "Outsourcing your customer experience management solutions utilizes the skills and resources of professionals around the globe to reduce costs and improve customer engagement.",
+    "intro": "Outsourced customer experience management draws on experienced professionals worldwide to reduce costs and increase customer engagement.",
     "short": "Customer Experience Management",
     "sections": [
       {
-        "heading": "Why businesses choose CXM outsourcing",
+        "heading": "Why Businesses Choose CXM Outsourcing",
         "paras": [
-          "Outsourcing leverages global professional resources, letting you select from experienced nearshore and offshore agents while using expert telephony to track inbound calls and resolve customer issues quickly."
+          "Outsourcing gives you access to experienced nearshore and offshore specialists, supported by advanced telephony that tracks inbound contact and resolves customer issues quickly."
         ],
         "bullets": [
-          "Responsive business positioning",
+          "Greater market responsiveness",
           "Higher customer satisfaction",
           "Improved customer retention",
           "Stronger brand loyalty"
-        ],
-        "image": "Customer Experience Management"
+        ]
       },
       {
         "heading": "What's Included",
         "items": [
           {
             "title": "Omnichannel customer insights",
-            "text": "Capture vital insights via phone, chat, email, and social platforms with industry-leading software."
+            "text": "Industry-leading software captures key insights across phone, chat, email and social platforms."
           },
           {
-            "title": "Industry-leading tracking software",
-            "text": "Track customer issues, moods, and escalations to identify trends and provide actionable support around the clock."
+            "title": "Advanced tracking software",
+            "text": "Customer issues, sentiment and escalations are tracked to identify trends and act on them around the clock."
           },
           {
             "title": "24/7 support",
-            "text": "Staff strategically around the world to meet your customers when they need it."
+            "text": "Teams are positioned strategically worldwide to support your customers whenever they need it."
           },
           {
             "title": "Automation",
-            "text": "Automated responses reduce workloads and improve wait times and customer satisfaction."
+            "text": "Automated responses reduce workload, shorten wait times and improve satisfaction."
           },
           {
             "title": "AI speech analytics",
-            "text": "Predict customer behavior and reveal overlooked trends."
+            "text": "Speech analytics anticipate customer behavior and surface trends that might otherwise be missed."
           },
           {
-            "title": "Thorough agent training",
-            "text": "Equip agents with tools to optimize key touchpoints."
+            "title": "Comprehensive agent training",
+            "text": "Agents are equipped with the tools and knowledge to optimize every key touchpoint."
           },
           {
             "title": "Cultural alignment",
-            "text": "Hire agents that become extensions of your brand."
+            "text": "We recruit agents who represent your brand as a natural extension of your team."
           }
-        ],
-        "eyebrow": "Capabilities"
+        ]
       },
       {
         "heading": "Key Benefits",
         "list": [
-          "Responsive business positioning",
+          "Greater market responsiveness",
           "Higher customer satisfaction",
           "Improved customer retention",
           "Stronger brand loyalty"
-        ],
-        "eyebrow": "Why It Matters"
+        ]
       }
     ]
   },
   {
     "slug": "contact-center-as-a-service",
     "practice": "call-center-outsourcing",
-    "kicker": "Scalable & cloud-based customer support",
+    "kicker": "Scalable, cloud-based customer support",
     "title": "Contact Center as a Service (CCaaS)",
-    "intro": "CCaaS offers a subscription-based model to contact center solutions on the cloud, giving companies the benefits of outsourced customer support with added flexibility and cost-efficiency — no internal infrastructure required.",
+    "intro": "CCaaS delivers contact center operations on a subscription basis in the cloud, combining the benefits of outsourced support with greater flexibility and cost efficiency, and no internal infrastructure required.",
     "short": "Contact Center as a Service (CCaaS)",
     "sections": [
       {
-        "heading": "What is Contact Center as a Service?",
+        "heading": "What Is Contact Center as a Service?",
         "paras": [
-          "CCaaS is a type of contact center outsourcing that offers a subscription-based model to contact center solutions on the cloud. This gives companies the benefits of outsourced customer support but with added flexibility and cost-efficiency, plus easier integration with state-of-the-art tools and omnichannel customer communication — all without needing to invest in any internal infrastructure."
+          "CCaaS is a cloud-based, subscription model of contact center outsourcing. It offers the advantages of outsourced customer support with added flexibility and cost efficiency, along with straightforward integration of modern tools and omnichannel communication, all without investment in internal infrastructure."
         ],
         "bullets": [
           "Subscription-based, cloud-hosted contact center",
-          "No internal infrastructure investment required",
-          "Omnichannel integration across phone, chat, email and social",
+          "No investment in internal infrastructure",
+          "Omnichannel integration across phone, chat, email and social media",
           "Built-in workforce management and reporting"
-        ],
-        "image": "Contact Center as a Service (CCaaS)"
+        ]
       },
       {
         "heading": "What's Included",
         "items": [
           {
             "title": "24/7 omnichannel customer support",
-            "text": "Ensure customers receive round-the-clock service from multilingual agents around the world, with smooth transitions across phone, chat, email, and social media."
+            "text": "Multilingual agents provide round-the-clock service, with seamless transitions across phone, chat, email and social media."
           },
           {
             "title": "AI-powered automation",
-            "text": "Provide faster resolutions with smart automation — automated chatbots or virtual agents handle initial questions, then intelligent call-routing gets customers to the right human."
+            "text": "Chatbots and virtual agents handle initial questions, and intelligent routing connects customers to the right specialist for faster resolution."
           },
           {
             "title": "Workforce optimization",
-            "text": "Get built-in accountability and workforce insights — track agent performance and compliance while planning ahead for future customer demand."
+            "text": "Built-in accountability and workforce insights track agent performance and compliance while planning for future demand."
           },
           {
             "title": "Seamless CRM integration",
-            "text": "Wajhat Al Sawt makes cloud-based CCaaS a smoother experience, providing seamless integration with your CRM of choice, including Salesforce, HubSpot, Zendesk, and more."
+            "text": "Wajhat Al Sawt integrates CCaaS with your preferred CRM, including Salesforce, HubSpot and Zendesk."
           }
-        ],
-        "eyebrow": "Capabilities"
+        ]
       },
       {
         "heading": "Key Benefits",
         "list": [
           "Lower infrastructure costs",
           "Faster deployment",
-          "Built-in workforce accountability and insights",
+          "Built-in workforce accountability and insight",
           "Seamless CRM integration"
-        ],
-        "eyebrow": "Why It Matters"
+        ]
       }
     ]
   },
   {
     "slug": "contact-center-workforce-optimization",
     "practice": "call-center-outsourcing",
-    "kicker": "Leverage the strength of a contact center at peak performance",
+    "kicker": "Keep your contact center operating at peak performance",
     "title": "Contact Center Workforce Optimization",
-    "intro": "To ensure a contact center is running at maximum efficiency, we run workforce optimization (WFO) — bringing your team to peak performance through proper recruitment, onboarding, training, support, and motivation.",
+    "intro": "Workforce optimization (WFO) keeps your contact center operating at maximum efficiency, bringing your team to peak performance through effective recruitment, onboarding, training, support and motivation.",
     "short": "Contact Center Workforce Optimization",
     "sections": [
       {
-        "heading": "What is contact center workforce optimization?",
+        "heading": "What Is Contact Center Workforce Optimization?",
         "paras": [
-          "To ensure that a contact center is running at its maximum efficiency, it's important to conduct contact center workforce optimization (WFO), a process that seeks to bring a contact center's workforce to their peak performance. This is done through proper recruitment and onboarding, followed by the best training, support, and motivation."
+          "Contact center workforce optimization is a structured process that brings a contact center workforce to its highest level of performance. It begins with effective recruitment and onboarding, followed by continuous training, support and motivation."
         ],
         "bullets": [
-          "Reduce labor costs while boosting productivity and efficiency",
-          "Data-driven decision-making from real-time analytics",
-          "Automated scheduling eliminates unnecessary overtime",
-          "Improved scheduling fairness",
-          "Better service from a satisfied workforce"
-        ],
-        "image": "Contact Center Workforce Optimization"
+          "Lower labor costs with higher productivity",
+          "Decisions informed by real-time analytics",
+          "Automated scheduling that eliminates unnecessary overtime",
+          "Fairer, more balanced scheduling",
+          "Better service from a more engaged workforce"
+        ]
       },
       {
         "heading": "What's Included",
         "items": [
           {
             "title": "Automated agent scheduling",
-            "text": "We ensure optimal staffing levels for your team by using AI-driven agent scheduling tools."
+            "text": "AI-driven scheduling tools maintain optimal staffing levels across your operation."
           },
           {
-            "title": "Workforce analytics & forecasting",
-            "text": "By analyzing historical customer demand and call volumes, we predict seasonal demand spikes."
+            "title": "Workforce analytics and forecasting",
+            "text": "Analysis of historical demand and call volumes anticipates seasonal peaks."
           },
           {
             "title": "Real-time performance monitoring",
-            "text": "Make more informed decisions by leveraging agent performance data gathered in real time."
+            "text": "Agent performance data gathered in real time supports better-informed decisions."
           },
           {
-            "title": "Employee engagement & retention",
-            "text": "We take great care to reduce employee attrition and improve the satisfaction of the workforce."
+            "title": "Employee engagement and retention",
+            "text": "Targeted programs reduce attrition and improve workforce satisfaction."
           }
-        ],
-        "eyebrow": "Capabilities"
+        ]
       },
       {
         "heading": "Key Benefits",
         "list": [
-          "Reduce labor costs while boosting productivity and efficiency",
-          "Data-driven decision-making from real-time analytics",
-          "Automated scheduling eliminates unnecessary overtime",
-          "Improved scheduling fairness",
-          "Better service from a satisfied workforce"
-        ],
-        "eyebrow": "Why It Matters"
+          "Lower labor costs with higher productivity",
+          "Decisions informed by real-time analytics",
+          "Automated scheduling that eliminates unnecessary overtime",
+          "Fairer, more balanced scheduling",
+          "Better service from a more engaged workforce"
+        ]
       }
     ]
   },
   {
     "slug": "onshore-call-center-services",
     "practice": "call-center-outsourcing",
-    "kicker": "US-based customer support solutions",
+    "kicker": "Customer support delivered from within your own market",
     "title": "Onshore Call Center Services",
-    "intro": "Onshore call center services keep your customer support operations in the same country as your business — cultural alignment, ease of communication, and smoother collaboration.",
+    "intro": "Onshore call center services keep your customer support operations in the same country as your business, ensuring cultural alignment, clear communication and smooth collaboration.",
     "short": "Onshore Call Center Services",
     "sections": [
       {
-        "heading": "What are onshore call center services?",
+        "heading": "What Are Onshore Call Center Services?",
         "paras": [
-          "Onshore call center services are a particular model of outsourced call centers where the customer support operations are conducted in the same country as the organization that hired them. Onshore call centers offer cultural alignment, ease of communication, and smoother collaboration compared to offshore alternatives."
+          "Onshore call center services are an outsourcing model in which customer support is delivered from the same country as the client organization. Compared with offshore alternatives, they offer closer cultural alignment, easier communication and smoother collaboration."
         ],
         "bullets": [
-          "Enhanced communication improving customer experience",
-          "Time zone alignment enabling streamlined operations",
-          "Simpler compliance management, adhering to local laws"
-        ],
-        "image": "Onshore Call Center Services"
+          "Clearer communication that improves the customer experience",
+          "Shared time zones that streamline operations",
+          "Simpler compliance with local regulations"
+        ]
       },
       {
         "heading": "What's Included",
         "items": [
           {
             "title": "Inbound call center services",
-            "text": "Manage your inbound customer calls, providing professional, empathetic support."
+            "text": "Professional, empathetic handling of your inbound customer calls."
           },
           {
             "title": "Help desk support",
-            "text": "Troubleshooting and ticketing for simpler inquiries."
+            "text": "Troubleshooting and ticket management for routine inquiries."
           },
           {
             "title": "Technical support outsourcing",
-            "text": "Advanced technical support services from a dedicated team."
+            "text": "Advanced technical support from a dedicated team."
           },
           {
             "title": "Customer service training programs",
-            "text": "Comprehensive training programs, designed specifically around your business needs."
+            "text": "Comprehensive training programs designed around your business requirements."
           }
-        ],
-        "eyebrow": "Capabilities"
+        ]
       },
       {
         "heading": "Key Benefits",
         "list": [
-          "Enhanced communication improving customer experience",
-          "Time zone alignment enabling streamlined operations",
-          "Simpler compliance management, adhering to local laws"
-        ],
-        "eyebrow": "Why It Matters"
+          "Clearer communication that improves the customer experience",
+          "Shared time zones that streamline operations",
+          "Simpler compliance with local regulations"
+        ]
       }
     ]
   },
   {
     "slug": "nearshore-call-center-services",
     "practice": "call-center-outsourcing",
-    "kicker": "Cost-effective customer support solutions",
+    "kicker": "Cost-effective customer support from a neighboring market",
     "title": "Nearshore Call Center Services",
-    "intro": "Nearshore call center teams sit in a nearby country with a similar time zone — the affordability of offshoring with the cultural alignment and collaboration ease of onshore outsourcing.",
+    "intro": "Nearshore call center teams operate from a nearby country in a similar time zone, combining the cost advantages of offshoring with the cultural alignment and ease of collaboration of onshore delivery.",
     "short": "Nearshore Call Center Services",
     "sections": [
       {
-        "heading": "What are nearshore call center services?",
+        "heading": "What Are Nearshore Call Center Services?",
         "paras": [
-          "Nearshore call center services are a model of call center outsourcing similar to offshoring, but where the call center teams are located in a nearby country with a similar time zone to the client. This arrangement allows companies to leverage some of the affordability of offshoring, but with the cultural similarity and ease of collaboration of onshore outsourcing."
+          "Nearshore call center services are an outsourcing model in which support teams operate from a neighboring country in a similar time zone. The approach offers much of the cost efficiency of offshoring, together with the cultural familiarity and ease of collaboration of onshore outsourcing."
         ],
         "bullets": [
-          "Real-time support from a nearby time zone",
-          "Cultural and language alignment",
-          "Cost savings vs. onshore",
-          "Improved quality control feasibility",
+          "Real-time support from a neighboring time zone",
+          "Close cultural and language alignment",
+          "Cost savings compared with onshore delivery",
+          "Easier quality oversight",
           "Better customer interactions and faster resolutions"
-        ],
-        "image": "Nearshore Call Center Services"
+        ]
       },
       {
         "heading": "What's Included",
         "items": [
           {
             "title": "Onshore call center services",
-            "text": "U.S.-based support teams offering native language support from a knowledgeable and culturally aligned team."
+            "text": "In-country support teams providing native-language service with strong cultural alignment."
           },
           {
             "title": "Offshore call center services",
-            "text": "A worldwide talent pool to reduce customer service costs while still providing 24/7 support."
+            "text": "A global talent pool that reduces customer service costs while maintaining 24/7 support."
           },
           {
             "title": "Multilingual support services",
-            "text": "Customers should feel heard and understood, no matter which language they're speaking."
+            "text": "Customers are understood and supported in the language they prefer."
           },
           {
             "title": "Technical support outsourcing",
-            "text": "Support teams that troubleshoot basic and advanced technical issues."
+            "text": "Support teams that resolve both basic and advanced technical issues."
           }
-        ],
-        "eyebrow": "Capabilities"
+        ]
       },
       {
         "heading": "Key Benefits",
         "list": [
-          "Real-time support from a nearby time zone",
-          "Cultural and language alignment",
-          "Cost savings vs. onshore",
-          "Improved quality control feasibility",
+          "Real-time support from a neighboring time zone",
+          "Close cultural and language alignment",
+          "Cost savings compared with onshore delivery",
+          "Easier quality oversight",
           "Better customer interactions and faster resolutions"
-        ],
-        "eyebrow": "Why It Matters"
+        ]
       }
     ]
   },
   {
     "slug": "smartshore-call-center-services",
     "practice": "call-center-outsourcing",
-    "kicker": "Flexible CX across onshore, nearshore, and offshore",
+    "kicker": "Flexible customer experience delivery across onshore, nearshore and offshore teams",
     "title": "Smartshore Call Center Services",
-    "intro": "Smartshore call center services blend onshore, nearshore, and offshore teams to handle different types of work — flexible coverage that doesn't rely on a single location.",
+    "intro": "Smartshore call center services combine onshore, nearshore and offshore teams, each handling the work it is best suited to, for flexible coverage that does not depend on a single location.",
     "short": "Smartshore Call Center Services",
     "sections": [
       {
-        "heading": "What are Smartshore Call Center Services?",
+        "heading": "What Are Smartshore Call Center Services?",
         "paras": [
-          "Smartshore call center services are a customer support strategy that uses a mix of onshore, nearshore, and offshore teams to handle different types of work. Companies that use smartshoring do not have to rely on a single location."
+          "Smartshoring is a customer support strategy that assigns different types of work to onshore, nearshore and offshore teams. Organizations that adopt it are no longer dependent on a single location."
         ],
         "bullets": [
-          "Expands reach across time zones and languages",
-          "Reduces risk while maintaining business continuity",
-          "Improves customer satisfaction",
-          "Provides a competitive edge",
-          "Flexible framework that adapts as demand changes"
-        ],
-        "image": "Smartshore Call Center Services"
+          "Broader coverage across time zones and languages",
+          "Reduced risk and stronger business continuity",
+          "Higher customer satisfaction",
+          "A clear competitive advantage",
+          "A flexible model that adapts as demand changes"
+        ]
       },
       {
         "heading": "What's Included",
         "items": [
           {
             "title": "Inbound call center services",
-            "text": "Handle customer interactions across multiple channels — routine inquiries, account updates, order questions."
+            "text": "Customer interactions across multiple channels, including routine inquiries, account updates and order questions."
           },
           {
             "title": "Technical support",
-            "text": "Troubleshooting through to problem resolution — support that helps customers resolve issues quickly."
+            "text": "End-to-end troubleshooting that helps customers resolve issues quickly."
           },
           {
             "title": "Help desk support services",
-            "text": "Quickly solving any issues that arise, from password resets to account updates."
+            "text": "Prompt resolution of everyday issues, from password resets to account changes."
           },
           {
             "title": "Customer service support",
-            "text": "Agents trained on product knowledge, brand standards, and best practices."
+            "text": "Agents trained in your products, brand standards and best practices."
           },
           {
             "title": "Multilingual support services",
-            "text": "Match agents to customers based on language preference."
+            "text": "Agents are matched to customers according to their language preference."
           },
           {
             "title": "Overflow support",
-            "text": "Dedicated agents take over during peak periods to avoid backlogs."
+            "text": "Dedicated agents absorb peak volumes to prevent backlogs."
           }
-        ],
-        "eyebrow": "Capabilities"
+        ]
       },
       {
         "heading": "Key Benefits",
         "list": [
-          "Expands reach across time zones and languages",
-          "Reduces risk while maintaining business continuity",
-          "Improves customer satisfaction",
-          "Provides a competitive edge",
-          "Flexible framework that adapts as demand changes"
-        ],
-        "eyebrow": "Why It Matters"
+          "Broader coverage across time zones and languages",
+          "Reduced risk and stronger business continuity",
+          "Higher customer satisfaction",
+          "A clear competitive advantage",
+          "A flexible model that adapts as demand changes"
+        ]
       }
     ]
   },
   {
     "slug": "offshore-call-center-services",
     "practice": "call-center-outsourcing",
-    "kicker": "Scale with cost-effective offshore call center services, 24/7 support, and seamless CX",
+    "kicker": "Scale efficiently with offshore support, 24/7 coverage and a seamless customer experience",
     "title": "Offshore Call Center Services",
-    "intro": "Offshore outsourcing is a business relationship where an organization contracts a business in another country to carry out an essential function of their operations, such as customer service — unlocking affordability, efficiency, and around-the-clock coverage.",
+    "intro": "Offshore outsourcing engages a partner in another country to deliver an essential business function, such as customer service, providing cost efficiency, operational efficiency and around-the-clock coverage.",
     "short": "Offshore Call Center Services",
     "sections": [
       {
-        "heading": "What is offshore outsourcing?",
+        "heading": "What Is Offshore Outsourcing?",
         "paras": [
-          "Offshore outsourcing is a business relationship where an organization contracts a business in another country to carry out an essential function of their operations, such as customer service."
+          "Offshore outsourcing is a business arrangement in which an organization engages a partner in another country to perform an essential function of its operations, such as customer service."
         ],
         "bullets": [
-          "Affordability",
-          "Efficiency",
+          "Cost efficiency",
+          "Operational efficiency",
           "Around-the-clock service",
-          "Worldwide talent pools"
-        ],
-        "image": "Offshore Call Center Services"
+          "Access to global talent"
+        ]
       },
       {
         "heading": "What's Included",
         "items": [
           {
             "title": "24/7 customer support",
-            "text": "We thoroughly train our staff so they understand the nuances of your business and can help your customers over email, phone, or chat."
+            "text": "Thoroughly trained agents understand your business and support your customers by email, phone and chat."
           },
           {
             "title": "Appointment scheduling",
-            "text": "We supplement human care with data-driven automations so you'll have all the information you need for your next appointment."
+            "text": "Data-driven automation supports our agents, so every appointment is prepared with complete information."
           },
           {
             "title": "Order processing",
-            "text": "Agents can assist customers in tracking the status of existing orders, making changes, cancelling orders, or initiating new ones."
+            "text": "Agents help customers track, amend, cancel or place orders."
           },
           {
             "title": "Surveys",
-            "text": "We send emails or make phone calls to gather valuable feedback on behalf of your business."
+            "text": "We gather valuable customer feedback on your behalf by email and phone."
           },
           {
             "title": "Lead qualification",
-            "text": "Using a data-driven approach, our team nurtures and delivers quality leads that convert into paying customers."
+            "text": "A data-driven approach nurtures and delivers qualified leads that convert into customers."
           },
           {
-            "title": "B2C & B2B telemarketing",
-            "text": "We're well-equipped both to take and make calls on behalf of your company, with experienced specialists designing effective plans."
+            "title": "B2C and B2B telemarketing",
+            "text": "Experienced specialists design and run effective inbound and outbound calling programs on your behalf."
           }
-        ],
-        "eyebrow": "Capabilities"
+        ]
       },
       {
         "heading": "Key Benefits",
         "list": [
           "Wider profit margins",
           "More consistent staffing",
-          "Access to skilled agents globally",
-          "Lower cost-per-agent",
+          "Access to skilled agents worldwide",
+          "Lower cost per agent",
           "Reduced attrition",
-          "Minimal overhead expenses",
-          "Ability to reinvest savings"
-        ],
-        "eyebrow": "Why It Matters"
+          "Minimal overhead",
+          "Savings available for reinvestment"
+        ]
       }
     ]
   },
   {
     "slug": "back-office-support",
     "practice": "bpo-business-support",
-    "kicker": "Improve your efficiency by outsourcing behind-the-scenes tasks",
+    "kicker": "Improve efficiency by outsourcing essential administrative work",
     "title": "Back Office Support Services",
-    "intro": "Back office support services are the essential administrative functions that take place behind the scenes — from data entry and document management to HR, payroll, and beyond — so your team can stay focused on core work.",
+    "intro": "Back office support covers the administrative functions that run behind the scenes, from data entry and document management to HR and payroll, so your team can stay focused on core priorities.",
     "short": "Back Office Support Services",
     "sections": [
       {
-        "heading": "What are back office support services?",
+        "heading": "What Are Back Office Support Services?",
         "paras": [
-          "Back-office functions run the gamut from data entry and document management to HR, payroll, and beyond. Outsourcing them streamlines administrative processes and boosts efficiency."
+          "Back office functions range from data entry and document management to HR, payroll and beyond. Outsourcing them streamlines administrative processes and improves overall efficiency."
         ],
         "bullets": [
-          "Focus more on the core functions of your business",
-          "Provide a higher quality customer experience",
-          "Greater efficiency in your core tasks",
-          "Higher accuracy and stricter compliance"
-        ],
-        "image": "Back Office Support Services"
+          "Greater focus on your core business functions",
+          "A higher-quality customer experience",
+          "Greater efficiency in core tasks",
+          "Higher accuracy and stronger compliance"
+        ]
       },
       {
         "heading": "What's Included",
         "items": [
           {
             "title": "Data entry and processing",
-            "text": "A skilled data entry team efficiently and accurately processes and manages your company's data."
+            "text": "A skilled team processes and manages your company data accurately and efficiently."
           },
           {
-            "title": "Document management and digitalization",
-            "text": "Document storage and digitization made more secure, easier to use, and more compliant."
+            "title": "Document management and digitization",
+            "text": "Secure, accessible and compliant document storage and digitization."
           },
           {
             "title": "HR and payroll administration",
-            "text": "Recruitment support for smoother onboarding, plus streamlined payroll and benefits administration."
+            "text": "Recruitment support for smoother onboarding, together with streamlined payroll and benefits administration."
           },
           {
             "title": "Accounting and financial processing",
-            "text": "Financial processes, from invoicing to billing and reconciliation, promptly and accurately managed."
+            "text": "Prompt, accurate management of financial processes, from invoicing and billing to reconciliation."
           },
           {
             "title": "Customer record maintenance",
-            "text": "Secure handling of customer data with maintenance and support for your customer records system."
+            "text": "Secure handling of customer data, with ongoing maintenance of your customer records system."
           },
           {
             "title": "Administrative support",
-            "text": "Broad administrative services to manage scheduling, email handling, and other essential tasks."
+            "text": "Comprehensive administrative services, including scheduling, email management and other essential tasks."
           }
-        ],
-        "eyebrow": "Capabilities"
+        ]
       },
       {
         "heading": "Key Benefits",
         "list": [
-          "Focus more on the core functions of your business",
-          "Provide a higher quality customer experience",
-          "Greater efficiency in your core tasks",
-          "Higher accuracy and stricter compliance"
-        ],
-        "eyebrow": "Why It Matters"
+          "Greater focus on your core business functions",
+          "A higher-quality customer experience",
+          "Greater efficiency in core tasks",
+          "Higher accuracy and stronger compliance"
+        ]
       }
     ]
   },
   {
     "slug": "revenue-cycle-management",
     "practice": "bpo-business-support",
-    "kicker": "Maximizing healthcare revenue through streamlined patient services",
+    "kicker": "Maximize healthcare revenue through streamlined patient services",
     "title": "Revenue Cycle Management Outsourcing",
-    "intro": "From the beginning of the process, managing new patient information, all the way to submitting claims and collecting payment, our RCM specialists cover your revenue cycle every step of the way.",
+    "intro": "Our revenue cycle management specialists support every stage of your revenue cycle, from capturing new patient information to submitting claims and collecting payment.",
     "short": "Revenue Cycle Management Outsourcing",
     "sections": [
       {
-        "heading": "Why outsource revenue cycle management?",
+        "heading": "Why Outsource Revenue Cycle Management?",
         "paras": [
-          "Healthcare providers can vastly simplify their whole financial process through revenue cycle management outsourcing, with industry-savvy experts covering the revenue cycle every step of the way."
+          "Outsourcing revenue cycle management significantly simplifies the financial process for healthcare providers, with experienced specialists managing every stage of the cycle."
         ],
         "bullets": [
-          "Reducing overhead costs",
+          "Lower overhead costs",
           "Faster reimbursement",
           "Improved cash flow",
           "Streamlined operations",
-          "Time freed for patient care focus"
-        ],
-        "image": "Revenue Cycle Management Outsourcing"
+          "More time to focus on patient care"
+        ]
       },
       {
         "heading": "What's Included",
         "items": [
           {
-            "title": "Patient access to healthcare",
-            "text": "An excellent patient experience from the start, guiding patients through scheduling, registration, and insurance verification."
+            "title": "Patient access",
+            "text": "A positive patient experience from the outset, with guidance through scheduling, registration and insurance verification."
           },
           {
             "title": "Patient accounting",
-            "text": "Outsourced patient accounting handling medical coding and billing, charge capture, claims processing, and more."
+            "text": "Medical coding and billing, charge capture, claims processing and related accounting functions."
           },
           {
-            "title": "Health insurance management system",
-            "text": "Top-of-the-line HIMS software leading claims submission and management, benefits and payer communication, and denial appeals."
+            "title": "Health insurance management systems",
+            "text": "Leading HIMS software that manages claims submission, benefits and payer communication, and denial appeals."
           },
           {
             "title": "Insurance revenue management and billing",
-            "text": "Closing out outstanding receivables, locating lost revenue, maximizing reimbursements, and expediting patient billing."
+            "text": "Resolving outstanding receivables, recovering lost revenue, maximizing reimbursement and accelerating patient billing."
           }
-        ],
-        "eyebrow": "Capabilities"
+        ]
       },
       {
         "heading": "Key Benefits",
         "list": [
-          "Reducing overhead costs",
+          "Lower overhead costs",
           "Faster reimbursement",
           "Improved cash flow",
           "Streamlined operations",
-          "Time freed for patient care focus"
-        ],
-        "eyebrow": "Why It Matters"
+          "More time to focus on patient care"
+        ]
       }
     ]
   },
   {
     "slug": "workforce-management",
     "practice": "bpo-business-support",
-    "kicker": "Streamline operations with efficient processes and modern technology",
+    "kicker": "Streamline operations through efficient processes and modern technology",
     "title": "Workforce Management Solutions",
-    "intro": "Allocate resources, forecast workloads, and maximize the productivity of employees and operations — using historical and live data to accommodate peak seasons or business goals.",
+    "intro": "Allocate resources, forecast workloads and maximize productivity, using historical and live data to plan for peak seasons and business objectives.",
     "short": "Workforce Management Solutions",
     "sections": [
       {
-        "heading": "What is workforce management (WFM)?",
+        "heading": "What Is Workforce Management (WFM)?",
         "paras": [
-          "Workforce management is the set of processes businesses use to allocate resources, forecast workloads, and maximize the productivity of employees and business operations. Proper WFM requires anticipating demand and fine-tuning staffing levels using historical and live data."
+          "Workforce management is the set of processes organizations use to allocate resources, forecast workloads and maximize the productivity of employees and operations. Effective WFM anticipates demand and fine-tunes staffing levels using historical and live data."
         ],
         "bullets": [
           "Allocate resources effectively",
           "Forecast workloads accurately",
           "Maximize employee productivity",
           "Anticipate business demand",
-          "Use historical and live data"
-        ],
-        "image": "Workforce Management Solutions"
+          "Apply historical and live data"
+        ]
       },
       {
         "heading": "What's Included",
         "items": [
           {
             "title": "Workforce optimization",
-            "text": "A more efficient and engaged contact center workforce, consistently improving through performance tracking and actionable data."
+            "text": "A more efficient and engaged contact center workforce, continuously improved through performance tracking and actionable data."
           },
           {
             "title": "Real-time analytics",
-            "text": "AI-powered performance analytics gathered in real time, enhancing the customer experience by understanding agent performance."
+            "text": "AI-powered performance analytics, gathered in real time, that improve the customer experience through a clear view of agent performance."
           },
           {
-            "title": "Forecasting & demand planning",
-            "text": "Extrapolate insights from historical data to predict future staffing needs and plan for peak demand."
+            "title": "Forecasting and demand planning",
+            "text": "Insights drawn from historical data predict future staffing needs and prepare for peak demand."
           },
           {
             "title": "Regulatory compliance",
-            "text": "Speech analytics and natural language processing (NLP) ensure customer communications stay compliant with industry regulations."
+            "text": "Speech analytics and natural language processing keep customer communications compliant with industry regulations."
           }
-        ],
-        "eyebrow": "Capabilities"
+        ]
       },
       {
         "heading": "Key Benefits",
         "list": [
-          "Improve processes while reducing manual labor management costs",
-          "Source offshore or nearshore teams via industry connections",
-          "Customize tasks with data-driven automations",
-          "Scalable hiring optimizes workloads and work-life balance",
-          "Reduce attrition and improve loyalty"
-        ],
-        "eyebrow": "Why It Matters"
+          "Improved processes with lower workforce management costs",
+          "Access to offshore and nearshore teams through our network",
+          "Tasks tailored through data-driven automation",
+          "Scalable hiring that balances workloads and wellbeing",
+          "Lower attrition and stronger loyalty"
+        ]
       },
       {
         "heading": "Frequently Asked Questions",
         "faqs": [
           {
             "q": "What is workforce management (WFM)?",
-            "a": "The process of optimizing staff scheduling, tracking performance, and ensuring compliance to enhance operational efficiency."
+            "a": "Workforce management is the process of optimizing staff scheduling, tracking performance and ensuring compliance to improve operational efficiency."
           },
           {
             "q": "How does workforce management reduce costs?",
-            "a": "WFM solutions prevent overstaffing and understaffing, reduce overtime costs, and improve resource allocation."
+            "a": "WFM prevents overstaffing and understaffing, reduces overtime costs and improves resource allocation."
           },
           {
             "q": "Can workforce management integrate with existing systems?",
-            "a": "Yes — our WFM solutions seamlessly integrate with CRM, payroll, and contact center platforms."
+            "a": "Yes. Our WFM solutions integrate with CRM, payroll and contact center platforms."
           },
           {
-            "q": "What industries benefit from workforce management?",
-            "a": "WFM is essential for call centers, retail, healthcare, finance, and logistics industries."
+            "q": "Which industries benefit from workforce management?",
+            "a": "WFM is essential for contact centers, retail, healthcare, finance and logistics."
           },
           {
             "q": "Does workforce management improve employee engagement?",
-            "a": "Yes — balanced scheduling, clear workload distribution, and real-time feedback improve employee satisfaction and performance."
+            "a": "Yes. Balanced scheduling, clear workload distribution and real-time feedback improve employee satisfaction and performance."
           }
         ]
       }
@@ -1378,126 +1327,120 @@ export const services = [
   {
     "slug": "management-business-support",
     "practice": "bpo-business-support",
-    "kicker": "Smooth operations that don't compromise on quality",
+    "kicker": "Efficient operations without compromising quality",
     "title": "Management & Business Support Services",
-    "intro": "We help streamline your operations and decrease your overhead — boosting efficiency, but not at the expense of quality — so your team stays focused on their core duties.",
+    "intro": "We help streamline your operations and reduce overhead, improving efficiency without compromising quality, so your team can focus on its core responsibilities.",
     "short": "Management & Business Support Services",
     "sections": [
       {
-        "heading": "Our management and business support solutions",
+        "heading": "Our Management and Business Support Solutions",
         "paras": [
-          "Flexible and comprehensive management and business support services give your team the advantage of staying focused on their core duties. Whether it's process automation, customer communications, or anything in between, we help streamline your operations and decrease your overhead."
+          "Flexible, comprehensive management and business support services allow your team to stay focused on its core responsibilities. From process automation to customer communications, we help streamline your operations and reduce overhead."
         ],
         "bullets": [
-          "More optimized performance, reduced costs, and higher customer satisfaction",
-          "Flexible and scalable support adapts to your team's precise needs",
-          "Dedicated team with the right skills and the right tools",
+          "Optimized performance, lower costs and higher customer satisfaction",
+          "Flexible, scalable support tailored to your team's needs",
+          "A dedicated team with the right skills and tools",
           "Measurable results and business growth"
-        ],
-        "image": "Management & Business Support Services"
+        ]
       },
       {
         "heading": "What's Included",
         "items": [
           {
-            "title": "Process optimization & workflow automation",
-            "text": "Streamline your workflow with helpful automation, freeing your team's time to focus on value-producing work."
+            "title": "Process optimization and workflow automation",
+            "text": "Automation streamlines your workflows and frees your team to focus on value-generating work."
           },
           {
             "title": "Customer communication management",
-            "text": "Manage inbound and outbound customer communications for quicker, more thorough answers from trained professionals."
+            "text": "Trained professionals manage inbound and outbound customer communications for faster, more complete responses."
           },
           {
             "title": "Back office support services",
-            "text": "Streamline administrative tasks — document management, data entry, accounting, and billing."
+            "text": "Streamlined administrative tasks, including document management, data entry, accounting and billing."
           },
           {
-            "title": "Reporting & performance analytics",
-            "text": "The key metrics and indicators you need to make more informed decisions, with valuable insights on your most important KPIs."
+            "title": "Reporting and performance analytics",
+            "text": "The metrics and insight you need to make informed decisions on your most important KPIs."
           }
-        ],
-        "eyebrow": "Capabilities"
+        ]
       },
       {
         "heading": "Key Benefits",
         "list": [
-          "More optimized performance, reduced costs, and higher customer satisfaction",
-          "Flexible and scalable support adapts to your team's precise needs",
-          "Dedicated team with the right skills and the right tools",
+          "Optimized performance, lower costs and higher customer satisfaction",
+          "Flexible, scalable support tailored to your team's needs",
+          "A dedicated team with the right skills and tools",
           "Measurable results and business growth"
-        ],
-        "eyebrow": "Why It Matters"
+        ]
       }
     ]
   },
   {
     "slug": "enterprise-contact-center",
     "practice": "bpo-business-support",
-    "kicker": "Scalable enterprise contact center solutions with omnichannel support and advanced security, built for global CX operations",
+    "kicker": "Scalable enterprise contact center solutions with omnichannel support and advanced security for global customer experience operations",
     "title": "Enterprise Contact Center Solutions",
-    "intro": "Great customer service starts with modern tools and a caring team. Our enterprise call center solutions support high-volume operations with secure integrations, scalable cloud infrastructure, and enterprise-grade automation.",
+    "intro": "Exceptional customer service is built on modern tools and a dedicated team. Our enterprise contact center solutions support high-volume operations with secure integrations, scalable cloud infrastructure and enterprise-grade automation.",
     "short": "Enterprise Contact Center Solutions",
     "sections": [
       {
-        "heading": "Enterprise call centers have many complex needs",
+        "heading": "Meeting the Complex Needs of Enterprise Contact Centers",
         "paras": [
-          "Enterprises face challenges managing effective contact centers — compliance in regulated industries, managing multi-channel CX strategies, and strict SLA adherence. It requires scalability, advanced technology, and enterprise reporting and analytics."
+          "Enterprises face distinct challenges in running effective contact centers, including compliance in regulated industries, multichannel customer experience strategies and strict SLA adherence. Success requires scalability, advanced technology and enterprise-grade reporting and analytics."
         ],
         "bullets": [
-          "Increasing customer demands",
+          "Rising customer expectations",
           "Consistent service quality",
-          "Controlling costs",
+          "Cost control",
           "Agent availability"
-        ],
-        "image": "Enterprise Contact Center Solutions"
+        ]
       },
       {
         "heading": "What's Included",
         "items": [
           {
             "title": "24/7 service",
-            "text": "Retain your hard-earned customers with 24/7 access to support services."
+            "text": "Retain valuable customers with round-the-clock access to support."
           },
           {
             "title": "Communication without borders",
-            "text": "Support across 17 languages for global customers."
+            "text": "Support in 17 languages for customers worldwide."
           },
           {
-            "title": "Solid data security",
-            "text": "HIPAA-, SOC 2-, and PCI-compliant with encryption, password protection, and secure storage."
+            "title": "Robust data security",
+            "text": "HIPAA, SOC 2 and PCI compliant, with encryption, password protection and secure storage."
           },
           {
-            "title": "Latest technology & integrations",
-            "text": "A unified platform and user-friendly technologies that readily integrate with your existing business infrastructure."
+            "title": "Modern technology and integrations",
+            "text": "A unified, user-friendly platform that integrates readily with your existing infrastructure."
           },
           {
             "title": "Omnichannel support",
-            "text": "Email, web, mobile, and phone channels integrated seamlessly."
+            "text": "Email, web, mobile and phone channels, seamlessly integrated."
           }
-        ],
-        "eyebrow": "Capabilities"
+        ]
       },
       {
         "heading": "Key Benefits",
         "list": [
           "24/7 customer access to support",
-          "Communication across 17 languages",
-          "HIPAA, SOC 2, and PCI compliant security",
+          "Communication in 17 languages",
+          "HIPAA, SOC 2 and PCI compliant security",
           "Seamless integration with existing infrastructure",
           "Fully integrated omnichannel support"
-        ],
-        "eyebrow": "Why It Matters"
+        ]
       },
       {
         "heading": "Frequently Asked Questions",
         "faqs": [
           {
             "q": "What is an enterprise contact center?",
-            "a": "A central hub that enables large operations to efficiently manage customer needs across channels, incorporating advanced technologies for operational efficiency, data management, and service quality."
+            "a": "An enterprise contact center is a central hub that allows large organizations to manage customer needs efficiently across channels, using advanced technology to support operational efficiency, data management and service quality."
           },
           {
-            "q": "Why do you need enterprise contact center services?",
-            "a": "They address customer volume growth, improve response times, increase retention, and let companies focus resources on expansion rather than building internal infrastructure."
+            "q": "Why do organizations need enterprise contact center services?",
+            "a": "They accommodate growing customer volumes, improve response times and increase retention, allowing organizations to invest in growth rather than internal infrastructure."
           }
         ]
       }
@@ -1506,166 +1449,158 @@ export const services = [
   {
     "slug": "small-business-contact-center",
     "practice": "bpo-business-support",
-    "kicker": "Rapidly scale operations with comprehensive solutions tailored to your needs",
+    "kicker": "Scale quickly with comprehensive solutions tailored to your needs",
     "title": "Call Center Services for Small Businesses",
-    "intro": "Access solutions that adapt to your needs and power business growth while developing engaging relationships with customers — with attentive 24/7 support.",
+    "intro": "Flexible solutions that adapt to your needs, support business growth and build strong customer relationships, backed by attentive 24/7 support.",
     "short": "Call Center Services for Small Businesses",
     "sections": [
       {
-        "heading": "Our small business call center solutions",
+        "heading": "Our Small Business Call Center Solutions",
         "paras": [
-          "Outsourcing your customer care ensures excellent results and attentive 24/7 support, with access to industry-leading technology, streamlined processes, and improved customer satisfaction and brand loyalty."
+          "Outsourcing your customer care delivers consistent results and attentive 24/7 support, with access to industry-leading technology, streamlined processes, and stronger customer satisfaction and brand loyalty."
         ],
         "bullets": [
-          "Reduces need for significant in-house staff investment",
-          "Provides industry-specific expertise",
-          "Delivers consistent high-quality interactions",
-          "Strengthens brand image and builds trust"
-        ],
-        "image": "Call Center Services for Small Businesses"
+          "Reduced need for significant in-house staffing investment",
+          "Industry-specific expertise",
+          "Consistently high-quality interactions",
+          "A stronger brand reputation built on trust"
+        ]
       },
       {
         "heading": "What's Included",
         "items": [
           {
-            "title": "After-hours and overflow",
-            "text": "Don't worry about missing calls, emails, chats, or social media requests outside of business hours."
+            "title": "After-hours and overflow support",
+            "text": "Calls, emails, chats and social media messages are answered outside business hours."
           },
           {
             "title": "Order taking and billing",
-            "text": "Skilled representatives help grow revenue by efficiently taking orders and securely handling payment information."
+            "text": "Skilled representatives grow revenue by processing orders efficiently and handling payment information securely."
           },
           {
             "title": "Inbound and outbound support",
-            "text": "Efficiently manage your queues with expert contact center operations."
+            "text": "Expert contact center operations manage your queues efficiently."
           },
           {
             "title": "Customer acquisition and retention",
-            "text": "Strategies targeted to match your specific business goals."
+            "text": "Strategies designed around your specific business goals."
           }
-        ],
-        "eyebrow": "Capabilities"
+        ]
       },
       {
         "heading": "Key Benefits",
         "list": [
-          "Reduces need for significant in-house staff investment",
-          "Provides industry-specific expertise",
-          "Delivers consistent high-quality interactions",
-          "Enhances customer satisfaction",
-          "Strengthens brand image and builds trust",
-          "Increases sales opportunities through meaningful engagement"
-        ],
-        "eyebrow": "Why It Matters"
+          "Reduced need for significant in-house staffing investment",
+          "Industry-specific expertise",
+          "Consistently high-quality interactions",
+          "Higher customer satisfaction",
+          "A stronger brand reputation built on trust",
+          "More sales opportunities through meaningful engagement"
+        ]
       }
     ]
   },
   {
     "slug": "sms-support",
     "practice": "after-hours-overflow",
-    "kicker": "Reach more customers with more effective communication",
+    "kicker": "Reach more customers through timely, effective communication",
     "title": "SMS Text Messaging Services",
-    "intro": "SMS messaging helps boost customer engagement and increase response rates. Fast, scalable, and effective messaging customized to your precise business goals.",
+    "intro": "Our SMS messaging services increase customer engagement and response rates through fast, scalable campaigns tailored to your business objectives.",
     "short": "SMS Text Messaging Services",
     "sections": [
       {
-        "heading": "Our SMS text messaging solutions",
+        "heading": "Our SMS Messaging Solutions",
         "paras": [
-          "A comprehensive messaging platform designed to enhance customer engagement with fast, scalable delivery customized to business goals. SMS open rates run above 90%, compared to 20–30% for email."
+          "A comprehensive messaging service that delivers timely, personalized communication at scale. SMS open rates exceed 90 percent, compared with 20 to 30 percent for email."
         ],
         "bullets": [
-          "Enhanced customer engagement through personalized communication",
-          "Automated tools reducing organizational workload",
-          "High message delivery and open rates",
+          "Higher engagement through personalized communication",
+          "Automation that reduces your team's workload",
+          "Consistently high delivery and open rates",
           "Instant delivery for time-sensitive messages"
-        ],
-        "image": "SMS Text Messaging Services"
+        ]
       },
       {
         "heading": "What's Included",
         "items": [
           {
             "title": "Two-way SMS communication",
-            "text": "Engage customers in real-time with two-way SMS text messaging, receiving direct replies for efficient support."
+            "text": "Engage customers in real time and receive direct replies, enabling efficient, conversational support."
           },
           {
-            "title": "Appointment setting & reminders",
-            "text": "Reduce no-shows by sending automated SMS reminders before appointments, integrated with your digital calendar tools."
+            "title": "Appointment setting and reminders",
+            "text": "Reduce missed appointments with automated reminders integrated with your existing calendar tools."
           },
           {
-            "title": "Promotional & seasonal messaging",
-            "text": "Send promotional SMS during peak seasons and special promotions to instantly inform customers of flash sales and exclusive offers."
+            "title": "Promotional and seasonal messaging",
+            "text": "Inform customers promptly of seasonal campaigns, limited-time offers and exclusive promotions."
           },
           {
             "title": "Multilingual SMS",
-            "text": "Extend your reach to customers worldwide with culturally relevant campaigns and fluent communication."
+            "text": "Engage international audiences with culturally relevant messaging in their preferred language."
           }
-        ],
-        "eyebrow": "Capabilities"
+        ]
       },
       {
         "heading": "Key Benefits",
         "list": [
-          "Enhanced customer engagement through personalized communication",
-          "Automated tools reducing organizational workload",
-          "Comprehensive analytics for data-driven decisions",
-          "High message delivery and open rates",
-          "Affordable, instant communication"
-        ],
-        "eyebrow": "Why It Matters"
+          "Higher customer engagement",
+          "Reduced operational workload",
+          "Analytics that inform better decisions",
+          "Reliable delivery and high open rates",
+          "Cost-effective, instant communication"
+        ]
       }
     ]
   },
   {
     "slug": "email-support",
     "practice": "after-hours-overflow",
-    "kicker": "Provide 24/7 availability with dedicated email customer care agents",
+    "kicker": "Deliver 24/7 availability with dedicated email support specialists",
     "title": "Outsourced Email Support Services",
-    "intro": "Outsourcing email support allows a business to seamlessly scale operations, answering all requests and improving customer satisfaction and engagement with dedicated, multilingual agents.",
+    "intro": "Outsourced email support allows your business to scale efficiently, respond to every request and improve customer satisfaction through dedicated, multilingual specialists.",
     "short": "Outsourced Email Support Services",
     "sections": [
       {
-        "heading": "Our email support solutions",
+        "heading": "Our Email Support Solutions",
         "paras": [
-          "Outsourced contact centers work with businesses to improve their omnichannel communications, and key to that is efficiently handling emails — inquiry handling, complaint management, and request support."
+          "Effective email management is central to a strong omnichannel experience. Our teams handle inquiries, complaints and service requests promptly and consistently."
         ],
         "bullets": [
           "24/7 availability",
           "Scalable operations",
           "Faster response times",
           "Multilingual support"
-        ],
-        "image": "Outsourced Email Support Services"
+        ]
       },
       {
         "heading": "What's Included",
         "items": [
           {
             "title": "Email ticket management",
-            "text": "Streamlined processes to open, process, resolve, close, and follow up on every ticket."
+            "text": "A structured process to open, resolve, close and follow up on every ticket."
           },
           {
             "title": "Response drafting and sending",
-            "text": "Conversational AI drafts responses for faster, more consistent replies."
+            "text": "AI-assisted drafting delivers faster, more consistent replies."
           },
           {
             "title": "Escalation handling",
-            "text": "Proactive strategies mitigate escalations while improving your ability to handle them."
+            "text": "Proactive measures reduce escalations and ensure they are resolved effectively."
           },
           {
             "title": "Customer data entry and CRM updates",
-            "text": "Accurate data handling powers the technologies behind your customer relationships."
+            "text": "Accurate data management keeps your customer records complete and current."
           },
           {
             "title": "Quality assurance and email audits",
-            "text": "Systems track and score all interactions, offering real-time feedback."
+            "text": "Every interaction is tracked and scored, with real-time feedback for continuous improvement."
           },
           {
             "title": "Email categorization and routing",
-            "text": "Accurately categorize requests and efficiently route customers to the right agent."
+            "text": "Requests are categorized accurately and routed promptly to the right specialist."
           }
-        ],
-        "eyebrow": "Capabilities"
+        ]
       },
       {
         "heading": "Key Benefits",
@@ -1673,66 +1608,62 @@ export const services = [
           "24/7 availability",
           "Scalable operations",
           "Faster response times",
-          "Improved customer satisfaction",
-          "Cost-effectiveness",
+          "Higher customer satisfaction",
+          "Cost efficiency",
           "Multilingual support"
-        ],
-        "eyebrow": "Why It Matters"
+        ]
       }
     ]
   },
   {
     "slug": "live-chat-support",
     "practice": "after-hours-overflow",
-    "kicker": "Boost customer satisfaction with dedicated care around the clock",
-    "title": "Instant Support with 24/7 Live Chat Services",
-    "intro": "Live chat answers simple queries and offers responsive care amid call overload and outside of business hours, reducing workloads for your team and establishing your brand as accessible and reliable.",
-    "short": "Instant Support with 24/7 Live Chat Services",
+    "kicker": "Improve customer satisfaction with dedicated support around the clock",
+    "title": "24/7 Live Chat Support Services",
+    "intro": "Our live chat teams resolve routine inquiries and provide responsive support during peak periods and outside business hours, reducing the load on your team and positioning your brand as accessible and reliable.",
+    "short": "24/7 Live Chat Support Services",
     "sections": [
       {
-        "heading": "Comprehensive live chat and email support solutions",
+        "heading": "Comprehensive Live Chat Support",
         "paras": [
-          "Communicate in real time via live chat on your website or social media platforms, boosting engagement and efficiently routing customers to the right agent."
+          "Engage customers in real time through live chat on your website and social channels, improving engagement and routing every inquiry to the right specialist."
         ],
         "bullets": [
-          "Immediate attention leads to happier, more loyal customers",
-          "Real-time assistance guides customers through purchasing",
-          "Reduces overhead costs of maintaining in-house teams",
-          "Global reach via 24/7 availability and multilingual support"
-        ],
-        "image": "Instant Support with 24/7 Live Chat Services"
+          "Prompt responses that build customer loyalty",
+          "Real-time guidance that supports purchasing decisions",
+          "Lower overheads than maintaining an in-house team",
+          "Global coverage with 24/7 availability and multilingual support"
+        ]
       },
       {
         "heading": "What's Included",
         "items": [
           {
             "title": "Omnichannel customer support",
-            "text": "Optimize your customer communications by answering inquiries across platforms."
+            "text": "Manage customer inquiries consistently across every platform you operate."
           },
           {
-            "title": "Billing payment and support",
-            "text": "Efficiently and securely process payments and provide billing support."
+            "title": "Billing and payment support",
+            "text": "Process payments securely and resolve billing questions efficiently."
           },
           {
             "title": "Appointments and reservations",
-            "text": "Use 24/7 live chat support to streamline appointment scheduling."
+            "text": "Streamline scheduling with live chat support available around the clock."
           },
           {
             "title": "AI as a service",
-            "text": "Utilize artificial intelligence to enhance self-service and optimize processes."
+            "text": "Apply artificial intelligence to strengthen self-service and optimize processes."
           }
-        ],
-        "eyebrow": "Capabilities"
+        ]
       },
       {
         "heading": "Key Benefits",
         "list": [
-          "Immediate attention leads to happier, more loyal customers",
-          "Real-time assistance guides customers through purchasing, boosting sales",
-          "Reduces overhead costs of maintaining in-house teams",
-          "Achieves global reach via 24/7 availability and multilingual support"
-        ],
-        "eyebrow": "Why It Matters"
+          "Stronger customer loyalty through prompt responses",
+          "Increased sales through real-time purchase assistance",
+          "Reduced overhead compared with in-house teams",
+          "Global reach with 24/7 multilingual coverage"
+        ]
       }
     ]
   },
@@ -1740,131 +1671,125 @@ export const services = [
     "slug": "order-taking",
     "practice": "order-taking-billing",
     "kicker": "Seamless customer experiences and fewer missed opportunities",
-    "title": "Reliable 24/7 Order Taking Services",
-    "intro": "Round-the-clock order-taking allows your business to capture every possible opportunity, even after standard business hours, with a dedicated team of knowledgeable agents prepared to close sales.",
-    "short": "Reliable 24/7 Order Taking Services",
+    "title": "24/7 Order Taking Services",
+    "intro": "Round-the-clock order taking allows your business to capture every opportunity, including outside standard business hours, with a dedicated team of knowledgeable agents ready to complete each sale.",
+    "short": "24/7 Order Taking Services",
     "sections": [
       {
         "heading": "Comprehensive Order Taking Solutions",
         "paras": [
-          "24/7 availability and scalability for businesses of all sizes, capturing sales opportunities beyond standard hours with a dedicated team acting as an extension of your brand."
+          "Scalable, 24/7 order taking for businesses of every size, capturing sales beyond standard hours through a dedicated team that operates as an extension of your brand."
         ],
         "bullets": [
-          "Boost conversion rates significantly",
-          "Foster customer trust and loyalty for repeat business",
-          "Free internal team resources for core business functions",
-          "Handle increased call volumes during peak periods without quality loss"
-        ],
-        "image": "Reliable 24/7 Order Taking Services"
+          "Significantly higher conversion rates",
+          "Greater customer trust and repeat business",
+          "Internal resources freed for core business functions",
+          "Peak call volumes handled without loss of quality"
+        ]
       },
       {
         "heading": "What's Included",
         "items": [
           {
             "title": "Live phone order taking",
-            "text": "Trained agents handle every order call with precision and professionalism."
+            "text": "Trained agents handle every order call with accuracy and professionalism."
           },
           {
             "title": "Online form and email order processing",
-            "text": "Efficiently manage incoming online orders and email inquiries with accurate CRM and POS system management."
+            "text": "Efficient management of online orders and email inquiries, with accurate updates to your CRM and point-of-sale systems."
           },
           {
-            "title": "Upselling & cross-selling support",
-            "text": "Skilled sales experts offer guidance on upgraded products and additional services to increase average order value."
+            "title": "Upselling and cross-selling support",
+            "text": "Skilled sales specialists recommend upgrades and additional services to increase average order value."
           },
           {
             "title": "Real-time order tracking and reporting",
-            "text": "Stay up to date with the latest data via intuitive dashboards and regular performance reports."
+            "text": "Intuitive dashboards and regular performance reports keep you fully informed."
           }
-        ],
-        "eyebrow": "Capabilities"
+        ]
       },
       {
         "heading": "Key Benefits",
         "list": [
-          "Boost conversion rates significantly",
-          "Foster customer trust and loyalty for repeat business",
-          "Free internal team resources for core business functions",
-          "Access detailed reports and analytics on customer behavior",
-          "Handle increased call volumes during peak periods without quality loss"
-        ],
-        "eyebrow": "Why It Matters"
+          "Significantly higher conversion rates",
+          "Greater customer trust and repeat business",
+          "Internal resources freed for core business functions",
+          "Detailed reporting and analytics on customer behavior",
+          "Peak call volumes handled without loss of quality"
+        ]
       }
     ]
   },
   {
     "slug": "billing-payment-support",
     "practice": "order-taking-billing",
-    "kicker": "Custom billing and payment solutions built on trust",
-    "title": "Comprehensive Billing & Payment Support Services",
-    "intro": "Custom billing and payment solutions using cutting-edge software to reduce errors and resolve issues with payment processing, invoices, disputes, and patient accounts.",
-    "short": "Comprehensive Billing & Payment Support Services",
+    "kicker": "Tailored billing and payment solutions built on trust",
+    "title": "Billing & Payment Support Services",
+    "intro": "Tailored billing and payment support, powered by advanced software, that reduces errors and resolves issues across payment processing, invoicing, disputes and patient accounts.",
+    "short": "Billing & Payment Support Services",
     "sections": [
       {
-        "heading": "Our billing & payment support solutions",
+        "heading": "Our Billing and Payment Support Solutions",
         "paras": [
-          "Customized solutions using cutting-edge technology to reduce errors and resolve billing and payment issues, with detailed reporting on turnaround times, customer satisfaction, and escalations."
+          "Tailored solutions that use advanced technology to reduce errors and resolve billing and payment issues, supported by detailed reporting on turnaround times, customer satisfaction and escalations."
         ],
         "bullets": [
           "Payment processing",
-          "Invoices",
-          "Disputes",
+          "Invoicing",
+          "Dispute resolution",
           "Patient accounts"
-        ],
-        "image": "Comprehensive Billing & Payment Support Services"
+        ]
       },
       {
         "heading": "What's Included",
         "items": [
           {
             "title": "Ordering and fulfillment",
-            "text": "Agents securely process orders and efficiently manage inventory, supported by IVR technology to reduce queues."
+            "text": "Agents process orders securely and manage inventory efficiently, supported by IVR technology that reduces queues."
           },
           {
             "title": "Subscription billing management",
-            "text": "Expert technology securely stores customer information and sets up automated payments, boosting satisfaction and retention."
+            "text": "Secure storage of customer information and automated payments that improve satisfaction and retention."
           },
           {
             "title": "Customer support and inquiries",
-            "text": "Manage refunds and credit adjustments with professionalism across all customer touchpoints via omnichannel support."
+            "text": "Professional handling of refunds and credit adjustments across every customer touchpoint."
           },
           {
             "title": "Payment processing services",
-            "text": "Skilled teams equipped with cutting-edge technology improve payment accuracy, setting up payment plans and tailored invoices."
+            "text": "Skilled teams using advanced technology improve payment accuracy and arrange payment plans and tailored invoices."
           }
-        ],
-        "eyebrow": "Capabilities"
+        ]
       },
       {
         "heading": "Key Benefits",
         "list": [
-          "Faster processing leads to quicker payments",
-          "Enhances customer experience and bottom line",
-          "Accurate, timely billing improves client relationships",
-          "Strict protection of private information",
-          "Improves operational efficiency",
-          "Scalable services matching business growth and seasonal demands"
-        ],
-        "eyebrow": "Why It Matters"
+          "Faster processing and quicker payments",
+          "A better customer experience and stronger bottom line",
+          "Accurate, timely billing that strengthens client relationships",
+          "Rigorous protection of personal information",
+          "Greater operational efficiency",
+          "Services that scale with growth and seasonal demand"
+        ]
       },
       {
         "heading": "Frequently Asked Questions",
         "faqs": [
           {
-            "q": "What types of billing and payment support can you handle?",
-            "a": "End-to-end billing and payment support — payment processing, invoice generation, payment plan setups, subscription billing, dispute resolution, and processing refunds and credits."
+            "q": "What types of billing and payment support do you provide?",
+            "a": "We provide end-to-end billing and payment support, including payment processing, invoice generation, payment plans, subscription billing, dispute resolution, and refunds and credits."
           },
           {
             "q": "How do you ensure PCI compliance and payment security?",
-            "a": "Strict PCI compliance standards with encrypted networks, antivirus protection, regular monitoring and security testing, and secure access."
+            "a": "We adhere to strict PCI compliance standards, with encrypted networks, antivirus protection, continuous monitoring, regular security testing and controlled access."
           },
           {
             "q": "Can your billing support integrate with our existing systems?",
-            "a": "Yes — we work with a diverse range of CRMs, ERPs, billing platforms, and payment gateways."
+            "a": "Yes. We work with a wide range of CRMs, ERPs, billing platforms and payment gateways."
           },
           {
             "q": "How does outsourcing billing support improve the customer experience?",
-            "a": "Professional agents focus fully on customers' needs, resulting in faster payment processing, higher billing accuracy, and higher satisfaction."
+            "a": "Dedicated professionals focus entirely on your customers' needs, delivering faster payment processing, greater billing accuracy and higher satisfaction."
           }
         ]
       }
@@ -1873,560 +1798,532 @@ export const services = [
   {
     "slug": "subscription-continuity",
     "practice": "order-taking-billing",
-    "kicker": "Building trust and revenue through reliable, ethical subscription management",
+    "kicker": "Build trust and revenue through reliable, ethical subscription management",
     "title": "Continuity Subscription Services",
-    "intro": "Recurring payments provide steady income to the business and a reliable solution to customers seeking specific services — we help you navigate the challenges of subscription management for optimal success.",
+    "intro": "Recurring payments provide steady revenue for businesses and dependable service for customers. We help you manage the challenges of subscription management for long-term success.",
     "short": "Continuity Subscription Services",
     "sections": [
       {
-        "heading": "Comprehensive continuity subscription management solutions",
+        "heading": "Comprehensive Continuity Subscription Management",
         "paras": [
-          "Many products or services must be replaced monthly or renewed yearly, making subscriptions an ideal solution for companies and customers. Professional management handles the risks and challenges that come with it."
+          "Many products and services are replaced monthly or renewed annually, making subscriptions a practical model for both businesses and customers. Professional management addresses the risks and challenges that come with it."
         ],
         "bullets": [
           "Attentive, professional care that strengthens customer relationships",
-          "Analysis of historical and real-time data to streamline communication",
+          "Historical and real-time data analysis that streamlines communication",
           "Seamless system integration for secure operations",
-          "Reduced churn through retention strategies"
-        ],
-        "image": "Continuity Subscription Services"
+          "Lower churn through targeted retention strategies"
+        ]
       },
       {
         "heading": "What's Included",
         "items": [
           {
-            "title": "Customer retention & win-back programs",
-            "text": "Services designed to keep subscribers engaged, reduce cancellation rates, and recover lost subscribers."
+            "title": "Customer retention and win-back programs",
+            "text": "Programs that keep subscribers engaged, reduce cancellations and recover lapsed subscribers."
           },
           {
-            "title": "Recurring billing & payment processing",
-            "text": "Ensures customers are billed accurately and on time, with automated recurring charges and support for multiple payment methods."
+            "title": "Recurring billing and payment processing",
+            "text": "Accurate, on-time billing with automated recurring charges and support for multiple payment methods."
           },
           {
             "title": "Subscription lifecycle management",
-            "text": "End-to-end management of a subscriber's journey, from sign-up to renewal or cancellation, including plan upgrades and reminders."
+            "text": "End-to-end management of the subscriber journey, from sign-up to renewal or cancellation, including plan upgrades and reminders."
           },
           {
-            "title": "Reporting & performance analytics",
-            "text": "Track key metrics to identify growth opportunities, address weaknesses, and make data-driven improvements."
+            "title": "Reporting and performance analytics",
+            "text": "Key metrics that reveal growth opportunities, highlight weaknesses and guide data-driven improvements."
           }
-        ],
-        "eyebrow": "Capabilities"
+        ]
       },
       {
         "heading": "Key Benefits",
         "list": [
           "Attentive, professional care that strengthens customer relationships",
-          "Analysis of historical and real-time data to streamline communication",
+          "Historical and real-time data analysis that streamlines communication",
           "Seamless system integration for secure operations",
-          "Reduced churn through retention strategies",
-          "Customized solutions tailored to specific business needs"
-        ],
-        "eyebrow": "Why It Matters"
+          "Lower churn through targeted retention strategies",
+          "Solutions tailored to your specific business needs"
+        ]
       }
     ]
   },
   {
     "slug": "inbound-contact-center-solutions",
     "practice": "inbound-outbound",
-    "kicker": "Effortlessly scale your inbound customer support with trusted, cost-effective outsourcing solutions",
+    "kicker": "Scale your inbound customer support with trusted, cost-effective outsourcing",
     "title": "Inbound Contact Center Outsourcing",
-    "intro": "Outsourcing to an inbound call center allows a company to quickly answer incoming calls and resolve customer problems in a timely manner — without the cost of internal infrastructure.",
+    "intro": "An outsourced inbound contact center answers incoming calls promptly and resolves customer issues efficiently, without the cost of internal infrastructure.",
     "short": "Inbound Contact Center Outsourcing",
     "sections": [
       {
-        "heading": "What is inbound contact center outsourcing?",
+        "heading": "What Is Inbound Contact Center Outsourcing?",
         "paras": [
-          "An outsourced inbound call center is a business partner that focuses on answering customers' incoming calls, with agents offering support for various questions or complaints regarding a company's core product or service offerings."
+          "An outsourced inbound contact center is a partner dedicated to answering customers' incoming calls, with agents supporting questions and concerns about your core products and services."
         ],
         "bullets": [
-          "Cost-effective solution without infrastructure investment",
-          "Scalable and customizable solutions",
-          "Higher and more consistent customer satisfaction",
-          "Eliminates need for in-house staffing and hiring concerns"
-        ],
-        "image": "Inbound Contact Center Outsourcing"
+          "A cost-effective solution with no infrastructure investment",
+          "Scalable, customizable solutions",
+          "Consistently higher customer satisfaction",
+          "No in-house staffing or recruitment burden"
+        ]
       },
       {
         "heading": "What's Included",
         "items": [
           {
             "title": "Lead qualification",
-            "text": "An in-depth process for evaluating each inbound lead to determine which callers have the greatest chance of becoming paying customers."
+            "text": "A thorough evaluation of each inbound lead to identify the callers most likely to become customers."
           },
           {
             "title": "Customer service",
-            "text": "Ready to handle all incoming inquiries — questions, comments, complaints, and difficult problems."
+            "text": "Professional handling of every inquiry, from questions and feedback to complaints and complex issues."
           },
           {
-            "title": "Tier I tech support",
-            "text": "The frontline of your company's technical support team, offering customers assistance when they need it."
+            "title": "Tier 1 technical support",
+            "text": "The first line of your technical support, assisting customers whenever they need help."
           },
           {
             "title": "Reservation services",
-            "text": "Agents equipped to manage customer reservations across a variety of industries."
+            "text": "Agents equipped to manage customer reservations across a wide range of industries."
           },
           {
-            "title": "Direct response & media support",
-            "text": "Handle the influx of inbound inquiries whenever you receive attention from advertising or media coverage."
+            "title": "Direct response and media support",
+            "text": "Capacity to handle surges in inbound inquiries following advertising or media coverage."
           },
           {
-            "title": "Overflow & after hours support",
-            "text": "Structured teams allow continued access to support, even when call volumes peak or after regular business hours."
+            "title": "Overflow and after-hours support",
+            "text": "Structured teams maintain access to support during peak volumes and outside business hours."
           }
-        ],
-        "eyebrow": "Capabilities"
+        ]
       },
       {
         "heading": "Key Benefits",
         "list": [
-          "Cost-effective solution without infrastructure investment",
-          "Scalable and customizable solutions",
-          "Stress-free customer experiences",
-          "Higher and more consistent customer satisfaction",
-          "Allows focus on core business competencies"
-        ],
-        "eyebrow": "Why It Matters"
+          "A cost-effective solution with no infrastructure investment",
+          "Scalable, customizable solutions",
+          "A smooth, reliable customer experience",
+          "Consistently higher customer satisfaction",
+          "Greater focus on your core competencies"
+        ]
       }
     ]
   },
   {
     "slug": "omnichannel-customer-support",
     "practice": "inbound-outbound",
-    "kicker": "Seamless, consistent support across all channels",
-    "title": "Omnichannel Customer Support Outsourcing Services",
-    "intro": "Omnichannel support models allow customers the flexibility to easily choose the communication channel that's most convenient in the moment, with a fully integrated CRM to fill in the context agents need.",
-    "short": "Omnichannel Customer Support Outsourcing Services",
+    "kicker": "Seamless, consistent support across every channel",
+    "title": "Omnichannel Customer Support Outsourcing",
+    "intro": "Omnichannel support lets customers choose the most convenient channel at any moment, while a fully integrated CRM gives agents the context they need.",
+    "short": "Omnichannel Customer Support Outsourcing",
     "sections": [
       {
-        "heading": "What is omnichannel outsourcing?",
+        "heading": "What Is Omnichannel Outsourcing?",
         "paras": [
-          "Integrated CRM systems prevent customers from repeating themselves and boost team efficiency, allowing agents to smoothly pick up the conversation from the last interaction across any channel."
+          "Integrated CRM systems mean customers never need to repeat themselves. Agents continue each conversation seamlessly from the previous interaction, on any channel, which improves team efficiency."
         ],
         "bullets": [
-          "Prevents customer frustration from repeating information",
-          "Improves overall efficiency of support teams",
-          "Provides consistent brand experience across channels",
-          "Enables stress-free, high-quality support"
-        ],
-        "image": "Omnichannel Customer Support Outsourcing Services"
+          "Customers never need to repeat information",
+          "Greater efficiency across support teams",
+          "A consistent brand experience on every channel",
+          "Seamless, high-quality support"
+        ]
       },
       {
         "heading": "What's Included",
         "items": [
           {
             "title": "Voice services",
-            "text": "Inbound and outbound voice support performed by experienced, highly-trained professionals who represent your brand."
+            "text": "Inbound and outbound voice support from experienced, highly trained professionals who represent your brand."
           },
           {
             "title": "Social media support",
-            "text": "Agents monitor your social media platforms and respond to customer inquiries, keeping your reputation strong."
+            "text": "Agents monitor your social platforms and respond to customer inquiries, protecting your reputation."
           },
           {
             "title": "Live chat support",
-            "text": "Real-time chat assistance from friendly, knowledgeable agents trained to boost customer satisfaction."
+            "text": "Real-time assistance from knowledgeable agents trained to raise customer satisfaction."
           },
           {
             "title": "Email support",
-            "text": "Reliable email response management to help customers resolve issues quickly and get accurate answers."
+            "text": "Reliable email response management that resolves issues quickly and accurately."
           },
           {
             "title": "Chatbot integration",
-            "text": "Automate support for the most common questions and issues through seamless chatbot implementation."
+            "text": "Seamless chatbot implementation that automates responses to common questions and issues."
           },
           {
-            "title": "Webform & SMS support",
-            "text": "Support for incoming webform submissions and fast, personalized text support that meets customers where they are."
+            "title": "Web form and SMS support",
+            "text": "Prompt handling of web form submissions and personalized text support on the channels customers prefer."
           }
-        ],
-        "eyebrow": "Capabilities"
+        ]
       },
       {
         "heading": "Key Benefits",
         "list": [
-          "Prevents customer frustration from repeating information",
-          "Improves overall efficiency of support teams",
-          "Reduces impact of fragmented support systems",
-          "Provides consistent brand experience across channels"
-        ],
-        "eyebrow": "Why It Matters"
+          "Customers never need to repeat information",
+          "Greater efficiency across support teams",
+          "Reduced impact of fragmented support systems",
+          "A consistent brand experience on every channel"
+        ]
       }
     ]
   },
   {
     "slug": "lead-qualification",
     "practice": "inbound-outbound",
-    "kicker": "Convert prospects with outsourced lead qualification, outreach, and appointment setting solutions built for predictable sales growth",
-    "title": "Expert Lead Qualification Services",
-    "intro": "Lead qualification identifies which leads are most likely to convert, so your team can focus energy and resources on the best-performing prospects.",
-    "short": "Expert Lead Qualification Services",
+    "kicker": "Convert more prospects with outsourced lead qualification, outreach and appointment setting",
+    "title": "Lead Qualification Services",
+    "intro": "Lead qualification identifies the prospects most likely to convert, so your team can focus its time and resources where they deliver the greatest return.",
+    "short": "Lead Qualification Services",
     "sections": [
       {
-        "heading": "Lead generation vs. lead qualification?",
+        "heading": "Lead Generation and Lead Qualification",
         "paras": [
-          "Lead generation is the process of identifying your target market and actively making efforts to attract the right customers, while qualification helps teams determine which leads are the most likely to convert."
+          "Lead generation identifies your target market and attracts the right prospects. Lead qualification then determines which of those prospects are most likely to convert."
         ],
         "bullets": [
-          "Lead generation focuses on attracting customers",
-          "Qualification identifies highest-conversion prospects",
-          "Teams can focus energy on best-performing leads"
-        ],
-        "image": "Expert Lead Qualification Services"
+          "Lead generation attracts potential customers",
+          "Qualification identifies the prospects most likely to convert",
+          "Your team focuses on the highest-value opportunities"
+        ]
       },
       {
         "heading": "What's Included",
         "items": [
           {
             "title": "Omnichannel outreach",
-            "text": "The right mix of customer communication channels to engage leads from your target market."
+            "text": "The right combination of channels to engage prospects in your target market."
           },
           {
-            "title": "Lead qualification services",
-            "text": "Identify valuable leads most likely to convert, ensuring time and resources are used efficiently."
+            "title": "Lead qualification",
+            "text": "Identification of the leads most likely to convert, ensuring time and resources are used efficiently."
           },
           {
             "title": "Appointment setting",
-            "text": "Agents coordinate with your best prospects and actively put meetings on your calendar."
+            "text": "Agents coordinate with your strongest prospects and schedule meetings directly in your calendar."
           },
           {
             "title": "Market research",
-            "text": "Research to discover the pain points of your customer base and deliver actionable data."
+            "text": "Research that uncovers the challenges your customers face and delivers actionable insight."
           }
-        ],
-        "eyebrow": "Capabilities"
+        ]
       },
       {
         "heading": "Key Benefits",
         "list": [
-          "Access to a steady flow of qualified leads, ready for conversion",
-          "Frees internal resources for closing deals",
-          "Scalable solutions for flexibility",
-          "Maximizes ROI by focusing on leads with highest conversion potential"
-        ],
-        "eyebrow": "Why It Matters"
+          "A steady flow of qualified, sales-ready leads",
+          "Internal resources focused on closing business",
+          "Scalable, flexible solutions",
+          "Higher ROI by prioritizing leads with the greatest conversion potential"
+        ]
       }
     ]
   },
   {
     "slug": "cross-selling-upselling",
     "practice": "inbound-outbound",
-    "kicker": "Technology-informed cross-sells and upsells centered on customer needs",
+    "kicker": "Data-informed cross-selling and upselling centered on customer needs",
     "title": "Cross-Selling & Upselling Services",
-    "intro": "Tap into new revenue streams and improve customer satisfaction in every interaction with cross-selling and upselling — ethical methods that keep customers' needs in mind while boosting your sales.",
+    "intro": "Open new revenue streams and improve customer satisfaction in every interaction through ethical cross-selling and upselling that keeps customer needs at the center.",
     "short": "Cross-Selling & Upselling Services",
     "sections": [
       {
-        "heading": "Our cross-selling and upselling services",
+        "heading": "Our Cross-Selling and Upselling Services",
         "paras": [
-          "Cross-selling involves offering related items alongside existing purchases, while upselling offers upgraded versions — both using technology and data-driven insights with ethical methods."
+          "Cross-selling offers related products alongside an existing purchase, while upselling offers an upgraded version. Both are guided by technology, data-driven insight and ethical sales practices."
         ],
         "bullets": [
-          "Revenue growth without extra operational costs",
-          "Improved customer loyalty",
-          "Enhanced customer experience through personalized recommendations",
-          "Increased customer lifetime value"
-        ],
-        "image": "Cross-Selling & Upselling Services"
+          "Revenue growth without additional operating costs",
+          "Stronger customer loyalty",
+          "A better customer experience through personalized recommendations",
+          "Higher customer lifetime value"
+        ]
       },
       {
         "heading": "What's Included",
         "items": [
           {
-            "title": "Upgrade & volume upselling",
-            "text": "Offering the more premium version of an item, or encouraging customers to buy more for a discounted price."
+            "title": "Upgrade and volume upselling",
+            "text": "Offering premium versions of a product, or volume pricing that encourages larger purchases."
           },
           {
             "title": "Value-added services",
-            "text": "Features that improve a customer's experience with the product, such as customization or exclusive content."
+            "text": "Features that enhance the customer experience, such as customization or exclusive content."
           },
           {
-            "title": "Product bundling & add-on services",
-            "text": "Options to buy complementary products or additional services alongside the main purchase."
+            "title": "Product bundles and add-on services",
+            "text": "Complementary products and additional services offered alongside the main purchase."
           },
           {
             "title": "Personalized recommendations",
-            "text": "Using previous purchase data to suggest similar or related products."
+            "text": "Purchase history used to recommend relevant and related products."
           },
           {
-            "title": "Cross-industry cross-selling",
-            "text": "Partnering with a brand in another industry to offer complementary products or services."
+            "title": "Cross-industry partnerships",
+            "text": "Partnerships with brands in other industries to offer complementary products and services."
           }
-        ],
-        "eyebrow": "Capabilities"
+        ]
       },
       {
         "heading": "Key Benefits",
         "list": [
-          "Revenue growth without extra operational costs — up to 40% increase",
-          "Improved customer loyalty",
-          "Enhanced customer experience through personalized recommendations",
-          "Increased customer lifetime value"
-        ],
-        "eyebrow": "Why It Matters"
+          "Revenue growth of up to 40 percent without additional operating costs",
+          "Stronger customer loyalty",
+          "A better customer experience through personalized recommendations",
+          "Higher customer lifetime value"
+        ]
       }
     ]
   },
   {
     "slug": "appointment-setting",
     "practice": "inbound-outbound",
-    "kicker": "Streamline your scheduling and boost sales",
+    "kicker": "Streamline scheduling and increase sales",
     "title": "Appointment Setting Services",
-    "intro": "End-to-end appointment setting and reservation services, fully customized to your company's needs, ensuring every booking interaction is smooth, accurate, and customer-friendly.",
+    "intro": "End-to-end appointment setting and reservation services, tailored to your organization's needs, that make every booking interaction smooth, accurate and customer-friendly.",
     "short": "Appointment Setting Services",
     "sections": [
       {
-        "heading": "Our comprehensive appointment and reservation solutions",
+        "heading": "Comprehensive Appointment and Reservation Solutions",
         "paras": [
-          "Tailored scheduling solutions across various booking types — consultations, service calls, or reservations — emphasizing smooth, accurate, and customer-friendly interactions."
+          "Tailored scheduling for every type of booking, including consultations, service calls and reservations, with a focus on smooth, accurate and customer-friendly interactions."
         ],
         "bullets": [
-          "Enhanced efficiency through streamlined scheduling processes",
-          "Scalable solutions growing with business needs",
-          "Convenient booking enhances customer satisfaction and loyalty",
-          "Better resource utilization and staff allocation"
-        ],
-        "image": "Appointment Setting Services"
+          "Greater efficiency through streamlined scheduling",
+          "Solutions that scale with your business",
+          "Convenient booking that improves satisfaction and loyalty",
+          "Better use of resources and staff"
+        ]
       },
       {
         "heading": "What's Included",
         "items": [
           {
             "title": "Automated scheduling",
-            "text": "No more double bookings or manual errors — intelligent scheduling systems handle appointment-setting with precision, updating calendars instantly."
+            "text": "Intelligent scheduling systems book appointments precisely and update calendars instantly, eliminating double bookings and manual errors."
           },
           {
             "title": "Reminder notifications",
-            "text": "Decrease no-shows and late cancellations with personalized, timely reminders via email, SMS, or phone."
+            "text": "Personalized, timely reminders by email, SMS or phone reduce no-shows and late cancellations."
           },
           {
             "title": "Resource management",
-            "text": "Optimize staff and resource allocation to maximize your service capacity."
+            "text": "Optimized allocation of staff and resources to maximize service capacity."
           },
           {
             "title": "User-friendly interfaces",
-            "text": "An intuitive platform for an easy scheduling experience for your clients."
+            "text": "An intuitive platform that makes scheduling easy for your clients."
           }
-        ],
-        "eyebrow": "Capabilities"
+        ]
       },
       {
         "heading": "Key Benefits",
         "list": [
-          "Enhanced efficiency through streamlined scheduling processes",
-          "Scalable solutions growing with business needs",
-          "Convenient booking enhances customer satisfaction and loyalty",
-          "Reduction in no-show rates through reminders",
-          "Better resource utilization and staff allocation"
-        ],
-        "eyebrow": "Why It Matters"
+          "Greater efficiency through streamlined scheduling",
+          "Solutions that scale with your business",
+          "Convenient booking that improves satisfaction and loyalty",
+          "Fewer no-shows through timely reminders",
+          "Better use of resources and staff"
+        ]
       }
     ]
   },
   {
     "slug": "answering-services",
     "practice": "customer-service-support",
-    "kicker": "24/7 access to human support without the overhead",
+    "kicker": "24/7 access to professional support without the overhead",
     "title": "Call Answering & Virtual Reception Services",
-    "intro": "A dedicated team of agents provides your customers with professional care, taking down important messages, answering basic inquiries, and appropriately routing calls when necessary.",
+    "intro": "A dedicated team provides professional care for your customers, taking messages, answering routine inquiries and routing calls appropriately.",
     "short": "Call Answering & Virtual Reception Services",
     "sections": [
       {
-        "heading": "Our call answering and virtual reception services",
+        "heading": "Our Call Answering and Virtual Reception Services",
         "paras": [
-          "Every call receives an immediate answer from a real person, around the clock, with virtual reception functioning as an in-house receptionist extension covering scheduling, transfers, and inquiries — without the overhead."
+          "Every call is answered promptly by a real person, around the clock. Our virtual reception operates as an extension of your front desk, managing scheduling, transfers and inquiries without the associated overhead."
         ],
         "bullets": [
-          "Miss fewer calls and lose fewer leads",
-          "Excellent customer experience with brand consistency",
+          "Fewer missed calls and lost leads",
+          "A consistent, professional customer experience",
           "Lower overhead costs",
-          "Frees in-house team for higher-value work"
-        ],
-        "image": "Call Answering & Virtual Reception Services"
+          "In-house teams freed for higher-value work"
+        ]
       },
       {
         "heading": "What's Included",
         "items": [
           {
-            "title": "24/7 call answering services",
-            "text": "Your dedicated call answering team is answering the phone at all times, even during peak hours."
+            "title": "24/7 call answering",
+            "text": "Your dedicated team answers every call, including during peak hours."
           },
           {
-            "title": "Basic inquiries",
-            "text": "Troubleshoot and solve your customers' FAQs and common inquiries, freeing up your time."
+            "title": "Routine inquiries",
+            "text": "Common questions are answered and resolved, saving your team valuable time."
           },
           {
             "title": "Appointment scheduling",
-            "text": "Booking, confirmations, and appointment-setting handled for you — managing your calendar and keeping no-shows to a minimum."
+            "text": "Bookings and confirmations are managed on your behalf, keeping your calendar organized and no-shows to a minimum."
           },
           {
-            "title": "Call routing & message taking",
-            "text": "Every call gets to the appropriate department and team member, every time."
+            "title": "Call routing and message taking",
+            "text": "Every call reaches the right department and team member."
           }
-        ],
-        "eyebrow": "Capabilities"
+        ]
       },
       {
         "heading": "Key Benefits",
         "list": [
-          "Miss fewer calls and lose fewer leads",
-          "Excellent customer experience with brand consistency",
+          "Fewer missed calls and lost leads",
+          "A consistent, professional customer experience",
           "Lower overhead costs",
-          "Frees in-house team for higher-value work",
+          "In-house teams freed for higher-value work",
           "Professional service at all times"
-        ],
-        "eyebrow": "Why It Matters"
+        ]
       }
     ]
   },
   {
     "slug": "help-desk",
     "practice": "customer-service-support",
-    "kicker": "Power real-time technical assistance via a dedicated team",
+    "kicker": "Real-time technical assistance from a dedicated team",
     "title": "Outsourced Help Desk Services",
-    "intro": "Outsourcing your help desk support reduces business costs while connecting users with expert, responsive care for a smooth experience — from connectivity to password resets to hardware issues.",
+    "intro": "Outsourced help desk support reduces costs while giving users expert, responsive assistance with everything from connectivity and password resets to hardware issues.",
     "short": "Outsourced Help Desk Services",
     "sections": [
       {
-        "heading": "When your IT support can't keep up",
+        "heading": "When Internal IT Support Reaches Capacity",
         "paras": [
-          "Fully staffing internal IT teams isn't realistic for budget-conscious companies, as help desk requires around-the-clock coverage. Internal teams struggle to balance routine requests with their primary duties."
+          "Help desk support requires round-the-clock coverage, which makes a fully staffed internal IT team impractical for many organizations. Internal teams also struggle to balance routine requests with their primary responsibilities."
         ],
         "bullets": [
-          "Reduces costs while boosting quality",
-          "Access to expert IT agents from competitive contact center hubs worldwide",
-          "Empowers scalable operations according to demand",
-          "Seamless integration with industry-leading technologies"
-        ],
-        "image": "Outsourced Help Desk Services"
+          "Lower costs with higher service quality",
+          "Access to expert IT agents from competitive delivery centers worldwide",
+          "Operations that scale with demand",
+          "Seamless integration with leading technologies"
+        ]
       },
       {
         "heading": "What's Included",
         "items": [
           {
             "title": "Software and hardware support",
-            "text": "Experienced teams assist users with software access and troubleshooting, providing maintenance and support."
+            "text": "Experienced teams help users with software access, troubleshooting, maintenance and support."
           },
           {
             "title": "Customer satisfaction surveys",
-            "text": "A detailed look into the effect of your help desk support on customer satisfaction."
+            "text": "Detailed insight into how your help desk support affects customer satisfaction."
           },
           {
-            "title": "Internet call-tracking access",
-            "text": "Improved ability to track and monitor customer interactions via phone, chat, email, and social media."
+            "title": "Interaction tracking",
+            "text": "Improved tracking and monitoring of customer interactions across phone, chat, email and social media."
           },
           {
-            "title": "Remote control assistance",
-            "text": "Expert IT support that aligns with your budget through nearshore and offshore agent pools."
+            "title": "Remote assistance",
+            "text": "Expert remote IT support, aligned with your budget through nearshore and offshore teams."
           },
           {
             "title": "Foreign-language support",
-            "text": "Expand your team's language capabilities by outsourcing IT help desk support."
+            "text": "Extend your language capabilities through outsourced help desk support."
           },
           {
             "title": "Proprietary application support",
-            "text": "Teams experienced in navigating the specific licensing terms of various software applications."
+            "text": "Teams experienced with the licensing terms and requirements of a wide range of software applications."
           }
-        ],
-        "eyebrow": "Capabilities"
+        ]
       },
       {
         "heading": "Key Benefits",
         "list": [
-          "Reduces costs while boosting quality",
-          "Access to expert IT agents from competitive contact center hubs worldwide",
-          "Increased efficiency improves customer satisfaction",
-          "Empowers scalable operations according to demand",
-          "Rapid team scaling capability"
-        ],
-        "eyebrow": "Why It Matters"
+          "Lower costs with higher service quality",
+          "Access to expert IT agents from competitive delivery centers worldwide",
+          "Greater efficiency and higher customer satisfaction",
+          "Operations that scale with demand",
+          "Rapid team scaling"
+        ]
       }
     ]
   },
   {
     "slug": "content-moderation",
     "practice": "customer-service-support",
-    "kicker": "Safer spaces. Stronger communities.",
+    "kicker": "Safer platforms and stronger communities",
     "title": "Outsourced Content Moderation",
-    "intro": "High-quality outsourced content moderation combines the advantages of advanced AI tools with the tact and skill of human moderators, giving your community the chance to grow while maintaining trust in your brand.",
+    "intro": "Our content moderation combines advanced AI tools with the judgment of skilled human moderators, allowing your community to grow while maintaining trust in your brand.",
     "short": "Outsourced Content Moderation",
     "sections": [
       {
-        "heading": "What is content moderation?",
+        "heading": "What Is Content Moderation?",
         "paras": [
-          "Content moderation is how organizations monitor and review user-generated content on their platforms to keep communication safe, civil, and compliant with the platform's guidelines."
+          "Content moderation is the process of monitoring and reviewing user-generated content to keep communication on a platform safe, respectful and compliant with the platform's guidelines."
         ],
         "bullets": [
           "Flexible scalability",
-          "Round-the-clock support",
-          "Faster response times to content",
-          "User safety and brand image protection"
-        ],
-        "image": "Outsourced Content Moderation"
+          "Round-the-clock coverage",
+          "Faster response to harmful content",
+          "Protection of users and brand reputation"
+        ]
       },
       {
         "heading": "What's Included",
         "items": [
           {
             "title": "Text moderation",
-            "text": "Review and filter user-submitted text, running both AI-enabled and manual checks for spam, abuse, hate speech, and other violations."
+            "text": "AI-enabled and manual review of user-submitted text for spam, abuse, hate speech and other violations."
           },
           {
-            "title": "Image & video moderation",
-            "text": "Ensure nudity, violence, and other problematic images or footage are kept off your platform, monitoring uploaded and live content."
+            "title": "Image and video moderation",
+            "text": "Monitoring of uploaded and live content to keep explicit, violent and otherwise harmful material off your platform."
           },
           {
-            "title": "Profile & avatar moderation",
-            "text": "Keep community usernames, avatars, and profile information compliant, preventing impersonation and harassment."
+            "title": "Profile and avatar moderation",
+            "text": "Usernames, avatars and profile information kept compliant, preventing impersonation and harassment."
           },
           {
-            "title": "Comment & review moderation",
-            "text": "Analyze and moderate comments, reviews, and forum posts, preventing fake, biased, or offensive content."
+            "title": "Comment and review moderation",
+            "text": "Analysis and moderation of comments, reviews and forum posts to prevent fake, biased or offensive content."
           },
           {
-            "title": "Ad & marketplace listing moderation",
-            "text": "Check user-posted ads and product listings for compliance with platform rules and legal standards, preventing scams."
+            "title": "Ad and marketplace listing moderation",
+            "text": "User-posted ads and listings checked against platform rules and legal standards to prevent fraud."
           },
           {
-            "title": "AI-powered pre-moderation & flagging",
-            "text": "Identify and flag high-risk content through automated AI tools, making manual reviews easier and accelerating review times."
+            "title": "AI-powered pre-moderation and flagging",
+            "text": "Automated tools identify and flag high-risk content, accelerating and simplifying manual review."
           }
-        ],
-        "eyebrow": "Capabilities"
+        ]
       },
       {
         "heading": "Key Benefits",
         "list": [
           "Flexible scalability",
-          "Round-the-clock support",
-          "Reduced operational costs",
-          "Faster response times to content",
-          "Regulatory compliance assurance",
-          "Brand image preservation"
-        ],
-        "eyebrow": "Why It Matters"
+          "Round-the-clock coverage",
+          "Lower operational costs",
+          "Faster response to harmful content",
+          "Assured regulatory compliance",
+          "Protection of brand reputation"
+        ]
       }
     ]
   },
   {
     "slug": "ai-data-annotation",
     "practice": "ai-technology",
-    "kicker": "Enhance your AI model accuracy with expert help",
+    "kicker": "Improve AI model accuracy with expert support",
     "title": "AI Data Annotation Outsourcing",
-    "intro": "Data annotation is a crucial step in developing AI tools — it shows the AI what a good result looks like, improving model accuracy through skilled human review.",
+    "intro": "Data annotation is a critical stage in AI development. Skilled human reviewers show models what accurate results look like, improving model performance.",
     "short": "AI Data Annotation Outsourcing",
     "sections": [
       {
-        "heading": "Data Annotation for ML & AI",
+        "heading": "Data Annotation for Machine Learning and AI",
         "paras": [
-          "Data annotation is the human work done behind the scenes to train specific AI or machine learning applications, most often taking the form of grading AI outputs on how closely they match the desired result."
+          "Data annotation is the human work that trains AI and machine learning applications, most often by evaluating model outputs against the desired result."
         ],
         "bullets": [
-          "Improved AI model accuracy through human guidance",
-          "Prevention of pattern misidentification errors",
+          "Higher AI model accuracy through expert human guidance",
+          "Fewer pattern recognition errors",
           "Better scalability and generalization",
-          "Compliance and data security alignment"
-        ],
-        "image": "AI Data Annotation Outsourcing"
+          "Alignment with compliance and data security requirements"
+        ]
       },
       {
         "heading": "What's Included",
@@ -2437,204 +2334,193 @@ export const services = [
           },
           {
             "title": "Video annotation",
-            "text": "Frame-by-frame tagging to enable computer vision system training."
+            "text": "Frame-by-frame tagging that supports computer vision training."
           },
           {
             "title": "Text annotation",
-            "text": "Close inspection of textual data, bringing structure and labels to the source material."
+            "text": "Detailed review of text data, adding structure and labels to the source material."
           },
           {
             "title": "Audio annotation",
-            "text": "Transcription and audio data tagging, boosting the accuracy of speech recognition models."
+            "text": "Transcription and audio tagging that improve the accuracy of speech recognition models."
           },
           {
             "title": "Scalable workforce",
-            "text": "Access to skilled annotators, providing flexibility for projects of any scale."
+            "text": "Access to skilled annotators, with the flexibility to support projects of any size."
           },
           {
             "title": "Data quality assurance",
-            "text": "Regular and stringent quality checks to ensure the accuracy and effectiveness of each model."
+            "text": "Regular, rigorous quality checks that ensure the accuracy and effectiveness of every model."
           }
-        ],
-        "eyebrow": "Capabilities"
+        ]
       },
       {
         "heading": "Key Benefits",
         "list": [
-          "Improved AI model accuracy through human guidance",
-          "Prevention of pattern misidentification errors",
+          "Higher AI model accuracy through expert human guidance",
+          "Fewer pattern recognition errors",
           "Better scalability and generalization",
-          "Compliance and data security alignment",
-          "Cost-effective solutions"
-        ],
-        "eyebrow": "Why It Matters"
+          "Alignment with compliance and data security requirements",
+          "Cost-effective delivery"
+        ]
       }
     ]
   },
   {
     "slug": "ai-as-a-service",
     "practice": "ai-technology",
-    "kicker": "Access to advanced AI tools — even without the infrastructure",
+    "kicker": "Access advanced AI tools without the infrastructure",
     "title": "AI as a Service",
-    "intro": "AIaaS enables businesses to access advanced AI tools and models for data analytics, customer support, and process automation without expensive infrastructure investments.",
+    "intro": "AI as a Service (AIaaS) gives businesses access to advanced AI tools and models for analytics, customer support and process automation, without costly infrastructure investment.",
     "short": "AI as a Service",
     "sections": [
       {
-        "heading": "What is AI as a Service (AIaaS) in a BPO model?",
+        "heading": "What Is AI as a Service (AIaaS) in a BPO Model?",
         "paras": [
-          "Cloud-based AI solutions — including chatbots, predictive analytics, AI-driven automation, and intelligent call routing — that let businesses leverage advanced technology without in-house development."
+          "AIaaS provides cloud-based AI solutions, including chatbots, predictive analytics, AI-driven automation and intelligent call routing, allowing businesses to use advanced technology without developing it in-house."
         ],
         "bullets": [
           "Chatbots and virtual assistants",
           "Predictive analytics",
           "AI-driven automation",
           "Intelligent call routing"
-        ],
-        "image": "AI as a Service"
+        ]
       },
       {
         "heading": "What's Included",
         "items": [
           {
-            "title": "24/7 AI-powered chatbots & virtual assistants",
+            "title": "24/7 AI-powered chatbots and virtual assistants",
             "text": "Round-the-clock support powered by conversational AI."
           },
           {
             "title": "Predictive analytics",
-            "text": "Data-driven decision-making through advanced AI models."
+            "text": "Data-driven decision-making supported by advanced AI models."
           },
           {
-            "title": "Customizable AI model development",
-            "text": "AI tools tailored to your specific business needs and workflows."
+            "title": "Custom AI model development",
+            "text": "AI tools tailored to your business requirements and workflows."
           },
           {
-            "title": "Fraud detection & regulatory compliance",
-            "text": "AI-powered solutions that flag risk and help you stay compliant."
+            "title": "Fraud detection and regulatory compliance",
+            "text": "AI-powered solutions that identify risk and support compliance."
           }
-        ],
-        "eyebrow": "Capabilities"
+        ]
       },
       {
         "heading": "Key Benefits",
         "list": [
-          "Cost-effective AI implementation",
-          "Improved operational efficiency",
-          "Enhanced customer experience through personalization",
-          "Scalability for seasonal demand fluctuations",
+          "Cost-effective AI adoption",
+          "Greater operational efficiency",
+          "A more personalized customer experience",
+          "Scalability for seasonal fluctuations in demand",
           "AI-powered fraud detection and compliance"
-        ],
-        "eyebrow": "Why It Matters"
+        ]
       }
     ]
   },
   {
     "slug": "ai-implementation",
     "practice": "ai-technology",
-    "kicker": "Enhanced call center efficiency with smart implementation of AI in BPO",
+    "kicker": "Greater contact center efficiency through effective AI implementation",
     "title": "AI Implementation for BPO & Call Centers",
-    "intro": "AI implementation helps streamline processes, optimize workforce efficiency, and enhance customer engagement while maintaining operational flexibility — without requiring in-house AI expertise.",
+    "intro": "AI implementation streamlines processes, improves workforce efficiency and strengthens customer engagement while preserving operational flexibility, without requiring in-house AI expertise.",
     "short": "AI Implementation for BPO & Call Centers",
     "sections": [
       {
-        "heading": "What is AI Implementation for Contact Centers?",
+        "heading": "What Is AI Implementation for Contact Centers?",
         "paras": [
-          "AI implementation services streamline processes, optimize workforce efficiency, and enhance customer engagement, integrating AI-driven automation, predictive analytics, and customer support tools."
+          "Our AI implementation services integrate AI-driven automation, predictive analytics and customer support tools to streamline processes, improve workforce efficiency and strengthen customer engagement."
         ],
         "bullets": [
-          "Streamline processes",
-          "Optimize workforce efficiency",
-          "Enhance customer engagement",
-          "Reduce costs"
-        ],
-        "image": "AI Implementation for BPO & Call Centers"
+          "Streamlined processes",
+          "Improved workforce efficiency",
+          "Stronger customer engagement",
+          "Lower costs"
+        ]
       },
       {
         "heading": "What's Included",
         "items": [
           {
             "title": "Cost reduction",
-            "text": "Quality automation boosts individual agents' efficiency, reducing overall overstaffing costs."
+            "text": "Effective automation increases agent productivity and reduces overstaffing costs."
           },
           {
             "title": "Improved customer experience",
-            "text": "Intelligent routing enables faster response times and AI-powered personalization."
+            "text": "Intelligent routing and AI-powered personalization deliver faster, more relevant responses."
           },
           {
-            "title": "Scalable & flexible operations",
-            "text": "Smoother scaling to handle fluctuating call volumes."
+            "title": "Scalable, flexible operations",
+            "text": "Smoother scaling to accommodate fluctuating call volumes."
           },
           {
-            "title": "Data-driven insights",
-            "text": "Speech and text analytics compile data to refine engagement strategies."
+            "title": "Data-driven insight",
+            "text": "Speech and text analytics generate insight that refines engagement strategies."
           }
-        ],
-        "eyebrow": "Capabilities"
+        ]
       },
       {
         "heading": "Key Benefits",
         "list": [
-          "24/7 innovative customer support",
-          "Smooth escalation to live agents",
-          "Labor planning through call volume analysis",
-          "Automation of repetitive tasks like call summaries",
+          "Innovative 24/7 customer support",
+          "Seamless escalation to live agents",
+          "Workforce planning informed by call volume analysis",
+          "Automation of repetitive tasks such as call summaries",
           "Higher operational efficiency"
-        ],
-        "eyebrow": "Why It Matters"
+        ]
       }
     ]
   },
   {
     "slug": "human-in-the-loop",
     "practice": "ai-technology",
-    "kicker": "The power of automation with the trustworthiness of human oversight",
+    "kicker": "The power of automation with the assurance of human oversight",
     "title": "Human in the Loop",
-    "intro": "Automation is a powerful tool that augments the capabilities of human agents, but should never replace them outright — combining the speed and scalability of automation without sacrificing the human touch.",
+    "intro": "Automation extends the capabilities of human agents but should not replace them. Our approach combines the speed and scalability of automation with essential human judgment.",
     "short": "Human in the Loop",
     "sections": [
       {
-        "heading": "What is Human in the Loop (HITL) in a BPO model?",
+        "heading": "What Is Human in the Loop (HITL) in a BPO Model?",
         "paras": [
-          "HITL combines the speed, power, and scalability of automation without sacrificing the crucial human touch — automated outputs are monitored by real people, with complex issues routed to trained agents."
+          "Human in the loop combines the speed, power and scalability of automation with essential human judgment. People monitor automated outputs, and complex issues are routed to trained agents."
         ],
         "bullets": [
-          "Mistakes are more expensive at scale without oversight",
-          "Automation alone risks loss of customer trust",
-          "Nuance is lost without human review",
-          "Greater accuracy and efficiency with human-in-the-loop review"
-        ],
-        "image": "Human in the Loop"
+          "Unchecked errors become costly at scale",
+          "Automation alone can erode customer trust",
+          "Important nuance is lost without human review",
+          "Human review delivers greater accuracy and efficiency"
+        ]
       },
       {
         "heading": "What's Included",
         "items": [
           {
-            "title": "Automated workflows with humanity",
-            "text": "Automated outputs are monitored by real people, with complex issues routed to trained agents."
+            "title": "Automated workflows with human oversight",
+            "text": "People monitor automated outputs, and complex issues are routed to trained agents."
           },
           {
-            "title": "Human oversight & quality review",
-            "text": "Real people review automated outputs for accuracy, nuance, and compliance."
+            "title": "Human quality review",
+            "text": "Automated outputs are reviewed for accuracy, nuance and compliance."
           },
           {
             "title": "Escalation to trained agents",
-            "text": "Complex or sensitive cases are routed to experienced human agents."
+            "text": "Complex or sensitive cases are handled by experienced agents."
           },
           {
-            "title": "The transformative benefits of human oversight",
-            "text": "Greater accuracy and efficiency, higher CSAT scores, and lower compliance risk."
+            "title": "Measurable business value",
+            "text": "Greater accuracy and efficiency, higher customer satisfaction and lower compliance risk."
           }
-        ],
-        "eyebrow": "Capabilities"
+        ]
       },
       {
         "heading": "Key Benefits",
         "list": [
           "Greater accuracy and efficiency",
-          "Higher CSAT scores",
+          "Higher customer satisfaction scores",
           "Lower compliance risk",
-          "Stronger customer retention and loyal relationships"
-        ],
-        "eyebrow": "Why It Matters"
+          "Stronger customer retention and loyalty"
+        ]
       }
     ]
   }

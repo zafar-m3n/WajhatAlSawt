@@ -18,7 +18,7 @@ export default function About() {
   const { story, team } = about
   return (
     <>
-      <Seo title="About" description={about.lede} path="/about" />
+      <Seo path="/about" />
       <PageIntro title={about.title} deck={about.lede} image={{ slot: 'about-team' }} />
 
       <section className="shell pt-32 md:pt-48">

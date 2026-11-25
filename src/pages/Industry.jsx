@@ -28,7 +28,7 @@ export default function Industry() {
 
   return (
     <>
-      <Seo title={ind.title} description={ind.intro} path={`/industries/${ind.slug}`} />
+      <Seo path={`/industries/${ind.slug}`} />
       <PageIntro crumbs={[{ label: 'Industries' }, { label: ind.name }]} title={ind.title} image={{ slot: `industry-${ind.slug}`, alt: ind.title }}>
         <p className="mt-6 text-17 text-mint">{ind.subtitle}</p>
         <p className="deck measure mt-4">{ind.intro}</p>
@@ -137,7 +137,7 @@ export default function Industry() {
 
       {faq && <FaqBlock faqs={faq.faqs} title={faq.heading} />}
 
-      <CtaBand title="Ready to Build Your Industry Support Team?" text="Let's map the workflows, coverage, and service standards your customers need." />
+      <CtaBand title="Ready to Build Your Industry Support Team?" text="We will define the workflows, coverage and service standards your customers require." />
     </>
   )
 }

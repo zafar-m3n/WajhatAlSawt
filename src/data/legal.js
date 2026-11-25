@@ -1,4 +1,4 @@
-// Generated from the captured live-site content. Edit docs/content and re-run docs/tools/build-data.mjs.
+// Site content. Source of truth: edit here (the old capture converter is retired).
 export const legal = {
   "privacy": {
     "title": "Privacy Policy",

@@ -61,7 +61,7 @@ function ContactForm() {
     if (!values.name.trim()) er.name = 'Enter your name.'
     if (!values.email.trim()) er.email = 'Enter your email address.'
     else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(values.email)) er.email = 'Enter an email address like name@company.com.'
-    if (!values.message.trim()) er.message = 'Tell us a little about what you need.'
+    if (!values.message.trim()) er.message = 'Enter a brief description of your requirements.'
     setErrors(er)
     if (Object.keys(er).length) {
       document.getElementById(`cf-${Object.keys(er)[0]}`)?.focus()
@@ -90,6 +90,7 @@ function ContactForm() {
         <Field id="cf-service" label="Service you're interested in" optional>
           <Select
             inputId="cf-service"
+            instanceId="cf-service"
             variant="underline"
             options={serviceOptions}
             value={values.service}
@@ -113,7 +114,7 @@ function ContactForm() {
               <a className="text-link" href={company.phoneHref}>{company.phone}</a>.
             </>
           ) : (
-            'We typically respond within 24 hours.'
+            'We respond to every inquiry within 24 hours.'
           )}
         </p>
       </div>
@@ -124,7 +125,7 @@ function ContactForm() {
 export default function Contact() {
   return (
     <>
-      <Seo title="Contact" description={contactPage.lede} path="/contact" />
+      <Seo path="/contact" />
       <PageIntro title={contactPage.title} deck={contactPage.lede} />
 
       <section className="shell grid gap-16 lg:grid-cols-[minmax(0,0.85fr)_minmax(0,1.15fr)] lg:gap-24">

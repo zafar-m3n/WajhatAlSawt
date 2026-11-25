@@ -9,7 +9,7 @@ export default function Legal({ page }) {
   const deck = doc.intro[doc.intro.length - 1]
   return (
     <>
-      <Seo title={doc.title} description={deck} path={`/${page}`} />
+      <Seo path={`/${page}`} />
       <PageIntro title={doc.title} deck={deck}>
         {doc.updated && <p className="mt-6 text-15 text-sage">Last updated {doc.updated}</p>}
       </PageIntro>

@@ -116,7 +116,7 @@ function Practices() {
     <div className="flex w-[82vw] shrink-0 flex-col sm:w-[24rem] lg:w-[28rem]">
       <div>
         <h2 className="display-section">Our Services</h2>
-        <p className="deck mt-6 max-w-[30ch]">Empowering businesses worldwide with innovative BPO solutions.</p>
+        <p className="deck mt-6 max-w-[30ch]">{home.practicesIntro}</p>
       </div>
     </div>
   )
@@ -248,9 +248,9 @@ function Industries() {
     <section className="shell pt-32 md:pt-44" aria-labelledby="ind-title">
       <Reveal className="grid gap-6 md:grid-cols-2 md:items-end">
         <h2 id="ind-title" className="display-section">
-          Industries we serve
+          Industries We Serve
         </h2>
-        <p className="deck max-w-[38ch]">Dedicated teams that understand your customers, your workflows, and your standards.</p>
+        <p className="deck max-w-[38ch]">{home.industriesIntro}</p>
       </Reveal>
       <ul className="mt-14 space-y-6 md:space-y-8">
         {industryIndex.map((i) => (
@@ -282,7 +282,7 @@ function Why() {
       <ParallaxPhoto slot="home-why" rounded="rounded-[28px] rounded-tr-[140px]" />
       <div>
         <SplitHeading as="h2" text="Why Choose Us?" className="display-section" inView />
-        <p className="deck mt-6 max-w-[38ch]">{about.lede}</p>
+        <p className="deck mt-6 max-w-[38ch]">{home.whyIntro}</p>
         <Stagger className="mt-12 border-t border-line">
           {home.why.map((w) => (
             <motion.li variants={item} key={w} className="flex gap-4 border-b border-line py-6 text-21 tracking-[-0.01em]">
@@ -338,7 +338,7 @@ function Contact() {
 export default function Home() {
   return (
     <>
-      <Seo description={home.lede} path="/" />
+      <Seo path="/" />
       <HeroScene />
       <Statement />
       <Practices />

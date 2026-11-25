@@ -1,8 +1,8 @@
-// Generated from the captured live-site content. Edit docs/content and re-run docs/tools/build-data.mjs.
+// Lightweight index used by menus, footer, forms and page metadata. Source of truth: edit here.
 export const practices = [
   {
     "slug": "call-center-outsourcing",
-    "description": "Dedicated contact center teams, set up the way your business needs them: onshore, nearshore, offshore or fully virtual.",
+    "description": "Dedicated contact center teams configured to your requirements, whether onshore, nearshore, offshore or fully virtual.",
     "name": "Call Center Outsourcing",
     "services": [
       "virtual-call-center-solutions",
@@ -17,7 +17,7 @@ export const practices = [
   },
   {
     "slug": "bpo-business-support",
-    "description": "Back office, finance, HR and operations support that keeps your business running smoothly behind the scenes.",
+    "description": "Back office, finance, HR and operational support that keeps your business running efficiently behind the scenes.",
     "name": "BPO & Business Support Services",
     "services": [
       "back-office-operations",
@@ -33,7 +33,7 @@ export const practices = [
   },
   {
     "slug": "after-hours-overflow",
-    "description": "SMS, live chat and email teams that keep customers answered after hours and whenever volumes spike.",
+    "description": "Dedicated SMS, live chat and email teams that keep your customers supported outside business hours and during periods of peak demand.",
     "name": "After-Hours & Overflow Support",
     "services": [
       "sms-support",
@@ -43,7 +43,7 @@ export const practices = [
   },
   {
     "slug": "order-taking-billing",
-    "description": "Order taking, billing and subscription support that turns every customer call into a smooth transaction.",
+    "description": "Order taking, billing and subscription support that turns every customer interaction into a smooth, secure transaction.",
     "name": "Order Taking & Billing Services",
     "services": [
       "order-taking",
@@ -53,7 +53,7 @@ export const practices = [
   },
   {
     "slug": "inbound-outbound",
-    "description": "Inbound and outbound teams that answer, qualify, book and sell across every channel.",
+    "description": "Inbound and outbound teams that answer, qualify, schedule and sell across every channel.",
     "name": "Inbound & Outbound Support",
     "services": [
       "inbound-contact-center-solutions",
@@ -66,7 +66,7 @@ export const practices = [
   },
   {
     "slug": "customer-service-support",
-    "description": "Customer, technical and help desk support, plus answering services and content moderation.",
+    "description": "Customer, technical and help desk support, together with answering services and content moderation.",
     "name": "Customer Service & Support",
     "services": [
       "customer-support-excellence",
@@ -78,7 +78,7 @@ export const practices = [
   },
   {
     "slug": "ai-technology",
-    "description": "Data annotation, AI services and human-in-the-loop teams that help you put AI to work.",
+    "description": "Data annotation, AI services and human-in-the-loop teams that help you apply AI effectively and responsibly.",
     "name": "AI & Technology Services",
     "services": [
       "ai-data-annotation",
@@ -203,17 +203,17 @@ export const serviceIndex = [
   {
     "slug": "live-chat-support",
     "practice": "after-hours-overflow",
-    "title": "Instant Support with 24/7 Live Chat Services"
+    "title": "24/7 Live Chat Support Services"
   },
   {
     "slug": "order-taking",
     "practice": "order-taking-billing",
-    "title": "Reliable 24/7 Order Taking Services"
+    "title": "24/7 Order Taking Services"
   },
   {
     "slug": "billing-payment-support",
     "practice": "order-taking-billing",
-    "title": "Comprehensive Billing & Payment Support Services"
+    "title": "Billing & Payment Support Services"
   },
   {
     "slug": "subscription-continuity",
@@ -228,12 +228,12 @@ export const serviceIndex = [
   {
     "slug": "omnichannel-customer-support",
     "practice": "inbound-outbound",
-    "title": "Omnichannel Customer Support Outsourcing Services"
+    "title": "Omnichannel Customer Support Outsourcing"
   },
   {
     "slug": "lead-qualification",
     "practice": "inbound-outbound",
-    "title": "Expert Lead Qualification Services"
+    "title": "Lead Qualification Services"
   },
   {
     "slug": "cross-selling-upselling",
@@ -285,17 +285,23 @@ export const serviceIndex = [
 export const industryIndex = [
   {
     "slug": "banking-financial",
+    "title": "Banking & Financial BPO Services",
+    "intro": "Responsive support for banks, lenders, card issuers, wealth managers and financial institutions that require speed without compromising trust.",
     "name": "Banking & Financial",
-    "subtitle": "Secure, compliant customer support for financial service teams"
+    "subtitle": "Secure, compliant customer support for financial services organizations"
   },
   {
     "slug": "ecommerce",
+    "title": "eCommerce Call Center Services",
+    "intro": "Support for online shoppers covering orders, returns, billing, retention, product questions and peak-season demand.",
     "name": "eCommerce",
-    "subtitle": "Scalable customer care for fast-moving online retail brands"
+    "subtitle": "Scalable customer care for fast-growing online retail brands"
   },
   {
     "slug": "technology",
+    "title": "Technology & SaaS Call Center Services",
+    "intro": "Expert customer and technical support that helps technology companies reduce friction, resolve issues and keep users engaged.",
     "name": "Technology",
-    "subtitle": "Frictionless support for software, SaaS, IT, and digital product teams"
+    "subtitle": "Seamless support for software, SaaS, IT and digital product companies"
   }
 ]

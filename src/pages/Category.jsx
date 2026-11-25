@@ -153,7 +153,7 @@ export default function Category() {
 
   return (
     <>
-      <Seo title={p.name} description={p.description} path={`/services/${p.slug}`} />
+      <Seo path={`/services/${p.slug}`} />
       <PageIntro crumbs={[{ label: 'Services' }, { label: p.name }]} title={p.name} deck={p.description} image={{ slot: `service-${p.slug}`, alt: p.name }}>
         <div className="mt-10 flex flex-wrap gap-4">
           <Button to="/contact">Get started</Button>
@@ -187,7 +187,7 @@ export default function Category() {
 
       {faqs.length > 0 && <FaqBlock faqs={faqs} />}
 
-      <CtaBand title="Ready to Get Started?" text="Let's discuss how we can help transform your business operations." />
+      <CtaBand title="Ready to Get Started?" text="Speak with our team about how we can strengthen your business operations." />
     </>
   )
 }
